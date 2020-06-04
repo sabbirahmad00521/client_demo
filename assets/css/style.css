@@ -3,6 +3,13 @@
 
 
 @font-face {
+   font-family: "ProximaNova";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../webfonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
    font-family: "berlow";
    font-style: normal;
    font-weight: 400;
@@ -175,6 +182,7 @@ header h1 {
    z-index: 9;
    position: relative;
    padding: 10px;
+   height: 80px;
 }
 
 
@@ -282,6 +290,7 @@ a.order-btn svg {
 
 a.order-btn span {
    font-weight: 600;
+   letter-spacing: 2px;
 }
 
 /* Homepage 
@@ -387,7 +396,7 @@ footer .email span {
    left: 0%;
    bottom: 0;
    content: '';
-   background-color: rgba(0, 0, 0, .4);
+   background-color: rgba(0, 0, 0, .6);
    height: 100%;
    width: 100%;
    z-index: -1;
@@ -448,6 +457,12 @@ footer .email span {
    margin-bottom: 20px;
    max-width: 108%;
 }
+.service_page .col-lg-6:nth-child(2) img {
+      margin-bottom: 20px;
+      max-width: 120%;
+      position: relative;
+      left: -10%;
+  }
 
 
 /* Terms 
@@ -488,7 +503,8 @@ footer .email span {
    width: 750px;
    font-family: "poppins_light";
    font-size: 20px;
-   margin: auto;
+   margin: auto;    position: relative;
+   left: -100px;
 }
 
 .terms_body p a {
@@ -633,6 +649,9 @@ order
    width: 17px;
    height: 17px;
    margin: 0;
+}
+.order_container input[type="date"]{
+color: transparent;
 }
 
 .order_container .condition {
