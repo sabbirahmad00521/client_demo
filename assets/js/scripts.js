@@ -1,29 +1,34 @@
 jQuery(document).ready(function ($) {
 
-   jQuery('.order_container input[type="date"]').click(function () {
-      jQuery(this).css("color", "black")
-   })
-
-   // menu
-   jQuery("a.responsive-menu").click(function () {
-      jQuery("ul.menu").fadeToggle();
-      return false;
-   });
-
-   jQuery(window).resize(function () {
-      var windowWidth = jQuery(window).width();
-      if (windowWidth > 991) {
-         jQuery("ul.menu").css({
-            "display": "block"
-         });
-         $('.responsive-menu').removeClass('change');
-      } else {
-         jQuery("ul.menu").css({
-            "display": "none"
-         });
-
+   // Owl Carousel
+   $('.testimonial-slider').owlCarousel({
+      items: 3,
+      loop: true,
+      autoplay: true,
+      stagePadding: 120,
+      autoWidth: true,
+      autoplayTimeout: 2000,
+      margin: 50,
+      nav: false,
+      navText: false,
+      responsiveClass: true,
+      responsive: {
+         0: {
+            items: 1,
+            nav: true
+         },
+         600: {
+            items: 2,
+            nav: false
+         },
+         1000: {
+            items: 2,
+         }
       }
    });
 
-
+   // video Scripts
+   $(".work-video").modalVideo({
+      channel: 'youtube'
+   });
 });
