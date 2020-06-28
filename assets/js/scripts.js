@@ -1,34 +1,44 @@
 jQuery(document).ready(function ($) {
 
-   // Owl Carousel
-   $('.testimonial-slider').owlCarousel({
-      items: 3,
-      loop: true,
-      autoplay: true,
-      stagePadding: 120,
-      autoWidth: true,
-      autoplayTimeout: 2000,
-      margin: 50,
-      nav: false,
-      navText: false,
-      responsiveClass: true,
-      responsive: {
-         0: {
-            items: 1,
-            nav: true
-         },
-         600: {
-            items: 2,
-            nav: false
-         },
-         1000: {
-            items: 2,
-         }
-      }
+   $('nav li').hover(function () {
+      $('nav li a').attr("style", "opacity: 0.4;")
+      $(this).toggleClass("active")
+
+      $('nav li ul').removeClass("submenuactive")
+      $('nav li.active ul').addClass("submenuactive")
+
+   })
+   $('nav').mouseleave(function () {
+      $('nav li a').attr("style", "opacity: 1;")
+   })
+
+   $('.social-icons li').hover(function () {
+      $('.social-icons li a').attr("style", "opacity: 0.4;")
+      $(this).toggleClass("active")
+   })
+   $('.social-icons li').mouseleave(function () {
+      $('.social-icons li a').attr("style", "opacity: 1;")
+   })
+
+
+   // responsive menu
+   jQuery("a.responsive-menu").click(function () {
+      jQuery("ul.menu").fadeToggle();
+      return false;
    });
 
-   // video Scripts
-   $(".work-video").modalVideo({
-      channel: 'youtube'
+   jQuery(window).resize(function () {
+      var windowWidth = jQuery(window).width();
+      if (windowWidth > 748) {
+         jQuery("ul.menu").css({
+            "display": "block"
+         });
+         $('.responsive-menu').removeClass('change');
+      } else {
+         jQuery("ul.menu").css({
+            "display": "none"
+         });
+
+      }
    });
 });

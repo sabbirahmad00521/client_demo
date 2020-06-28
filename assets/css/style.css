@@ -1,22 +1,178 @@
 /* Common Styles
 ================*/
+/* ProximaNova-Regular */
+@font-face {
+   font-family: "ProximaNova-Regular";
+   src: url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#ProximaNova-Regular") format("svg");
+   /* iOS 4.1- */
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* font-family: "ProximaNova-Regular" */
 
-/* 
+/* UltraLight */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 100;
+   src: url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+/* ExtraLight */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 200;
+   src: url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+/* Light */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 300;
+   src: url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+/* Regular */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 400;
+   src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot");
+   src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg");
+}
+
+/* Medium */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 500;
+   src: url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+/* Semi Bold */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 600;
+   src: url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+/* Bold */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 700;
+   src: url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+/* Black */
+@font-face {
+   font-family: "Sofia Pro";
+   font-weight: 900;
+   src: url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.eot");
+   /* IE9*/
+   src: url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.woff2") format("woff2"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.woff") format("woff"),
+      /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.ttf") format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.svg#Sofia Pro") format("svg");
+   /* iOS 4.1- */
+}
+
+@font-face {
+   font-family: "font name";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../webfonts/.WOFF") format("woff");
+}
+
+
+/*
+font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; 
+font-family: 'Raleway', sans-serif;
 */
 
 body {
-   font-family: 'Poppins', sans-serif;
+   /* font-family: 'Raleway', sans-serif; */
+   font-family: "Sofia Pro";
    font-size: 16px;
    background-color: #fff;
-   color: #000;
-}
-
-.container {
-   max-width: 1455px;
+   color: #333;
 }
 
 h1,
@@ -36,7 +192,7 @@ a:active,
 a:hover,
 a:visited {
    text-decoration: none;
-   color: #fff;
+   color: #333;
 }
 
 img {
@@ -52,597 +208,365 @@ button:focus {
    outline: 0 solid;
 }
 
-.container-fluid {
-   padding-left: 245px;
-   padding-right: 155px;
-}
-
-p {
-   font-size: 26px;
-   color: #717171;
-   line-height: 1.6;
-}
-
-/* button */
-a.boxed-btn {
-   background: #ffb772;
-   background: -moz-linear-gradient(left, #ffb772 0%, #ff6a6c 100%);
-   background: -webkit-linear-gradient(left, #ffb772 0%, #ff6a6c 100%);
-   background: linear-gradient(to right, #ffb772 0%, #ff6a6c 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb772', endColorstr='#ff6a6c', GradientType=1);
-   padding: 15px 75px;
-   font-size: 21px;
-   transition: 0.3s;
-   position: relative;
-   display: table;
-   z-index: 3;
-}
-
-a.boxed-btn:after {
-   background: #ff6a6c;
-   background: -moz-linear-gradient(left, #ff6a6c 0%, #ffb772 100%);
-   background: -webkit-linear-gradient(left, #ff6a6c 0%, #ffb772 100%);
-   background: linear-gradient(to right, #ff6a6c 0%, #ffb772 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6a6c', endColorstr='#ffb772', GradientType=1);
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 100%;
-   width: 100%;
-   content: '';
-   z-index: -1;
-   opacity: 0;
-   transition: 0.4s;
-}
-
-a.boxed-btn:hover:after {
-   opacity: 1;
-}
-
-
-/* Top section Style
-===================== */
-
-.top-section {
-   background-image: url(../img/hero-bg.png);
-   background-repeat: no-repeat;
-   background-position: 100.8% -15px;
-
-}
-
-/* header area */
+/* Header section */
 header {
-   padding-top: 125px;
-   padding-bottom: 80px;
+   padding: 0 20px;
 }
 
 header h1 {
    margin-bottom: 0;
 }
 
-nav ul {
+header h1 img {
+   height: 80px;
+}
+
+header ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-align: center;
+}
+
+header ul li {
+   display: inline-block;
+   margin-left: -4px;
+   position: relative;
+}
+
+header ul li a {
+   display: block;
+   transition: 0.6s;
+   padding: 10px 25px;
+   font-size: 15px;
+   font-weight: 500;
+   color: #999999 !important;
+}
+
+header ul ul {
+   position: absolute;
+   background: #fff;
+   text-align: left;
+   top: calc(100% + 20px);
+   transition: 0.3s;
+   left: 10px;
+   opacity: 0;
+   visibility: hidden;
+   padding-bottom: 15px;
+}
+
+header ul ul li {
+   display: block;
+   white-space: nowrap;
+}
+
+header ul ul li a {
+   color: rgba(67, 66, 66, .4) !important;
+   opacity: 1 !important;
+   padding: 2px 25px;
+   font-size: 14px;
+}
+
+header ul ul li:hover a {
+   color: #434242 !important;
+}
+
+header ul li.active a {
+   opacity: 1 !important;
+}
+
+header ul li ul.submenuactive {
+   top: calc(100% + 0px);
+   opacity: 1;
+   visibility: visible;
+}
+
+.btn-round {
+   transition: background-color 170ms ease-out, color 170ms ease-out;
+   border: 2px solid rgba(244, 141, 52, .84);
+   color: rgba(244, 141, 52, .84) !important;
+   border-radius: 300px;
+   padding: 12px 18px;
+   margin: .618em .45em;
+   cursor: pointer;
+   font-size: 14.25px;
+   font-weight: 600;float: right;
+}
+
+.btn-round:hover {
+   background-color: rgba(244, 141, 52, .84);
+   color: #fff !important;
+}
+/* responsive menu */
+a.responsive-menu {
+   display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+   width: 30px;
+   height: 3px;
+   background-color: #F79F52;
+   margin: 6px 0;
+   transition: 0.4s;
+}
+
+.change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+   transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+   opacity: 0;
+}
+
+.change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-7px, -8px);
+   transform: rotate(45deg) translate(-7px, -8px);
+}
+
+
+/* Heroarea */
+
+.heroarea {
+   height: 690px;
+   background: transparent;
+}
+
+.hero-content {
+   color: #ffffff;
+   margin-left: 33px;
+   margin-top: 70px;
+}
+
+.hero-content h3 {
+   font-size: 33px;
+   margin-bottom: 30px;
+}
+
+.hero-content h6 {
+   font-size: 19px;
+   width: 440px;
+}
+
+.btn-boxed {
+   -webkit-box-shadow: 0 2px 0 0 #ebebeb;
+   -moz-box-shadow: 0 2px 0 0 #ebebeb;
+   box-shadow: 0 2px 0 0 #ebebeb;
+   border-radius: 3px;
+   transition: .1s background-color linear;
+   color: #e37262 !important;
+   background-color: #fff;
+   border-color: #fff;
+   font-size: 12px;
+   font-weight: 700;
+   cursor: pointer;
+   text-align: center;
+   padding: 13px 26px;
+   display: table;
+   margin-top: 30px;
+}
+
+/* Who we are section */
+
+.who-we-are {
+   padding: 100px 0px 45px;
+}
+
+.who-we-are .container {
+   max-width: 1230px;
+}
+
+.who-we-are h5 {
+   font-size: 19px;
+   color: #2b2b2b;
+   font-weight: 600;
+}
+
+.who-we-are p {
+   font-size: 14px;
+   color: #222222;
+   line-height: 1.7;
+   font-weight: 500;
+}
+
+.who-we-are ul {
+   list-style: none;
+   padding: 0;
+}
+
+.who-we-are li {
+   position: relative;
+   z-index: 0;
+   padding-left: 60px;
+   padding-bottom: 42px;
+   line-height: 17px;
+}
+
+.who-we-are li:after {
+   position: absolute;
+   left: 0;
+   top: 0;
+   content: '';
+   background-image: url(../img/right.png);
+   background-size: contain;
+   background-position: center;
+   height: 40px;
+   width: 40px;
+   z-index: -1;
+}
+
+.who-we-are li a {
+   font-size: 14px;
+   color: #222222;
+
+   font-weight: 500;
+}
+
+/* services */
+.services {}
+
+.services .row {
+   margin: 0;
+}
+
+.services .single-service-box {
+   padding: 47px 3px;
+
+}
+
+.services .single-service-box h3 {
+   font-weight: 700;
+   margin-top: 20px;
+   letter-spacing: .09em;
+}
+
+.services .single-service-box p {
+   color: #999999;
+   font-size: 13px;
+   font-family: "ProximaNova-Regular"
+}
+
+.services .single-service-box a {
+   display: inline-block;
+   padding: 0.8em 2.5em;
+   border: 2px solid #000;
+   background-color: rgba(0, 0, 0, 0);
+   text-transform: uppercase;
+   color: #000 !important;
+   font-size: 13px;
+}
+
+.services .single-service-box a:hover {
+   opacity: .8;
+}
+
+
+/* footer section */
+
+footer {
+   background-color: #F9EAD4;
+   padding: 30px 15px 45px;
+}
+
+footer h4 {
+   font-size: 16px;
+   color: rgba(153, 153, 153, 0.75);
+   letter-spacing: 1px;
+}
+
+footer ul {
    margin: 0;
    padding: 0;
    list-style: none;
 }
 
-nav li {
-   display: inline-block;
-   margin-left: -4px;
-}
-
-nav li a {
-   display: block;
-   transition: 0.6s;
-   padding: 10px 30px;
-   font-size: 22px;
-   transition: 0.3s;
-}
-
-nav li:hover a {
-   color: #000;
-}
-
-nav li.active a {
-   color: #000;
-   font-weight: 900;
-}
-
-/* hero area */
-
-.hero-content {
-   padding-top: 140px;
-}
-
-.hero-content img {
-   margin-bottom: 28px;
-   margin-left: -75px;
-}
-
-.hero-content h1 {
-   font-size: 100px;
-   font-weight: 600;
-   margin-bottom: 35px;
-
-}
-
-.hero-content h1 span {
-   color: #8B8B8B;
-   font-weight: 900;
-}
-
-.hero-content h4 {
-   font-weight: 300;
-   font-size: 30px;
-   color: #717171;
-   line-height: 1.5;
-   margin-bottom: 58px;
-}
-
-.heroarea .hero-image {
-   height: 915px;
-   width: 650px;
-   border-radius: 45px;
-   float: right;
-   margin-right: 35px;
-   background-size: 122%;
-   background-repeat: no-repeat;
-   background-position: 40% 100%;
-}
-
-/* Service section
-==================== */
-.service-section {
-   margin-top: 280px;
-   position: relative;
-}
-
-.section-header {
-   font-size: 64px;
-   text-align: center;
-   line-height: 1.5;
-   position: relative;
-}
-
-.service-section .section-header:after {
-   position: absolute;
-   right: 260px;
-   bottom: 40px;
-   height: 70px;
-   width: 76px;
-   content: '';
-   background-image: url(../img/polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.service-section:after {
-   position: absolute;
-   background-image: url(../img/lg-trans-polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   content: '';
-   left: -108px;
-   top: 166px;
-   height: 288px;
-   width: 250px;
-   opacity: 0.4;
-   transform: rotate(7deg);
-}
-
-.single-service-box {
-   padding: 45px;
-   width: 380px;
-   box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.06);
-   border-radius: 30px;
-   display: block;
-   color: #000 !important;
-   margin-top: 95px;
-   background-color: #fff;
-   z-index: 9;
-}
-
-.single-service-box:hover {
-   background: #ff5f6d;
-   background: -moz-linear-gradient(-45deg, #ff5f6d 1%, #ffc371 100%);
-   background: -webkit-linear-gradient(-45deg, #ff5f6d 1%, #ffc371 100%);
-   background: linear-gradient(135deg, #ff5f6d 1%, #ffc371 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5f6d', endColorstr='#ffc371', GradientType=1);
-   color: #fff !important;
-}
-
-
-a.single-service-box h6 {
-   font-size: 20px;
-   margin-bottom: 25px;
-   margin-top: 30px;
-}
-
-
-
-.service-section .boxed-btn {
-   margin-top: 140px;
-   display: inline-block;
-}
-
-.single-service-box:hover img {
-   filter: brightness(0) invert(1);
-}
-
-.single-service-box:hover p {
-   color: #fff !important;
-}
-
-
-/* How We Work
-=============== */
-
-.how-we-work {
-   padding-top: 300px;
-   padding-bottom: 300px;
-   position: relative;
-   overflow: hidden;
-}
-
-
-.how-we-work:before {
-   position: absolute;
-   right: 159px;
-   bottom: 242px;
-   height: 75px;
-   width: 81px;
-   content: '';
-   background-image: url(../img/polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   transform: rotate(-7deg);
-}
-
-
-.how-we-work:after {
-   position: absolute;
-   background-image: url(../img/lg-trans-polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   content: '';
-   left: auto;
-   top: auto;
-   height: 322px;
-   width: 274px;
-   opacity: 0.4;
-   transform: rotate(0deg);
-   right: -154px;
-   bottom: 27px;
-}
-
-/* video side */
-
-.work-video {
-   height: 630px;
-   width: 640px;
-   border-radius: 30px;
-   background-size: 174%;
-   background-repeat: no-repeat;
-   background-position: -181px bottom;
-   background-color: black;
-   position: relative;
-   z-index: 2;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.work-video:before {
-   position: absolute;
-   left: -125px;
-   top: -131px;
-   height: 70px;
-   width: 76px;
-   content: '';
-   background-image: url(../img/polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   transform: rotate(0deg);
-}
-
-.work-video:after {
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 100%;
-   width: 100%;
-   content: '';
-   background: #000;
-   border-radius: 30px;
-   z-index: -1;
-   opacity: 0;
-   visibility: hidden;
-   transition: 0.4s;
-}
-
-.work-video:hover:after {
-   opacity: 0.6;
-   visibility: visible;
-}
-
-.work-video i {
-   height: 190px;
-   width: 190px;
-   border-radius: 50%;
-   background: #ff5f6d;
-   background: -moz-linear-gradient(-45deg, #ff5f6d 1%, #ffc371 100%);
-   background: -webkit-linear-gradient(-45deg, #ff5f6d 1%, #ffc371 100%);
-   background: linear-gradient(135deg, #ff5f6d 1%, #ffc371 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5f6d', endColorstr='#ffc371', GradientType=1);
-   color: #fff;
-   font-size: 80px;
-   text-align: center;
-   line-height: 190px;
-}
-
-.work-video i:before {
-   margin-left: 18px;
-}
-
-/* content side */
-.work-content {
-   margin-left: 105px;
-   width: 550px;
-}
-
-.work-content h2.section-header {
-   text-align: left;
-   font-size: 76px;
-   margin-bottom: 40px;
-}
-
-.work-content p {
-   font-size: 23px;
-   margin-bottom: 45px;
-   margin-left: 10px;
-}
-
-.work-content a.boxed-btn {
-   padding: 15px 60px;
-   margin-left: 10px;
-}
-
-
-/* testimonial section 
-====================== */
-.testimonial-section {
-   overflow: hidden;
-   position: relative;
-   padding-bottom: 320px;
-}
-
-.testimonial-section:before {
-   position: absolute;
-   right: auto;
-   bottom: 272px;
-   height: 73px;
-   width: 80px;
-   content: '';
-   background-image: url(../img/polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   left: 80px;
-   transform: rotate(117deg);
-}
-
-.testimonial-section:after {
-   position: absolute;
-   background-image: url(../img/lg-trans-polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   content: '';
-   left: -184px;
-   top: auto;
-   height: 298px;
-   width: 260px;
-   bottom: -25px;
-   opacity: 0.4;
-   transform: rotate(-17deg);
-}
-
-.testimonial-section .container-fluid {
-   padding-right: 0;
-}
-
-.testimonial-section .section-header {
-   font-size: 76px;
-   margin-top: -15px;
-   margin-bottom: 110px;
-}
-
-.single-testimonial {
-   height: 375px;
-   width: 375px;
-   padding: 45px 55px;
-   box-shadow: 0px 0px 48px 6px rgba(0, 0, 0, 0.04);
-   border-radius: 30px;
-   display: block;
-   margin: 20px 0;
-}
-
-.single-testimonial .client-image {
-   height: 68px;
-   width: 68px;
-   border-radius: 50%;
-   background-size: cover;
-   background-position: top center;
-   margin-bottom: 30px;
-}
-
-.single-testimonial h5 {
-   background: #ff6a6c;
-   background: -moz-linear-gradient(top, #ff6a6c 0%, #fbb76e 100%);
-   background: -webkit-linear-gradient(top, #ff6a6c 0%, #fbb76e 100%);
-   background: linear-gradient(to bottom, #ff6a6c 0%, #fbb76e 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   margin-bottom: 25px;
-}
-
-.testimonial-section h6 {
-   font-size: 23px;
-   color: #717171;
-   line-height: 1.6;
-   font-weight: 400;
-   margin-bottom: 65px;
-}
-
-.testimonial-section .boxed-btn {
-   padding: 15px 60px;
-}
-
-
-/* subscription section
-======================== */
-.subscription-section {
-   position: relative;
-   /* top: -55px; */
-   overflow: hidden;
-   padding-bottom: 290px;
-}
-
-.subscription-section:before {
-   position: absolute;
-   right: auto;
-   bottom: 204px;
-   height: 70px;
-   width: 76px;
-   content: '';
-   background-image: url(../img/polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   transform: rotate(0deg);
-   left: 282px;
-}
-
-
-.subscription-section:after {
-   position: absolute;
-   background-image: url(../img/lg-trans-polygon.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   content: '';
-   left: auto;
-   top: auto;
-   height: 397px;
-   width: 343px;
-   opacity: 0.4;
-   transform: rotate(163deg);
-   right: -197px;
-   bottom: 36px;
-}
-
-.subscription-section .section-header {
-   font-size: 76px;
-   margin-bottom: 110px;
-}
-
-.subscription-section input[type='email'] {
-   width: 700px;
-   border: 0;
-   padding: 25px 30px 25px 60px;
-   box-shadow: 0px 13px 18px -6px rgba(0, 0, 0, .12);
-   border-radius: 50px;
-   background: #ff6a6c;
-   background: -moz-linear-gradient(top, #ff6a6c 0%, #fbb76e 100%);
-   background: -webkit-linear-gradient(top, #ff6a6c 0%, #fbb76e 100%);
-   background: linear-gradient(to bottom, #ff6a6c 0%, #fbb76e 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-weight: 400;
-   margin-bottom: 30px;
-}
-
-.subscription-section input[type='email']::placeholder {
-   background: #ff6a6c;
-   background: -moz-linear-gradient(top, #ff6a6c 0%, #fbb76e 100%);
-   background: -webkit-linear-gradient(top, #ff6a6c 0%, #fbb76e 100%);
-   background: linear-gradient(to bottom, #ff6a6c 0%, #fbb76e 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   font-weight: 700;
-   font-size: 20px;
-}
-
-.subscription-section input[type='submit'] {
-   background: #fe6c6d;
-   background: -moz-linear-gradient(left, #fe6c6d 0%, #ffb772 100%);
-   background: -webkit-linear-gradient(left, #fe6c6d 0%, #ffb772 100%);
-   background: linear-gradient(to right, #fe6c6d 0%, #ffb772 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe6c6d', endColorstr='#ffb772', GradientType=1);
-   border: 0;
-   font-size: 20px;
-   font-weight: 600;
-   color: #fff;
-   padding: 22px 64px;
-   border-radius: 50px;
-   margin-left: 70px;
-   cursor: pointer;
-}
-
-.subscription-section input[type='submit']:hover {
-   background: #ff5f6d;
-   background: -moz-linear-gradient(-45deg, #ff5f6d 1%, #ffc371 100%);
-   background: -webkit-linear-gradient(-45deg, #ff5f6d 1%, #ffc371 100%);
-   background: linear-gradient(135deg, #ff5f6d 1%, #ffc371 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5f6d', endColorstr='#ffc371', GradientType=1);
-}
-
-/* Footer section 
-=================== */
-
-footer {
-   background: #ff636e;
-   background: -moz-linear-gradient(-45deg, #ff636e 0%, #ffbd71 100%);
-   background: -webkit-linear-gradient(-45deg, #ff636e 0%, #ffbd71 100%);
-   background: linear-gradient(135deg, #ff636e 0%, #ffbd71 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff636e', endColorstr='#ffbd71', GradientType=1);
-   padding-top: 120px;
-   padding-bottom: 90px;
-}
-
-footer a.footer-logo {
-   padding-bottom: 115px;
-   display: inline-block;
-}
-
-footer h6 {
-   margin-bottom: 50px;
-   color: #fff;
-   text-transform: uppercase;
-   font-size: 25px;
-   font-weight: 600;
-
-}
-
-footer a {
-   transition: 0.3s;
-}
-
-footer a:hover {
-   color: #000;
-}
-
-ul.footer-list,
-.social-icons {
-   list-style: none;
-   padding: 0;
-}
-
-ul.footer-list a {
-   font-size: 25px;
-   font-weight: 300;
-   padding: 6px 0;
-   display: block;
+footer ul a {
+   color: rgba(71, 71, 71, 1) !important;
+   font-size: 14px;
+   border-bottom: 1px solid rgba(71, 71, 71, .3);
 }
 
 .social-icons li {
    display: inline-block;
-   font-size: 40px;
-   margin-right: 20px;
+}
+
+.social-icons li a {
+   color: #222222 !important;
+   border-bottom: none;
+   font-size: 16px;
+   padding-right: 8px;
+   transition: 0.3s;
+}
+
+.social-icons li.active a {
+   color: #222222 !important;
+   opacity: 1 !important;
+}
+
+footer form {
+   margin-top: 55px;
+}
+
+footer form p {
+   color: #222222;
+   font-size: 15px;
+   margin-bottom: 30px;
+}
+
+footer form input[type='email'] {
+   border: 1px solid rgba(0, 0, 0, .12);
+   width: 250px;
+   padding: 1em;
+   font-size: 15px;
+   background: #fff;
+   padding: 1em;
+   display: block;
+}
+
+footer form input[type='email']::placeholder {
+   opacity: 0.6;
+}
+
+footer form input[type='submit'] {
+   color: #fff;
+   background-color: #589361;
+   border: 1px solid #589361 !important;
+   transition: .1s opacity linear;
+   border-radius: 3px;
+   padding: 1em 2.5em;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 15px;
+   margin-top: 12px;
+   transition: 0.3s;
+}
+
+footer form input[type='submit']:hover {
+   opacity: .8;
+}
+
+footer .safe {
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 60px;
+}
+
+footer .safe img {
+   display: inline;
+}
+
+footer .powered h4 {
+   margin-bottom: 5px;
+   font-size: 14px;
+   font-weight: 400;
+   letter-spacing: 0;
+}
+
+footer .powered a {
+   color: rgba(71, 71, 71, 1) !important;
+   font-size: 14px;
+   border-bottom: 1px solid rgba(71, 71, 71, .3);
+   font-weight: 700;
 }
