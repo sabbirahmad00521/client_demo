@@ -1,157 +1,7 @@
 /* Common Styles
 ================*/
-/* ProximaNova-Regular */
-@font-face {
-   font-family: "ProximaNova-Regular";
-   src: url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#ProximaNova-Regular") format("svg");
-   /* iOS 4.1- */
-}
 
-/* font-family: "ProximaNova-Regular" */
-
-/* UltraLight */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 100;
-   src: url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/bc783a30ea350022ac8b85daa3380484.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
-
-/* ExtraLight */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 200;
-   src: url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/0c95ff6845bd542599a8eb781f2a65f3.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
-
-/* Light */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 300;
-   src: url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/aec4708719bc688b2b5226e044e40fa9.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
-
-/* Regular */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 400;
-   src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot");
-   src: url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.woff") format("woff"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9e00143409affcb46a1ae58634aa64be.svg#Sofia Pro") format("svg");
-}
-
-/* Medium */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 500;
-   src: url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/6eb802c6a07dd60496e67ca586038ce3.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
-
-/* Semi Bold */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 600;
-   src: url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/5e099073a68cfe1568410d07e0320322.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
-
-/* Bold */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 700;
-   src: url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/322abfb4839ffa8be0ee2126d7f33880.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
-
-/* Black */
-@font-face {
-   font-family: "Sofia Pro";
-   font-weight: 900;
-   src: url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.eot");
-   /* IE9*/
-   src: url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.eot?#iefix") format("embedded-opentype"),
-      /* IE6-IE8 */
-      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.woff2") format("woff2"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.woff") format("woff"),
-      /* chrome firefox */
-      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.ttf") format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-      url("http://db.onlinewebfonts.com/t/f78b3984438498d90048a2de3bda9b00.svg#Sofia Pro") format("svg");
-   /* iOS 4.1- */
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,600,700,800,900|Roboto:300,400,500,700,900');
 
 @font-face {
    font-family: "font name";
@@ -168,8 +18,7 @@ font-family: 'Raleway', sans-serif;
 */
 
 body {
-   /* font-family: 'Raleway', sans-serif; */
-   font-family: "Sofia Pro";
+   font-family: 'Raleway', sans-serif;
    font-size: 16px;
    background-color: #fff;
    color: #333;
@@ -208,365 +57,59 @@ button:focus {
    outline: 0 solid;
 }
 
-/* Header section */
-header {
-   padding: 0 20px;
-}
-
-header h1 {
-   margin-bottom: 0;
-}
-
-header h1 img {
-   height: 80px;
-}
-
-header ul {
+ul.inline-list {
    margin: 0;
    padding: 0;
    list-style: none;
-   text-align: center;
 }
 
-header ul li {
+ul.inline-list li {
    display: inline-block;
    margin-left: -4px;
-   position: relative;
 }
 
-header ul li a {
+ul.inline-list li a {
    display: block;
    transition: 0.6s;
-   padding: 10px 25px;
-   font-size: 15px;
-   font-weight: 500;
-   color: #999999 !important;
+   padding: 10px 20px;
 }
 
-header ul ul {
+
+/* Owl Carowsel
+===============*/
+
+/*
+.owl-carousel-class-name .owl-nav div {
    position: absolute;
-   background: #fff;
-   text-align: left;
-   top: calc(100% + 20px);
-   transition: 0.3s;
-   left: 10px;
-   opacity: 0;
-   visibility: hidden;
-   padding-bottom: 15px;
-}
-
-header ul ul li {
-   display: block;
-   white-space: nowrap;
-}
-
-header ul ul li a {
-   color: rgba(67, 66, 66, .4) !important;
-   opacity: 1 !important;
-   padding: 2px 25px;
-   font-size: 14px;
-}
-
-header ul ul li:hover a {
-   color: #434242 !important;
-}
-
-header ul li.active a {
-   opacity: 1 !important;
-}
-
-header ul li ul.submenuactive {
-   top: calc(100% + 0px);
-   opacity: 1;
-   visibility: visible;
-}
-
-.btn-round {
-   transition: background-color 170ms ease-out, color 170ms ease-out;
-   border: 2px solid rgba(244, 141, 52, .84);
-   color: rgba(244, 141, 52, .84) !important;
-   border-radius: 300px;
-   padding: 12px 18px;
-   margin: .618em .45em;
-   cursor: pointer;
-   font-size: 14.25px;
-   font-weight: 600;float: right;
-}
-
-.btn-round:hover {
-   background-color: rgba(244, 141, 52, .84);
-   color: #fff !important;
-}
-/* responsive menu */
-a.responsive-menu {
-   display: none;
-}
-
-.bar1,
-.bar2,
-.bar3 {
+   bottom: -40px;
+   height: 35px;
    width: 30px;
-   height: 3px;
-   background-color: #F79F52;
-   margin: 6px 0;
-   transition: 0.4s;
-}
-
-.change .bar1 {
-   -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-   transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.change .bar2 {
-   opacity: 0;
-}
-
-.change .bar3 {
-   -webkit-transform: rotate(45deg) translate(-7px, -8px);
-   transform: rotate(45deg) translate(-7px, -8px);
-}
-
-
-/* Heroarea */
-
-.heroarea {
-   height: 690px;
-   background: transparent;
-}
-
-.hero-content {
-   color: #ffffff;
-   margin-left: 33px;
-   margin-top: 70px;
-}
-
-.hero-content h3 {
-   font-size: 33px;
-   margin-bottom: 30px;
-}
-
-.hero-content h6 {
-   font-size: 19px;
-   width: 440px;
-}
-
-.btn-boxed {
-   -webkit-box-shadow: 0 2px 0 0 #ebebeb;
-   -moz-box-shadow: 0 2px 0 0 #ebebeb;
-   box-shadow: 0 2px 0 0 #ebebeb;
-   border-radius: 3px;
-   transition: .1s background-color linear;
-   color: #e37262 !important;
-   background-color: #fff;
-   border-color: #fff;
-   font-size: 12px;
-   font-weight: 700;
-   cursor: pointer;
+   line-height: 35px;
+   background: #1083D8;
    text-align: center;
-   padding: 13px 26px;
-   display: table;
-   margin-top: 30px;
-}
-
-/* Who we are section */
-
-.who-we-are {
-   padding: 100px 0px 45px;
-}
-
-.who-we-are .container {
-   max-width: 1230px;
-}
-
-.who-we-are h5 {
-   font-size: 19px;
-   color: #2b2b2b;
-   font-weight: 600;
-}
-
-.who-we-are p {
-   font-size: 14px;
-   color: #222222;
-   line-height: 1.7;
-   font-weight: 500;
-}
-
-.who-we-are ul {
-   list-style: none;
-   padding: 0;
-}
-
-.who-we-are li {
-   position: relative;
-   z-index: 0;
-   padding-left: 60px;
-   padding-bottom: 42px;
-   line-height: 17px;
-}
-
-.who-we-are li:after {
-   position: absolute;
-   left: 0;
-   top: 0;
-   content: '';
-   background-image: url(../img/right.png);
-   background-size: contain;
-   background-position: center;
-   height: 40px;
-   width: 40px;
-   z-index: -1;
-}
-
-.who-we-are li a {
-   font-size: 14px;
-   color: #222222;
-
-   font-weight: 500;
-}
-
-/* services */
-.services {}
-
-.services .row {
-   margin: 0;
-}
-
-.services .single-service-box {
-   padding: 47px 3px;
-
-}
-
-.services .single-service-box h3 {
-   font-weight: 700;
-   margin-top: 20px;
-   letter-spacing: .09em;
-}
-
-.services .single-service-box p {
-   color: #999999;
-   font-size: 13px;
-   font-family: "ProximaNova-Regular"
-}
-
-.services .single-service-box a {
-   display: inline-block;
-   padding: 0.8em 2.5em;
-   border: 2px solid #000;
-   background-color: rgba(0, 0, 0, 0);
-   text-transform: uppercase;
-   color: #000 !important;
-   font-size: 13px;
-}
-
-.services .single-service-box a:hover {
-   opacity: .8;
-}
-
-
-/* footer section */
-
-footer {
-   background-color: #F9EAD4;
-   padding: 30px 15px 45px;
-}
-
-footer h4 {
-   font-size: 16px;
-   color: rgba(153, 153, 153, 0.75);
-   letter-spacing: 1px;
-}
-
-footer ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-
-footer ul a {
-   color: rgba(71, 71, 71, 1) !important;
-   font-size: 14px;
-   border-bottom: 1px solid rgba(71, 71, 71, .3);
-}
-
-.social-icons li {
-   display: inline-block;
-}
-
-.social-icons li a {
-   color: #222222 !important;
-   border-bottom: none;
-   font-size: 16px;
-   padding-right: 8px;
-   transition: 0.3s;
-}
-
-.social-icons li.active a {
-   color: #222222 !important;
-   opacity: 1 !important;
-}
-
-footer form {
-   margin-top: 55px;
-}
-
-footer form p {
-   color: #222222;
-   font-size: 15px;
-   margin-bottom: 30px;
-}
-
-footer form input[type='email'] {
-   border: 1px solid rgba(0, 0, 0, .12);
-   width: 250px;
-   padding: 1em;
-   font-size: 15px;
-   background: #fff;
-   padding: 1em;
-   display: block;
-}
-
-footer form input[type='email']::placeholder {
-   opacity: 0.6;
-}
-
-footer form input[type='submit'] {
    color: #fff;
-   background-color: #589361;
-   border: 1px solid #589361 !important;
-   transition: .1s opacity linear;
-   border-radius: 3px;
-   padding: 1em 2.5em;
-   cursor: pointer;
+   font-size: 20px;
+   left: 42%;
+}
+
+.owl-carousel-class-name .owl-nav .owl-next {
+   left: auto;
+   right: 42%;
+}
+
+.owl-dots div {
    display: inline-block;
-   font-size: 15px;
-   margin-top: 12px;
-   transition: 0.3s;
+   height: 15px;
+   width: 15px;
+   background: #FACD38;
+   margin: -38px 5px;
+   border-radius: 50%;
 }
 
-footer form input[type='submit']:hover {
-   opacity: .8;
+.owl-dots div.active {
+   background-color: #1083D8;
 }
 
-footer .safe {
+.owl-dots {
    text-align: center;
-   margin-top: 50px;
-   margin-bottom: 60px;
-}
-
-footer .safe img {
-   display: inline;
-}
-
-footer .powered h4 {
-   margin-bottom: 5px;
-   font-size: 14px;
-   font-weight: 400;
-   letter-spacing: 0;
-}
-
-footer .powered a {
-   color: rgba(71, 71, 71, 1) !important;
-   font-size: 14px;
-   border-bottom: 1px solid rgba(71, 71, 71, .3);
-   font-weight: 700;
-}
+}*/
