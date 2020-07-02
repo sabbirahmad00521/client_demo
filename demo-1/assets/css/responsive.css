@@ -1,0 +1,102 @@
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .feature-reverse .feature-text,
+    .feature-reverse .feature-text {
+        padding: 0 40px;
+    }
+
+    .copyright.d-flex {
+        display: block !important;
+    }
+
+    footer ul.help-link li {
+        margin-left: 0;
+    }
+
+    footer h6 {
+        margin-bottom: 15px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .hero-area {
+        background: none;
+        padding-bottom: 0;
+    }
+
+    .feature-first {
+        margin-top: 80px;
+    }
+
+
+    a.responsive-menu {
+        display: inline-block;
+        float: right;
+    }
+
+    nav {
+        display: none;
+        margin-top: 40px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav a:after {
+        display: none;
+    }
+
+    nav ul li a {
+        padding-right: 5px;
+    }
+
+    nav ul li a.signup-btn {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+
+    nav ul li a.signup-btn:hover {
+        box-shadow: none
+    }
+
+    header .align-items-center {
+        align-items: stretch !important;
+    }
+}
+
+@media (max-width: 575px) {
+    footer span:nth-last-child(1) {
+        margin-bottom: 35px;
+        display: block;
+    }
+}

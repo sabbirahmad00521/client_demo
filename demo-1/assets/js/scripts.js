@@ -1,25 +1,37 @@
- // Get input element
- var filterInput = document.getElementById('filterInput');
- // Add event listener
- filterInput.addEventListener('keyup', filterNames);
+jQuery(document).ready(function ($) {
 
- function filterNames() {
-     // Get value of input
-     var filterValue = document.getElementById('filterInput').value.toUpperCase();
+   // responsive menu
+   jQuery(window).resize(function () {
+      var windowWidth = jQuery(window).width();
+      if (windowWidth > 750) {
+         jQuery("nav").css({
+            "display": "block"
+         });
+         $('.responsive-menu').removeClass('change');
+      } else {
+         jQuery("nav").css({
+            "display": "none"
+         });
+         $('.responsive-menu').removeClass('change');
+      }
+   });
 
-     // Get names ul
-     var ul = document.getElementById('names');
-     // Get lis from ul
-     var li = ul.querySelectorAll('li.collection-item');
+   jQuery("a.responsive-menu").click(function () {
+      jQuery("nav").fadeToggle();
+      return false;
+   });
 
-     // Loop through collection-item lis
-     for (var i = 0; i < li.length; i++) {
-         var a = li[i].getElementsByTagName('a')[0];
-         // If matched
-         if (a.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-             li[i].style.display = '';
-         } else {
-             li[i].style.display = 'none';
-         };
-     };
- };
+   // scroll to resize menu
+   $(window).scroll(function () {
+      if ($(window).scrollTop() > 10) {
+         $('header').addClass("scrolled");
+      } else {
+         $('header').removeClass("scrolled");
+      }
+   });
+
+});
+
+function myFunction(x) {
+   x.classList.toggle("change");
+}
