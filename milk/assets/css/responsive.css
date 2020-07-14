@@ -1,0 +1,373 @@
+@media (max-width: 1350px) {
+    header nav ul li {
+        padding: 5px 17px;
+    }
+
+    .who-we-are .content {
+        margin-left: 40px;
+    }
+
+    .what-we-do .content {
+        margin-right: 50px;
+    }
+
+    .our-team img {
+        margin-right: 65px;
+    }
+}
+
+@media (max-width: 1300px) {
+    header nav ul {
+        margin-left: 0;
+    }
+
+    header .col-lg-7 {
+        justify-content: center;
+    }
+
+    header {
+        height: 110px;
+    }
+
+    .slider-area .bg-1,
+    .slider-area .bg-2,
+    .slider-area {
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 1199px) {
+
+    header nav ul li,
+    .header-right li {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    header h1 img {
+        height: 50px;
+    }
+
+    .partners-card .single-partner-card p {
+        height: 380px;
+    }
+
+    .partners-card .single-partner-card h2 {
+        height: 65px;
+    }
+
+    .about-us {
+        background-size: cover;
+    }
+
+    .about-us img {
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .about-us .content {
+        width: 100%;
+        margin: 0;
+        padding: 10px 40px;
+    }
+
+    .about-us .d-flex {
+        display: block !important;
+    }
+
+    .what-we-do .responsive {
+        display: block;
+    }
+
+    .what-we-do .desktop {
+        display: none;
+    }
+
+    .product-suggestion .product-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    header nav ul li,
+    .header-right li {
+        font-size: 12px;
+        padding: 5px 1px;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .top-bar {
+        display: none;
+    }
+
+    .single-about-card {
+        transform: translateY(50px);
+        margin-bottom: 80px;
+    }
+
+    .partners-card .single-partner-card p {
+        height: 300px;
+    }
+
+    .partners-card .single-partner-card h2 {
+        height: 45px;
+    }
+
+
+    .show-on-mobile {
+        display: block
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .how-it-works-block .block-content,
+    .how-it-works-block .block-image {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .block-left,
+    .block-right {
+        float: none !important;
+        transform: none;
+    }
+
+    .how-it-works-block .max-width {
+        display: block !important;
+    }
+
+    .how-it-works-block .block-image .add-white-border {
+        position: static;
+        transform: translate(0);
+    }
+
+    .control-item .text {
+        font-size: 16px;
+    }
+
+    .service-control {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .control-item .text {
+        display: none;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header .col-md-2 {
+        order: 1;
+    }
+
+    header .col-md-7 {
+        order: 0;
+    }
+
+    header .col-md-3 {
+        order: 2;
+    }
+
+    header .sign-in {
+        display: none;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    .col-md-7 {
+        position: static;
+    }
+
+    header h1 img {
+        height: 60px;
+        margin: auto;
+    }
+
+    .header-right {
+        float: right;
+    }
+
+    ul.menu {
+        margin: 0;
+        position: absolute;
+        text-align: left;
+        left: 0;
+        background: #fff;
+        top: 0;
+        width: 350px;
+        height: 100vh;
+        padding-top: 100px;
+        margin-left: 0px;
+    }
+
+    ul.menu li {
+        border-bottom: 1px solid #F1F1F1;
+    }
+
+    ul.menu li a {
+        display: block;
+        margin-left: 25px;
+    }
+
+    ul.menu li:hover {
+        -moz-transform: translate(0, 0px);
+        -o-transform: translate(0, 0px);
+        -ms-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+
+    ul.menu a {
+        color: #E31B23;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+
+    a.responsive-menu {
+        display: inline-block;
+        color: #97C636;
+        z-index: 999;
+        font-size: 36px;
+        float: right;
+        margin-top: 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .menu {
+        display: none;
+        float: right;
+        margin-top: 70px;
+        margin-right: -50px;
+    }
+
+    .menu li {
+        display: block;
+    }
+
+    nav a:after {
+        display: none;
+    }
+
+    .searchbox {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .overlay {
+        background-color: #000;
+    }
+
+    .searchbox input {
+        width: 50%;
+    }
+
+    .search-area {
+        text-align: center;
+    }
+
+
+
+    .slider-area .bg-1,
+    .slider-area .bg-2,
+    .slider-area {
+        height: 500px;
+    }
+
+    .slider-text {
+        top: 20%;
+    }
+
+    .slider-text h1 {
+        font-size: 42px;
+    }
+
+    .cta-section h1 {
+        font-size: 32px;
+    }
+
+    footer h3 {
+        margin-top: 35px;
+    }
+
+    .copyright .col-12 {
+        display: block !important;
+        text-align: center;
+    }
+
+    .copyright ul {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .product-type-menu {
+        display: none;
+    }
+
+    .creamery-description h2 {
+        margin-top: 30px;
+    }
+
+    .partners-card .single-partner-card p {
+        height: auto;
+    }
+
+    .partner-hero {
+        height: 180px;
+    }
+
+    .product-showcase .product-image {
+        height: 400px;
+    }
+
+    .page-path .col {
+        display: block !important;
+    }
+
+    .breadcrumb {
+        margin-bottom: 10px !important;
+    }
+
+    .gift input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .searchbox button.search-submit {
+        height: 47px;
+    }
+
+    .product-showcase .product-image {
+        height: 300px;
+    }
+
+    .about-us .content {
+        padding: 10px;
+    }
+
+    .gallery-img img {
+        height: 300px;
+    }
+}
