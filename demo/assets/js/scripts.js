@@ -37,15 +37,34 @@ jQuery(document).ready(function ($) {
             "display": "block"
          });
          $('.responsive-menu').removeClass('change');
+
+         jQuery("ul.menu").removeClass('mobile-menu')
+         // jQuery("ul.submenu").hide()
       } else {
          jQuery("ul.menu").css({
             "display": "none"
          });
-
-
-
+         jQuery("ul.menu").addClass('mobile-menu')
+         $('ul.mobile-menu > li').click(function () {
+            $(this).find('ul').toggle()
+         })
       }
    });
 
+   // submenu
+   // jQuery(window).resize(function () {
+   var windowWidth = jQuery(window).width();
+   if (windowWidth < 750) {
+      jQuery("ul.menu").addClass('mobile-menu')
+      $('ul.mobile-menu > li').click(function () {
+         $(this).find('ul').toggle()
+      })
+   } else {
+      jQuery("ul.menu").removeClass('mobile-menu')
+   }
+   // });
 
+   // datepicker
+   $("#startdate").datepicker();
+   $("#enddate").datepicker();
 });
