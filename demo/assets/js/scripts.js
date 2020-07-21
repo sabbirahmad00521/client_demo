@@ -56,12 +56,13 @@ jQuery(document).ready(function ($) {
    var windowWidth = jQuery(window).width();
    if (windowWidth < 750) {
       jQuery("ul.menu").addClass('mobile-menu')
-      $('ul.mobile-menu > li').click(function () {
-         $(this).find('ul').toggle()
-      })
+
    } else {
       jQuery("ul.menu").removeClass('mobile-menu')
    }
+   $('ul.mobile-menu > li').click(function () {
+      $(this).find('ul').toggle()
+   })
    // });
 
    // datepicker
