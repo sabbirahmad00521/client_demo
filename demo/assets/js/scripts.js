@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
    // submenu
    // jQuery(window).resize(function () {
    var windowWidth = jQuery(window).width();
-   if (windowWidth < 750) {
+   if (windowWidth < 767) {
       jQuery("ul.menu").addClass('mobile-menu')
 
    } else {

@@ -855,3 +855,78 @@ a.spotify img {
    padding: 0 3px;
    margin-bottom: 6px;
 }
+
+/* mobile icon menu */
+.mobile-icon-menu {
+   background-color: #132837;
+   position: fixed;
+   bottom: 0px;
+   left: 0;
+   z-index: 999999;
+   width: 100%;
+   display: none;
+}
+
+.mobile-icon-menu ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   padding: 10px 0;
+}
+
+.mobile-icon-menu {}
+
+.mobile-icon-menu ul li a {
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 8px;
+   position: relative;
+}
+.mobile-icon-menu li a:before {
+   height: 22px;
+   width: 25px;
+   display: block;
+   left: 50%;
+   content: ' ';
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 5px;
+   background-repeat: no-repeat;
+}
+.mobile-icon-menu li:nth-child(1) a:before {
+   background: url(../img/menu-programme.png) ;
+   background-position: center bottom;
+}
+.mobile-icon-menu li:nth-child(2) a:before {
+   background: url(../img/menu-services.png);
+   background-position: center bottom;
+}
+.mobile-icon-menu li:nth-child(3) a:before {
+   background: url(../img/menu-pratique.png);
+   background-position: center bottom;
+}
+.mobile-icon-menu li:nth-child(4) a:before {
+   background: url(../img/menu-vip.png);
+   background-position: -4px bottom;
+}
+.mobile-icon-menu li:nth-child(5) a:before {
+   background: url(../img/menu-arena.png);
+   background-position: 1px bottom;
+}
+.mobile-icon-menu li.active:nth-child(1) a:before {
+   background-position: center top;
+}
+.mobile-icon-menu li.active:nth-child(2) a:before {
+   background-position: center top;
+}
+.mobile-icon-menu li.active:nth-child(3) a:before {
+   background-position: center top;
+}
+.mobile-icon-menu li.active:nth-child(4) a:before {
+   background-position: -4px top;
+}
+.mobile-icon-menu li.active:nth-child(5) a:before {
+   background-position: 1px top;
+} 

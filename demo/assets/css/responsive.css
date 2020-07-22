@@ -206,7 +206,7 @@
         padding: 5px 0;
         height: auto !important;
         color: #000 !important;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 700;
     }
 
@@ -248,7 +248,9 @@
 
 
 
-
+    .homepage-menu ul li a {
+        font-size: 14px !important;
+    }
 
 
 
@@ -385,7 +387,23 @@
         height: 150px;
         margin-bottom: 20px;
     }
-}@media (max-width: 385px) {
 
-    a.responsive-menu{position: absolute;}.homepage-menu a.logo{margin-left: 30%;}.homepage-menu-right span{padding: 0 20px;}
+    .mobile-icon-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 385px) {
+
+    a.responsive-menu {
+        position: absolute;
+    }
+
+    .homepage-menu a.logo {
+        margin-left: 30%;
+    }
+
+    .homepage-menu-right span {
+        padding: 0 20px;
+    }
 }
