@@ -1,409 +1,79 @@
-@media (max-width: 1850px) {
-    .events-menu ul li a {
-        padding: 32px 0;
-    }
-
-    .events-menu ul li {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 1750px) {
-    .homepage-menu ul li {
-        padding: 30px 15px;
-    }
-
-    .homepage-menu-right .lang:after {
-        right: 0;
-    }
-
-    .homepage-menu-right ul ul {
-        left: 6px;
-    }
-}
-
-
-@media (max-width: 1500px) {
-    .homepage-menu .col-xl-9 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .header-top {
-        overflow: hidden;
-    }
-
-    .slider-bg {
-        background-size: cover;
-    }
-
-    .map {
-        background-position: 60%;
-    }
-
-    .homepage-menu-right span {
-        padding: 0 30px;
-    }
-
-    .homepage-menu-right .lang:after {
-        right: 10px;
-    }
-
-    .homepage-menu-right ul ul {
-        left: 20px;
-    }
-
-    .event-details {
-        padding: 8% 76px 4% 15px;
-        height: 190px;
-    }
-}
-
-
-@media (max-width: 1199px) {
-    .homepage-menu ul li {
-        display: inline-block;
-        padding: 30px 12px;
-    }
-
-    .homepage-menu-right ul ul {
-        left: 10px;
-    }
-
-    .homepage-bg {
-        margin-bottom: 150px;
-    }
-
-    .single-homepage-slider {
-        height: 500px;
-    }
-
-    .gredient-section {
-        padding: 40px 0;
-    }
-
-    .map {
-        background-position: 50%;
-    }
-
-    .branding ul li {
-        width: 12%;
-    }
-
-    .homepage-menu ul li {
-        padding: 30px 5px;
-    }
-
-    .homepage-menu ul li a {
-        font-size: 13px !important;
-    }
-
-    .homepage-menu ul ul.submenu {
-        top: 90%;
-    }
-
-    .homepage-menu-right ul ul {
-        left: 15px;
-    }
-
-    a.poster img {
-        width: 100%;
-    }
-}
+@media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
-    .homepage-wrapper {
-        margin: 0;
+
+    h1 {
+        font-size: 50px !important;
     }
 
-    .homepage-bg {
-        margin-bottom: 90px;
+    h2 {
+        font-size: 36px !important;
+        line-height: 52px
     }
 
-    .homepage-menu ul li,
-    .homepage-menu ul li a {
-        padding: 20px 3px;
+    h3 {
+        font-size: 28px !important;
+        line-height: 39px
     }
 
-    .homepage-menu ul ul.submenu {
-        top: 80% !important;
+    h4 {
+        font-size: 24px !important;
     }
 
-    .search-box form {
-        padding-bottom: 0;
+    h5 {
+        font-size: 20px !important;
+        line-height: 36px
     }
 
-    .contact-form {
-        width: 330px;
-    }
-
-    footer .subscribe {
-        padding-left: 0;
-        margin-top: 40px;
-    }
-
-    footer .col-xl-4 {
-        padding: 0;
-    }
-
-    footer .social-icons {
-        border-right: 0;
-    }
-
-    .homepage-menu-right ul ul {
-        left: 22px;
+    p {
+        font-size: 18px !important;
+        line-height: 32px
     }
 }
 
 @media (max-width: 767px) {
-    .header-top img {
-        height: auto;
+
+    h1 {
+        font-size: 40px !important;
     }
 
-    .flashlight-gredient {
-        display: none;
+    h2 {
+        font-size: 32px !important;
     }
 
-
-    a.responsive-menu {
-        display: inline-block;
-        font-size: 36px;
-        margin-top: 14px;
-        position: relative;
-        z-index: 999;
-        margin-left: 25px;
+    h3 {
+        font-size: 26px !important;
     }
 
-
-    .menu {
-        display: none;
-        float: right;
+    h4 {
+        font-size: 22px !important;
     }
 
+    h5 {
+        font-size: 18px !important;
+    }
 
-    nav ul {
-        max-width: 100%;
-        width: 100%;
-        height: 100vh;
-        background: white;
-        position: fixed;
-        z-index: 9;
-        top: 0;
-        left: 0;
+    p {
+        font-size: 16px !important;
+    }
+
+    footer li {
+        display: block !important;
+        margin-bottom: 10px;
+    }
+
+    footer ul,
+    footer p {
         text-align: center;
     }
 
-    nav ul li:after {
-        display: none;
-    }
-
-    .homepage-menu nav>ul>li {
-        border: 0 !important;
-        border-radius: 0 !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-        width: 100%;
-        padding: 5px 0;
-        height: auto !important;
-        color: #000 !important;
-        font-size: 15px;
-        font-weight: 700;
-    }
-
-    .homepage-menu nav>ul>li>a {
-        padding: 0;
-        color: #000 !important;
-        font-weight: 700;
-    }
-
-
-
-
-    /* nav >ul >li:first-child {
-        margin-top: 30%;
-    } */
-    .homepage-menu nav ul.submenu {
-        background-color: #fff;
-        height: auto;
-        padding-bottom: 0;
-    }
-
-    .homepage-menu nav ul.submenu li {
-        height: auto;
-        background-color: #fff !important;
-    }
-
-    .homepage-menu nav ul.submenu li a {
-        padding: 10px;
-        color: #000 !important;
-    }
-
-    ul.mobile-menu>li:hover>ul.submenu {
-        display: none;
-    }
-
-    ul.mobile-menu>li:hover ul.submenu {
-        display: none;
-    }
-
-
-
-    .homepage-menu ul li a {
-        font-size: 14px !important;
-    }
-
-
-
-    .slider-info {
-        height: 200px;
-        width: auto;
-    }
-
-    .slider-info {
-        right: auto;
-    }
-
-    .map {
-        background-position: 40%;
-    }
-
-    .branding ul li {
-        width: 18%;
-    }
-
-    .homepage-menu ul.menu ul {
-        position: static;
-    }
-
-    .events-menu a.logo {
-        margin-left: 20%;
-    }
-}
-
-@media (max-width: 575px) {
-
-    .mobile-hide,
-    .homepage-bg {
-        display: none;
-    }
-
-    a.responsive-menu.change {
-        margin: 0;
-        margin-left: 25px;
-        margin-top: 14px;
-    }
-
-    .homepage-menu a.logo {
+    footer .d-flex {
         display: block !important;
-        margin-left: 18%;
     }
 
-    a.logo img {
-        height: 64px;
-    }
-
-    .single-homepage-slider {
-        height: 300px;
-    }
-
-    img.spotslight {
-        display: none;
-    }
-
-    a.boxed-btn {
-        font-weight: 600;
-        font-size: 15px;
-        padding: 5px 10px;
-    }
-
-    a.spotify img {
-        height: 30px;
-    }
-
-    h2.slider-header {
-        font-size: 20px;
-    }
-
-    h6.slider-time {
-        font-size: 14px;
-    }
-
-    .slider-info {
-        height: 160px;
-    }
-
-    .slider-poster-image {
-        width: 100px;
-    }
-
-    .slider-details {
-        padding: 20px 15px;
-        width: calc(100% - 100px);
-    }
-
-    .gredient-section {
-        padding: 20px 0;
-    }
-
-    .map {
-        display: none;
-    }
-
-    .contact-form {
-        position: static;
-        width: auto;
-    }
-
-    .contact-form form {
-        max-width: 100%;
-    }
-
-    .contact-form input[type="submit"] {
-        float: none;
-    }
-
-    footer .col-xl-4 {
-        padding: 0 20px;
-    }
-
-    footer .social-icons ul {
-        text-align: left;
-    }
-
-    footer .homepage-wrapper h3 {
-        text-align: left;
-        margin-top: 40px;
-    }
-
-    .branding ul li {
-        width: 20%;
-    }
-
-    .contact-form span {
-        margin-bottom: 30px;
-    }
-
-    .event-details {
-        height: 150px;
-        margin-bottom: 20px;
-    }
-
-    .mobile-icon-menu {
-        display: block;
+    footer {
+        text-align: center;
     }
 }
 
-@media (max-width: 385px) {
-
-    a.responsive-menu {
-        position: absolute;
-    }
-
-    .homepage-menu a.logo {
-        margin-left: 30%;
-    }
-
-    .homepage-menu-right span {
-        padding: 0 20px;
-    }
-}
+@media (max-width: 575px) {}
