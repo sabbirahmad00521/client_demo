@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+
+<title>Minisite Help Page</title>
+
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="media-queries.css" type="text/css">
+
+<style type="text/css">
+
+#wrapperhelp		{ max-width: 950px; padding: 10px; margin: 0 auto; }
+.SBleft			{ max-width: 152px; }
+.CNright		{ max-width: 758px; }
+.helppad 		{ padding: 0px 8px 0px 8px; }
+.hilite2		{ color: #FF0000; font-weight: bold; }
+.page-splits		{ min-width: 100%; }
+#headerdiv		{ display: none; }
+.page-splits 		{ margin-top: 10px; margin-bottom: 10px; }
+
+a.supportlink	{
+		display: block;
+		color: #FFFFFF;
+		font-weight: 600;
+	       	font-size: 14px;
+		text-align: center;
+		background-color: #455061;
+		-webkit-appearance: none;
+		padding: 12px 8px 12px 8px;
+		margin: 0px 0px 5px 0px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		border-radius: 3px;
+		}
+
+a.slink1	{ background-color: #0056BF; margin-top: 15px; }
+
+a.supportlink:hover
+		{
+		text-decoration: none;
+		background-color: #0A73C2;
+		}
+
+@media handheld and (max-width: 980px),
+   screen and (max-device-width: 980px),
+   screen and (max-width: 980px) 
+	{
+.hidemobile	{ display: none; }
+	}
+
+</style>
+
+<script type="text/javascript" src="JQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="javascripts.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="header.js"></script>
+
+<br><br>
+
+<!-- PAGE DIV -->
+<div id="wrapperhelp">
+
+
+
+<div class="left-float helppad SBleft printhide hidemobile">
+
+<a href="index.html"><img src="picts/help.png" width="150" height="208" alt="Template Help"></a><br>
+
+<br>
+
+<a href="index.html">Homepage</a><br>
+
+<a href="missing.html">Missing Page</a><br>
+
+<a href="http://www.allwebco-templates.com/support/" class="supportlink slink1">Search Support</a>
+
+<a href="https://allwebcodesign.com" class="supportlink">Allwebco Design</a>
+
+<a href="http://allwebco.com" class="supportlink">Allwebco Hosting</a>
+
+<br>
+
+</div>
+
+<div class="left-float helppad CNright">
+
+<div class="page-splits"></div>
+
+<span class="subtitle">Setting up your Minisite Template:</span><br>
+
+<span class="title">Minisite Group RD(1)</span><br>
+
+<a href="http://www.allwebco-templates.com/support/S_minisites.htm">Minisite Support &amp; Updates</a><br>
+<a href="http://allwebcodesign.com/setup/minisites.htm">View Allwebco Minisite Web Templates</a><br>
+
+<div class="page-splits"></div>
+
+<span class="subtitle">HTML<span class="hilite">5</span> Responsive Design </span> | <a href="http://www.allwebco-templates.com/support/S-responsive.htm">More Details</a> &amp; See section below.<br>
+<span class="subtitle">KEY:</span> <span class="hilite"><b>MQs</b></span> below indicates "media queries". The responsive css code for mobile located in the "media-queries.css". See section below and also <a href="http://www.allwebco-templates.com/support/S-responsive.htm">support details.</a><br>
+
+<div class="page-splits"></div>
+
+<span class="subtitle">Getting Started:</span><br><br>
+
+<span class="subtitle">Step 1:</span><br>
+<b>CHOOSE HOME PAGE TO USE:</b> | <a href="http://www.allwebco-templates.com/support/S_home_choice.htm">More Details</a><br>
+This template includes 3 homepage options:
+
+<ul>
+
+<li>To use the <a href="index.html">default homepage</a>, move the "OPTIONAL-homepage.htm" into the "extras" folder.
+<li>To use the <a href="OPTIONAL-homepage.htm">OPTIONAL homepage</a>, move the "index.html" into the "extras" folder. Rename the "OPTIONAL-homepage.htm" to "index.html".
+
+</ul>
+
+<span class="subtitle">Step 2:</span><br>
+<b>EDIT HEADER:</b> | <a href="http://www.allwebco-templates.com/support/S_pictures_change.htm">More Details</a><br>
+
+Edit the "var logotext" "YOUR WEBSITE TITLE" in the "header.js" near the top with your website name. The font is defined in the "style.css" under "START TEXT HEADER CODE". The logo uses a Google Font. See also "FONTS:" in "Options" below.
+
+<br><br>
+
+<b>USING A GRAPHIC LOGO:</b> Edit the "var logotype" in the "header.js" from "text" to "graphic". In the "picts" folder either replace or edit the "logo.jpg". This image is 600 x 70 pixels in size. If you change the size you must edit the ".logo-respond" class in the "style.css". There is a Photoshop "logo.PSD" file in the "extras" folder. The default font used is 46 point bold "Felix Titling". If you want to change to another image type like .png, edit the "header.js" in 1 place from .jpg to .png (near the bottom) and place your 600 x 70 "logo.png" in the "picts" folder.
+
+<br><br>
+
+<span class="subtitle">Step 3:</span><br>
+<b>EDIT FOOTER:</b> | <a href="http://www.allwebco-templates.com/support/S_js_files.htm">More Details</a><br>
+Open the "footer.js" file in Notepad, TextEdit, or any text editor, and edit the "Yourcompany.com" text with your company or website name. This will update the footer info on all pages.
+
+<br><br>
+
+<span class="subtitle">Step 4:</span><br>
+<b>EDIT CONTACT INFO:</b> | <a href="http://www.allwebco-templates.com/support/S_js_files.htm">More Details</a><br>
+Open the "contact.js" in Notepad or any text editor file and change the company name, address, phone and fax numbers, and e-mail address (edit the email in 2 places). This will update the contact info on the contact page.
+
+<br><br>
+
+<span class="subtitle">Step 5:</span><br>
+<b>SETUP VIDEO PAGE:</b> | <a href="http://www.allwebco-templates.com/support/S_video_youtube.htm">More Details</a><br>
+
+This template uses embedded YouTube video. Setup a free YouTube account, get the embed code for your video and replace the code in the "video-1.htm" through "video-4.htm" and "index.html" pages. Replace only the following code highlighted below and do not remove the ?rel=0 and other options code at the end:
+
+<br><br>
+
+&lt;iframe width="300" height="183" src="http://www.youtube.com/embed/<br><span class="hilite">Qevt0ppRzBg</span>?rel=0&amp;loop=0&amp;wmode=opaque"
+
+<br><br>
+
+Replace the 4 "thumb-video-?.jpg" thumbnail images in the picts folder.
+
+<br><br>
+
+<span class="subtitle">Step 6:</span><br>
+<b>CLICK MENU &amp; HEADER ICON BAR:</b> | <a href="http://www.allwebco-templates.com/support/S-mobile-click-menu.htm">More Details</a><br>
+
+The "header.js" is a complicated file and includes 3 sections. The click menu, the header icons and the graphic or text logo. You may want to make a backup of this file before you do any editing. Edit this file using Notepad or a plain text editor. Click link above for help, options and details.
+
+<br><br>
+
+<b>NOTE:</b> The menu is in the "header.js" so you have less .js files in each page for better mobile compliance.
+
+<br><br>
+
+<b>NOTE:</b> Some header icons hide on mobile screens. See Media Queries section below.
+
+<br><br>
+
+<span class="subtitle">Step 7:</span><br>
+<b>SETUP SITE SEARCH:</b><br>
+Open the "site_map.htm" and edit "allwebcodesign.com" in the "START SEARCH", "END SEARCH" section with your website domain in (2) places. If you require a more custom search with no ads, check in your Google account for info.
+
+<br><br>
+
+<span class="subtitle">Step 8:</span><br>
+<b>PDF PAGE SETUP:</b> | <a href="http://www.allwebco-templates.com/support/S_PDFpages.htm">More Details</a><br>
+In the "PDF" folder, replace the "PDFsample1.pdf" through "PDFsample6.pdf" with your PDF files. Edit the "PDFgallery.htm" with info for your PDF files. Click link above for setup details.
+
+<br><br>
+
+<span class="subtitle">Step 9:</span><br>
+<b>EDIT PAGES:</b> | <a href="http://www.allwebco-templates.com/support/S_HTML_software.htm">Software choices</a> | <a href="http://www.allwebco-templates.com/support/S_edit_in_notepad.htm">Notepad Editing</a><br>
+Edit the text on all HTML pages with your information. You can use Expression Web, Frontpage, Dreamweaver, any wysiwyg HTML editor or a text editor like Notepad. Take care not to delete any of the HTML tags that surround the text.
+
+<br><br>
+
+<span class="subtitle">Step 10:</span><br>
+<b>EDIT TITLE, DESCRIPTIONS &amp; KEYWORDS:</b> | <a href="http://www.allwebco-templates.com/support/S_Frontpage_titles.htm">More Details</a><br>
+Open each of the pages and change the title tag (at the very top of the page) and also the description and the keywords with your product or service details. You can edit one page and copy and paste to the other pages. You should use a unique title on each page. Be careful to only change what's inside the "" so you don't disturb the html code. Page titles are important so your site will get a good listing at Google, Yahoo and other search engines.
+
+<br><br>
+
+<span class="subtitle">Step 11:</span><br>
+<b>UPLOAD:</b> | <a href="http://www.allwebco-templates.com/support/S_FTP.htm">More Details</a><br>
+
+Upload the pages on to your hosting company's server using ftp software or Windows Explorer or your control panel. Be sure to upload all template files and folders and all files inside the folders. You do not need to upload the "extras" folder.
+
+
+<br><br><br>
+
+
+<div class="page-splits"></div>
+
+<span class="title">Media Queries Responsive Code | </span><a href="http://www.allwebco-templates.com/support/S-responsive.htm">More Details</a><br>
+
+<div class="page-splits"></div>
+
+<span class="subtitle"><span class="hilite">MQs</span> in this template control many parts of each webpage to conform for mobile and tablet.</span> The responsive <span class="hilite"><b>MQs</b></span> css classes are located in the "media-queries.css". Two stages are used for screen widths of 750 and 482 (the 3rd stage is to detect newer css3 browsers).
+
+As the browser width is made more narrow and each "stage" width threshold is reached, code defined in the "media-queries.css" will take effect changing the webpage layout. You can edit these sizes in the "media-queries.css" using any plain text editor.
+
+<br><br>
+
+<span class="hilite"><b>Hiding header icons for mobile:</b></span> The "header.js" icons for PDFs and search hide when the <span class="hilite"><b>MQs</b></span> kick-in using the class="hidemobile". This is included in the "header,js" as an example. You need to hide some icons for mobile and also test. <a href="http://www.allwebco-templates.com/support/S-mobile-click-menu.htm">See click menu details.</a>
+
+<br><br>
+
+The "<b>media-queries.css</b>" is for mobile and includes some of the same class names as the "style.css" that alters these classes as the browser width becomes more narrow.
+
+<br><br>
+
+When editing some styles, if there is a "like" class in both the "style.css" and "media-queries.css" you may need to edit classes in both files in some cases. <a href="http://www.allwebco-templates.com/support/S-responsive.htm">See responsive support details.</a>
+
+<br><br><br>
+
+<div class="page-splits"></div>
+
+
+<span class="title">Options:</span><br>
+
+<div class="page-splits"></div>
+
+
+
+<b>COMBINING MINISITES:</b> | <a href="http://www.allwebco-templates.com/support/S_minisites_combine.htm">More Details</a><br>
+If you have purchased more than one Minisite of the same template "group" number, for example "RD" is the name or number of this template group, you can combine pages and/or features easily between these models. Click link above for details. <a href="http://allwebcodesign.com/setup/minisites.htm">View the latest Minisites.</a>
+
+<br><br>
+
+
+<b>COLORS &amp; STYLES:</b> | <a href="http://www.allwebco-templates.com/support/S_background_colors.htm">More Details</a> | <a href="http://www.allwebco-templates.com/support/S-responsive.htm">Media Queries</a><br>
+
+Edit the font sizes, menu styles, background colors, page widths and heights, and all template colors in the "style.css" using any plain text editor. Edit the "media-queries.css" only if you want to change how the template reacts on smaller screen mobile devices. See Media Queries above.
+
+
+<br><br>
+
+<b>FONTS:</b> | <a href="http://www.allwebco-templates.com/support/S_font_colors.htm">More Details</a> | <a href="http://www.allwebco-templates.com/support/S-responsive.htm">Media Queries</a> | <a href="http://www.allwebco-templates.com/support/S-fonts-google-fonts.htm">Google Fonts</a><br>
+
+This template uses Google Fonts. The code that "calls" the font files is the first line in the "style.css". Click link above for details.
+
+<br><br>
+
+Edit the font sizes in the "style.css" file. Change the class after the note "THE NEXT LINE CONTROLS THE DEFAULT FONT SIZE" px size to change the font sizes or colors on all pages. Change the "title" px size to change all the title sizes. <a href="http://www.allwebco-templates.com/support/S_colors_standard.htm">You can find other web HEX colors by clicking here.</a>
+
+<br><br>
+
+
+<b>THE GRAPHIC LOGO:</b><br>
+If you do not now have a graphic logo you can contact Allwebco Design through our support center and we can create a quick simple logo for a small fee. <a href="http://www.allwebco-templates.com/support/custom_work.htm">See the custom design services support page for details.</a>
+
+<br><br>
+
+<b>HEADER ICONS:</b> | <a href="http://www.allwebco-templates.com/support/S-mobile-click-menu.htm">More Details</a><br>
+
+See "CLICK MENU &amp; HEADER ICON BAR" step above on this page.
+
+<br><br>
+
+<b>MENU EDITING:</b> | <a href="http://www.allwebco-templates.com/support/S-mobile-click-menu.htm">More Details</a><br>
+
+See "CLICK MENU &amp; HEADER ICON BAR" step above on this page.
+
+<br><br>
+
+<b>SITE MAP:</b><br>
+The "site_map.htm" is the site map page. This page is linked from the home page (index.html) to help list all your pages at the search engines. Do not remove this link.
+
+<br><br>
+
+<b>PAGE HEIGHTS &amp; WIDTHS:</b><br>
+So all your pages will maintain a minimum standard height and width ".pageheight-min" and "#pagewrapper" and "#contentwrapper" classes are included in the "style.css". Edit these heights and widths to any sizes you prefer.
+
+<br><br>
+
+<b>IMAGES:</b> | <a href="http://www.allwebco-templates.com/support/S_pictures_change.htm">More Details</a><br>
+You can replace the template images with your own. You will find all non-gallery images in the "picts" folder. Hover over any image to view the size.
+
+<br><br>
+
+<span class="hilite">Responsive Image Note:</span> If you want to make the images larger in height, edit the image in the picts folder, then in the "style.css" edit the "max-height" for the ".main-image" class with your new height.
+
+<br><br>
+
+<b>ADDING IMAGES:</b> | <a href="http://www.allwebco-templates.com/support/S_add-images.htm">More Details</a><br>
+You can add new images to the template pages, however, you will want to keep your images very small in size so your website will load quickly on mobile devices. TIP: If you want to add larger images, do not add them to the homepage so your site will load quickly.
+
+<br><br>
+
+<b>ADDING SCRIPTS OR ANIMATION:</b><br>
+Scripts, Javascripts and Flash or video can be added to any of the template pages, however, most mobile devices load these types of items slowly and\or may not have support for these applications. If adding these types of items it is best not to add them to the homepage in the template.
+
+<br><br>
+
+<b>ADDING PAGES:</b> | <a href="http://www.allwebco-templates.com/support/S_add_remove_pages.htm">More Details</a><br>
+You can add pages to your website by copying and pasting any one of the .htm pages and renaming it to whatever you need. You can then add text links from the other .htm pages, or you can add new links to the menu in the "header.js". See menu editing above.
+
+<br><br><br><br>
+
+
+</div>
+<div class="floatclear"></div>
+</div>
+<!-- PAGE DIV -->
+
+
+</body></html>

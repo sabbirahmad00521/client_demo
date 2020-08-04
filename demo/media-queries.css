@@ -1,0 +1,173 @@
+
+/***************
+START Media Queries #1 - WHEN PAGE WIDTH LESS THAN 750 IS ACTIVE (FOR BELOW TABLET)
+***************/
+@media handheld and (max-width: 750px),
+   screen and (max-device-width: 750px),
+   screen and (max-width: 750px) 
+	{
+
+
+
+/* THE NEXT LINE CONTROLS THE DEFAULT FONT SIZE */
+
+div, table	{ font-size: 16px; }
+
+.just 		{ text-align: left; }
+
+.title		{ font-size: 22px; }
+
+.textlogo	{ font-size: 25px; }
+
+.headerbar	{ min-width: 483px; }
+
+#headerdiv	{ padding: 9px 0px 14px 0px; }
+
+.logo-respond	{ width: 100%; height: auto; }
+
+.hidemobile	{ display: none; }
+
+.cart-box	{ float: none; margin: 15px auto; }
+
+.centered-btns_tabs a 	{
+			width: 8px;
+			height: 8px;
+		/* CORNER ROUNDING */
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			margin: 0px 2px 0px 2px;
+			}
+
+
+
+	}
+/***************
+END Media Queries #1
+***************/
+
+
+
+
+
+/***************
+Media Queries #2 - WHEN PAGE WIDTH LESS THAN 482 IS ACTIVE
+***************/
+
+@media handheld and (max-width: 482px),
+   screen and (max-device-width: 482px),
+   screen and (max-width: 482px) 
+	{
+
+
+
+/* THE NEXT LINE CONTROLS THE DEFAULT FONT SIZE */
+
+div, table	{ font-size: 14px; }
+
+.title		{ font-size: 20px; }
+
+
+
+
+
+/* MQs DEFAULTS */
+
+.pageheight-min	{ min-height: 50px; }
+
+.just 		{ text-align: left; }
+
+.float-margin2	{ margin-right: 6px; margin-bottom: 6px; }
+
+.headerbar	{ min-width: 300px; }
+
+.textlogo	{ font-size: 20px; }
+
+.page-splits 	{ margin-top: 22px; margin-bottom: 22px; }
+
+
+
+
+
+/* MQs HOME PAGE */
+
+.home-small-image	{
+			display: inline;
+			margin: 4px 1px 0px 1px;
+			border-width: 2px;
+			}
+
+.bottom-links a 	{ margin-left: 1px; margin-right: 1px; }
+
+.home-boxes	{
+		font-size: 14px;
+		padding: 10px 2px 0px 2px;
+		}
+
+
+
+
+
+/* MQs SLIDESHOWS */
+
+.centered-btns_tabs a 	{ margin: 0px 1px 0px 1px; }
+
+
+
+
+
+/* MQs GALLERY */
+
+img.Galimg-respond 	{ width: 45px; }
+
+input[type=button].galbutton
+		{
+        	padding: 4px 0px 4px 0px;
+		cursor: pointer;
+		width: 86px;
+		}
+
+
+
+
+
+/* MQs CART */
+
+.cart-box	{ font-size: 14px; padding: 5px; }
+
+.home-products	{ padding: 0px 0px 0px 2px; }
+
+.cartdrop 	{ width: 120px; }
+
+input[type=submit].button-order 
+	 	{
+		font-size: 14px;
+		width: 120px;
+		}
+
+
+
+
+
+/* MQs RESOURCES */
+
+.search-float	{ float: none; }
+
+
+
+
+
+/* MQs HEADER TOP MENU BAR (ICONS & SOCIAL ICONS) */
+
+.headericon		{ padding: 7px 0px 7px 0px; }
+
+
+
+	}
+/***************
+END Media Queries #2
+***************/
+
+
+
+
