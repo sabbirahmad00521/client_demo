@@ -2974,6 +2974,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
+  opacity: 1 !important;
 }
 
 .preloader.hide {
