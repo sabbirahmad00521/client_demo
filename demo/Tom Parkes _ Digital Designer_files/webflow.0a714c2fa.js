@@ -9962,9 +9962,9 @@ Webflow.require('ix2').init({
                             "target": {
                                 "id": "5eb437d17daafdabb2cb7297|d7287160-d818-2264-fd48-facc51e9e8ad"
                             },
-                            "rValue": 0,
-                            "gValue": 0,
-                            "bValue": 0,
+                            "rValue": 17,
+                            "gValue": 1,
+                            "bValue": 51,
                             "aValue": 1
                         }
                     }]
@@ -9980,9 +9980,9 @@ Webflow.require('ix2').init({
                             "target": {
                                 "id": "5eb437d17daafdabb2cb7297|d7287160-d818-2264-fd48-facc51e9e8ad"
                             },
-                            "rValue": 0,
-                            "gValue": 0,
-                            "bValue": 0,
+                            "rValue": 17,
+                            "gValue": 1,
+                            "bValue": 51,
                             "aValue": 1
                         }
                     }]
