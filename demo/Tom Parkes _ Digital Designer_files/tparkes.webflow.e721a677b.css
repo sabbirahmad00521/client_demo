@@ -3980,3 +3980,8 @@ nav.nav-menu-2.w-nav-menu a {
 .project-feature-1 {height: 100vw;} 
 .project-feature-2{height: 100vw;}
 .project-feature-3{height: 100vw;}
+
+.tp-logo {
+  width: 120px;
+  margin-top: -60px;
+}
