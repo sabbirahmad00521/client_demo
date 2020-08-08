@@ -2973,7 +2973,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .preloader.hide {
@@ -3967,3 +3967,10 @@ a {
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* custom */
+
+.preloader img{height: 120px;width: auto;position: absolute;left: 50px;top: 50px;}
+.preloader .h1,.intro-header .h1{color: #110133;}
+.project-feature-1 {height: 100vw;} 
