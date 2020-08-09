@@ -1,0 +1,174 @@
+/* Common Styles
+================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   background-color: #fff;
+   color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0 0 15px;
+   font-weight: 700;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:hover,
+a:visited {
+   text-decoration: none;
+   color: #333;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+
+input:focus,
+textarea:focus,
+button:focus {
+   outline: 0 solid;
+}
+
+ul.inline-list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+ul.inline-list li {
+   display: inline-block;
+   margin-left: -4px;
+}
+
+ul.inline-list li a {
+   display: block;
+   transition: 0.6s;
+   padding: 10px 20px;
+}
+
+
+/* Owl Carowsel
+===============*/
+
+/*
+.owl-carousel-class-name .owl-nav div {
+   position: absolute;
+   bottom: -40px;
+   height: 35px;
+   width: 30px;
+   line-height: 35px;
+   background: #1083D8;
+   text-align: center;
+   color: #fff;
+   font-size: 20px;
+   left: 42%;
+}
+
+.owl-carousel-class-name .owl-nav .owl-next {
+   left: auto;
+   right: 42%;
+}
+
+.owl-dots div {
+   display: inline-block;
+   height: 15px;
+   width: 15px;
+   background: #FACD38;
+   margin: -38px 5px;
+   border-radius: 50%;
+}
+
+.owl-dots div.active {
+   background-color: #1083D8;
+}
+
+.owl-dots {
+   text-align: center;
+}*/
+
+
+.portfolio-header {
+   text-align: center;
+   background-image: url(../img/gallery-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 500px;
+   position: relative;
+   z-index: 1;
+}
+
+.portfolio-header h1 {
+   font-size: 72px;
+   font-weight: 600;
+   color: #fff;
+   margin-top: 80px;
+}
+
+.portfolio-header h6 {
+   font-size: 22px;
+   font-weight: 300;
+   color: #fff;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.portfolio-header p {
+   color: #fff;
+}
+
+.portfolio-header a {
+   display: table;
+   font-size: 46px;
+   color: #fff;
+   margin: auto;
+   margin-top: -10px;
+}
+
+.portfolio-header:after {
+   background: #4DD599;
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   content: '';
+   opacity: 0.7;
+   z-index: -1;
+}
+
+
+
+
+html {
+   scroll-behavior: smooth;
+ }
+    .portfolio-section{background-color: #FFEAE1;margin-top: 50px;min-height: 650px;max-height: 800px;}
+    .portfolio-section .container-fluid {padding: 0;}
+    .portfolio-section h4{color: #35558b;font-weight: 600;font-size: 18px;}
+    .portfolio-section p{font-size: 15px;color: #35558b;font-weight: 200;width: 60%;} 
+    .portfolio-section {color: #35558b !important;}
+    .portfolio-section b{font-weight: 500;}
+    .portfolio-section li{font-weight: 400;font-size: 15px;}
+    .portfolio-section li li{font-weight: 200;}
+    .portfolio-section img {
+     max-height: 750px;margin: auto;
+ }
+ .portfolio-section.portfolio-section-5 img{max-height: 330px;margin: 10px auto;min-width: 480px;}
+ .portfolio-section video{width: 100%;height: auto;}
