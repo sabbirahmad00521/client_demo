@@ -114,7 +114,7 @@ ul.inline-list li a {
    z-index: 1;
 }
 .portfolio-header-2{
-   background-image: url(../img/Backgroundimage.jpg);
+   background-image: url(../img/5eda696a2cbafc22e298a863_Elevate_Cover.jpg);
 }
 
 .portfolio-header h1 {
@@ -156,7 +156,9 @@ ul.inline-list li a {
    z-index: -1;
 }
 
-
+.portfolio-header-2:after{
+   background: rgb(6, 114, 214);
+}
 
 
 html {
