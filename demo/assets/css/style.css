@@ -163,6 +163,10 @@ ul.inline-list li a {
    background: rgb(6, 114, 214);
 }
 
+.portfolio-header-3:after{
+   background: grey;
+}
+
 
 html {
    scroll-behavior: smooth;
