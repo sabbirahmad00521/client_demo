@@ -174,7 +174,7 @@ html {
      max-height: 650px;margin: auto;
  }
  .portfolio-section.portfolio-section-5 img{max-height: 330px;margin: 10px auto;min-width: 480px;}
- .portfolio-section video{width: 100%;height: auto;}
+ .portfolio-section video{width: 100%;height: auto;max-height: 750px;}
  .portfolio-section a{font-weight: 300;font-size: 15px;color: #35558b;text-decoration: underline;}
  .portfolio-section.portfolio-section-20 img {
    display: inline-block;
