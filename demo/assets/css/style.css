@@ -145,7 +145,7 @@ ul.inline-list li a {
 }
 
 .portfolio-header:after {
-   background: #4DD599;
+   background: red;
    position: absolute;
    left: 0;
    top: 0;
