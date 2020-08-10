@@ -1,40 +1,43 @@
 jQuery(document).ready(function ($) {
 
    // Owl Carousel
-   /*
-   $('.owl-carousel-class-name').owlCarousel({
-      items: 4,
+   
+   $('.owl-2').owlCarousel({
+      items: 1,
       loop: true,
       autoplay: true,
-      autoplayTimeout: 2000,
-      dots: true,
-      margin: 15,
+      autoplayTimeout: 5000,
+      dots: false,
       nav: true,
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-      smartSpeed: 1,
-      dragEndSpeed: 1,
-      fluidSpeed: 1,
-      autoplaySpeed: 10,
-      responsiveClass: true,
-      responsive: {
-         0: {
-            items: 1,
-            nav: true
-         },
-         600: {
-            items: 3,
-            nav: false
-         },
-         1000: {
-            items: 5,
-            nav: true,
-            loop: false
-         }
-      }
    });
-   */
-   
-   // Other Scripts
 
+   // owl count 
+
+   $('.owl-1').on('initialized.owl.carousel changed.owl.carousel', function(e) {
+      if (!e.namespace)  {
+        return;
+      }
+      var carousel = e.relatedTarget;
+      $('.slider-counter-1').text(carousel.relative(carousel.current()) + 1 + '/' + carousel.items().length);
+    }).owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: false,
+      autoplayTimeout: 8000,
+      dots: false,
+      nav: true,
+      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    });
+   
+   
+   // lightslider
+      $('#lightSlider').lightSlider({
+         gallery: true,
+         item: 1,
+         loop: true,
+         slideMargin: 0,
+         thumbItem: 9
+      });
 
 });

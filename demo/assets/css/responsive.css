@@ -8,6 +8,9 @@
     .portfolio-section p {
         width: 95%;
     }
+    .portfolio-section li {
+        width: 95%;
+    }
 
     .portfolio-section {
         min-height: 100%;
