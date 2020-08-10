@@ -41,3 +41,6 @@ jQuery(document).ready(function ($) {
       });
 
 });
+
+
+document.querySelector('video').play();
