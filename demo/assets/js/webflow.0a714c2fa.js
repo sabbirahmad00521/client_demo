@@ -10505,7 +10505,7 @@ Webflow.require('ix2').init({
                     "id": "a-11-n-4",
                     "actionTypeId": "STYLE_OPACITY",
                     "config": {
-                        "delay": 2500,
+                        "delay": 0,
                         "easing": "",
                         "duration": 500,
                         "target": {
@@ -10518,7 +10518,7 @@ Webflow.require('ix2').init({
                     "id": "a-11-n-2",
                     "actionTypeId": "TRANSFORM_MOVE",
                     "config": {
-                        "delay": 2500,
+                        "delay": 0,
                         "easing": "outExpo",
                         "duration": 2000,
                         "target": {
