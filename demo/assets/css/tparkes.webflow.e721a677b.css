@@ -3991,3 +3991,10 @@ nav.nav-menu-2.w-nav-menu a {
   max-height: 700px;
   width: auto;
 }
+
+.body-2 {
+  background-color: #121212;
+  
+}.body-2 * {
+  color: #fff  !important;
+}
