@@ -247,3 +247,21 @@ height: 120px;
  .owl-2  .owl-next {
    position: absolute;left: 20px;top: calc(50% - 60px);background: white;width: 30px;height: 120px;line-height: 120px;text-align: center;
  } .owl-2  .owl-next{left: auto; right: 20px;}
+
+
+
+ .main-nav {
+   margin-top: 0px;
+   margin-right: 0;
+   margin-left: 0;
+   background-color: #fff;
+   font-family: Suissebpintl;
+   color: #000;
+   font-size: 3vh;
+   font-weight: 300;
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   padding: 0 35px;
+}
