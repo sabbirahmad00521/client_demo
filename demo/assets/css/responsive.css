@@ -1,35 +1,93 @@
-@media (max-width: 1199px) {
-    .portfolio-section.portfolio-section-5 img {
-        min-width: 100%;
-    }
-}
+@media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
-    .portfolio-section p {
-        width: 95%;
-    }
-    .portfolio-section li {
-        width: 95%;
+
+
+    .info-tabs {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .portfolio-section {
-        min-height: 100%;
-        padding: 30px 0;
+    .info-tabs li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding: 15px;
+        margin-bottom: 0;
     }
+
+    .info-tabs li a {
+        padding: 10px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .info-tabs li a::after {
+        display: none;
+    }
+
+    .info-tabs li a i {
+        position: static;
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    /* info content */
+    .single-info-content {
+        overflow: hidden;
+    }
+
+    .info-content-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .info-content.active {
+        display: block;
+        height: calc(100vh - 55px);
+        background: white;
+    }
+    .info-content h2 {
+        text-align: center;
+    }
+
+    .info-content i {
+        display: block;
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
+        top: 0;
+        font-size: 30px;
+        padding: 15px;
+    }
+
 }
 
 @media (max-width: 767px) {
-    .portfolio-section .col-md-6 {
-        padding: 50px;
-    }
-
-    .portfolio-section {
-        max-height: 100%;
-    }
-
-    .portfolio-header h1 {
-        font-size: 52px;
+    
+    .info-tabs li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 15px;
+        margin-bottom: 0;
     }
 }
 
 @media (max-width: 575px) {}
+@media (max-width: 440px) {
+    .info-tabs li a {
+        padding: 10px;
+        height: 150px;}
+}
