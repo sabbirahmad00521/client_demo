@@ -82,7 +82,7 @@ nav a {
    padding: 15px;
    color: #fff !important;
    font-weight: 600;
-   background-color: red;
+   background-color: #bbb;
    transition: 0.5s;
 }
 
@@ -94,7 +94,7 @@ nav a:hover {
 .nav-tabs>.active>a,
 .nav-tabs>.active>a:hover {
    cursor: default;
-   background-color: #ddd;
+   background-color: #999;
 }
 
 .tab-content.active {
