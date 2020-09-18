@@ -25,7 +25,6 @@
 
 <body class="clearfix">
 
-    <!--全站头部导航 开始-->
     <div class="mainNav">
         <div class="mainNav_inner">
             <div id="w26" class="mainNav_in_l"><a href="" target="_blank">轻小说</a></div>
@@ -43,14 +42,11 @@
 
 
 
-    <!--全站头部导航 结束-->
-    <!--head topTheme 开始-->
     <div class="topTheme autoHeight">
         <div class="topTheme_inner autoHeight">
             <div class="dmzj-logo">
                 <a class="logo" href=""><img src="assets/7a5b1151/images/logo.png"></a> </div>
 
-            <!--搜素 开始-->
             <div class="topTheme_in_search">
                 <div class="topTheme_in_search_input">
                     <div class="topTheme_search_input" tabindex="0" style="outline:none;">
@@ -59,7 +55,6 @@
                         <input type="button" class="search_input_r" id="btnSearch" value="">
                         <ul class="messagSjr autoHeight" style="display: none;" id="search-results"></ul>
                     </div>
-                    <!--热门关键词-->
                     <ul id="w28" class="sear_keyword">
                         <li><a href="#">一拳超人</a></li>
                         <li><a href="#">进击的巨人</a></li>
@@ -77,22 +72,16 @@
                         </li>
                         <li><a href="#">百炼成神</a></li>
                     </ul>
-                    <!--热门关键词-->
                 </div>
-                <!--公告-->
                 <div class="announce">
                     <ul id="index-notice">
                         <li><a href="" target="_blank">骚年，来看漫画呗！</a></li>
                     </ul>
                 </div>
-                <!--公告 结束-->
             </div>
-            <!--搜素 结束-->
         </div>
         <div class="topTheme_nav">
-            <!--主导航栏 开始-->
             <div class="topTheme_nav_in">
-                <!--导航栏-->
                 <ul class="topTheme_nav_inl">
                     <li><a class="cur " href="">首页</a></li>
                     <li><a class="" href="">日漫</a></li>
@@ -104,17 +93,12 @@
                     <li><a class="" href="">排行榜</a></li>
                     <li><a class="" href="">全部漫画</a></li>
                 </ul>
-                <!--导航栏 结束-->
-                <!--上传漫画-->
                 <div class="topTheme_nav_inr">
                     <a href="" target="_blank">会员中心</a> </div>
-                <!--上传漫画 结束-->
             </div>
 
         </div>
-        <!--topTheme 结束-->
     </div>
-    <!--head topTheme 结束-->
 
     <div class="wrap autoHeight">
         <div class="wrap_banner autoHeight">
@@ -581,7 +565,6 @@
                     </li>
                 </ul>
             </div>
-            <!--精品推荐右侧广告栏-->
             <div class="recommend_r_ad con_right">
                 <ul id="w7">
                     <li><a href="#" target="_blank"><img
@@ -683,7 +666,6 @@
                     </ul>
                 </div>
             </div>
-            <!--少年漫画排行榜-->
             <div class="youn_mh_r con_right widthEigRight">
                 <h2>少年漫画排行榜</h2>
 
@@ -919,7 +901,6 @@
                     </ul>
                 </div>
             </div>
-            <!--少女漫画排行榜-->
             <div class="youn_mh_r con_right widthEigRight">
                 <h2>少女漫画排行榜</h2>
 
@@ -1813,7 +1794,6 @@
         </div>
     </div>
 
-    <!--baiduzidongshoulu-->
     <script>
         (function () {
             var bp = document.createElement('script');
@@ -1854,35 +1834,7 @@
                 <h3>漫画呗（原 漫画堆）</h3>
                 <p>所有漫画均来自搜索和分享，以便漫画爱好者研究漫画技巧和构图方式。若喜欢，请购买正版书籍以支持作者！漫画版权归原作者所有。如有侵犯到您的权益，请联系我们，确认之后立即删除。本站不负任何相关责任！
                     ©2020 <a href="#" target="_blank">漫画呗（漫画堆）</a> <span style="display:none;">
-                        <!-- Global site tag (gtag.js) - Google Analytics -->
-                        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154557870-1"></script>
-                        <script>
-                            window.dataLayer = window.dataLayer || [];
 
-                            function gtag() {
-                                dataLayer.push(arguments);
-                            }
-                            gtag('js', new Date());
-                            gtag('config', 'UA-154557870-1');
-                        </script>
-                        <script>
-                            var cnzz_s_tag = document.createElement('script');
-                            cnzz_s_tag.type = 'text/javascript';
-                            cnzz_s_tag.async = true;
-                            cnzz_s_tag.charset = 'utf-8';
-                            cnzz_s_tag.src = 'https://w.cnzz.com/c.php?id=1278944425&async=1';
-                            var root_s = document.getElementsByTagName('script')[0];
-                            root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
-                        </script>
-                        <script>
-                            var _hmt = _hmt || [];
-                            (function () {
-                                var hm = document.createElement("script");
-                                hm.src = "https://hm.baidu.com/hm.js?0059b5e0311ca68e8eda1e34bfc6dcab";
-                                var s = document.getElementsByTagName("script")[0];
-                                s.parentNode.insertBefore(hm, s);
-                            })();
-                        </script>
                     </span> </p>
             </div>
         </div>
@@ -1933,76 +1885,6 @@
         </div>
     </div>
 
-    <script id="search-template" type="text/html">
-        <%if(items&&items.length>0){%>
-        <%for(var i = 0; i
-    <items.length;i++){
-    var item = items[i];
-    %>
-        <li title="<%=item.title%>" data-url="<%= item.uri %>">
-
-            <p class="pull-left">
-                [<a href="author/id-<%= item.author_id %>/"><%=item.author%></a>]
-                <a href="<%= item.uri %>"><%=item.title%></a>
-                [<span
-                    class="<%=item.serialise==1?'text-danger':'text-success'%>"><%=item.serialise==1?'连载中':'已完结'%></span>]
-            </p>
-            <% if(item.last_chapter_id>0){ %>
-            <span class="pull-right">更新至：
-                <a href="<%= item.uri+ item.last_chapter_id%>.html"><%=item.last_chapter_name%></a></span>
-            <% } %>
-        </li>
-        <%}%>
-    <%}else{%>
-        <li>暂无搜索结果</li>
-        <%}%>
-    </script>
-    <script id="history-template" type="text/html">
-        <%if(list&&list.length>0){%>
-        <ul class="book_con_li">
-            <%for(var i = 0; i < list.length;i++){
-        if(i>15) break;
-        var item = list[i];
-        %>
-            <li>
-                <span class="tip"></span>
-                <a class="book_title" title="<%=item.comic_name%>" href="<%=item.comic_url%>"
-                    target="_blank"><%=item.comic_name%></a>
-                <span class="book_l">看到</span>
-                <a class="book_num" title="<%=item.read_chapter%>" href="<%=item.read_chapter_url%>"
-                    target="_blank"><%=item.read_chapter%></a>
-                <span class="book_clo" onclick="SinMH.removeHistory(<%=item.comic_id%>);">X</span></li>
-
-            <%}%>
-    </ul>
-    <a class="book_con_bottom" href="member/history/" target="_blank">查看更多历史记录</a>    <%}else{%>
-            <div class="no_content">你还没有观看过作品哦</div>
-            <%}%>
-    </script>
-    <script id="subscribe-template" type="text/html">
-        <%if(list&&list.length>0){%>
-        <ul class="book_con_li">
-            <%for(var i = 0; i < list.length;i++){
-        if(i>15) break;
-        var item = list[i];
-        %>
-            <li>
-                <span class="tip"></span>
-                <a class="book_title wid" title="<%=item.comic_name%>" href="<%=item.comic_url%>"
-                    target="_blank"><%=item.comic_name%></a>
-                <% if(item.update_chapter!=null) { %>
-                <a class="book_num" title="<%=item.update_chapter%>" href="<%=item.update_chapter_url%>"
-                    target="_blank"><%=item.update_chapter%></a>
-                <% }
-            if(item.status == 0)%><span href="" class="subcribe_new"></span>
-            </li>
-
-            <%}%>
-    </ul>
-    <a class="book_con_bottom" href="member/subscribe/" target="_blank">查看更多订阅</a>    <%}else{%>
-            <div class="no_content">你还没有订阅过作品哦</div>
-            <%}%>
-    </script>
 
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.1/jquery.js"></script>
     <script src="assets/a4696427/yii.js"></script>
