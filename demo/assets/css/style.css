@@ -413,10 +413,10 @@ select.goog-te-combo {
 div#google_translate_element:after {
    content: '';
    position: absolute;
-   height: 40px;
+   height: 41px;
    width: 59px;
    background: #F3F3F3;
-   bottom: 5px;
+   bottom: 4px;
 }
 .skiptranslate iframe  {
    display: none;

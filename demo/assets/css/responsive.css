@@ -50,11 +50,13 @@
         left: 0;
         width: 100%;
     }
+
     .info-content.active {
         display: block;
         height: calc(100vh - 55px);
         background: white;
     }
+
     .info-content h2 {
         text-align: center;
     }
@@ -69,10 +71,14 @@
         padding: 15px;
     }
 
+    div#google_translate_element {
+        margin-left: 20px;
+    }
+
 }
 
 @media (max-width: 767px) {
-    
+
     .info-tabs li {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -84,8 +90,10 @@
 }
 
 @media (max-width: 575px) {}
+
 @media (max-width: 440px) {
     .info-tabs li a {
         padding: 10px;
-        height: 150px;}
+        height: 150px;
+    }
 }
