@@ -24,7 +24,31 @@
 
    <!-- jQuery -->
    <script src="assets/js/jquery-2.2.4.min.js"></script>
+   <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAnruHwciM8a0qtgcM436I6ynbzqBppRM&callback=initMap"
+      type="text/javascript"></script>
 
+   <script>
+      // Initialize and add the map
+      function initMap() {
+         // The location of Uluru
+         var uluru = {
+            lat: 33.779729,
+            lng: -118.200233
+         };
+         // The map, centered at Uluru
+         var map = new google.maps.Map(
+            document.getElementById('map'), {
+               zoom: 18,
+               center: uluru
+            });
+         // The marker, positioned at Uluru
+         var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+         });
+      }
+   </script>
 
 </head>
 
@@ -44,13 +68,14 @@
          <div class="row">
             <div class="col d-flex justify-content-center align-items-center">
                <div class="home-content">
-                  <h1>HELLO MARICELA CASTILLO </h1>
-                  <h6>09.10.2020 - 11.10.2020 </h6>
+                  <a href="" class="logo"><img src="assets/img/logo.png" alt=""></a>
+                  <h1>Your Bed Awaits Welcomes You! </h1>
+                  <!-- <h6>09.10.2020 - 11.10.2020 </h6> -->
                   <p><b>spacious craftsman close to downtown long beach
                      </b> <br> <i class="fas fa-map-marker-alt"></i> 1034 maine ave 90813 long beach</p>
                   <ul class="contact">
-                     <li><a href="tel:123-456-7890"><i class="fa fa-phone"></i></a></li>
-                     <li><a href="mailto:yourmail@gmail.com"><i class="fa fa-paper-plane"></i></a></li>
+                     <li><a href="tel:562-317-1324"><i class="fa fa-phone"></i></a></li>
+                     <li><a href="mailto:hello@yourbedawaits.com"><i class="fa fa-paper-plane"></i></a></li>
                   </ul>
                   <a class="get-started" href="#tab2">Get started</a>
                </div>
@@ -64,13 +89,16 @@
       <div class="container">
          <div class="row">
             <div class="col-lg-4">
+
+               <div id="google_translate_element"></div>
                <ul class="info-tabs">
                   <!-- <li><a href="#online_checkin"><img src="assets/img/online-check-in.svg" alt="">Online Check-in</a>
                   </li>
                   <li><a href="#tours"><img src="assets/img/tours.svg" alt=""> Tour</a></li>
                   <li><a href="#message"><img src="assets/img/message.svg" alt=""> Message</a></li>
                   <li><a href="#luggage"><img src="assets/img/luggage-hero.png" alt=""> Luggage Storage</a></li> -->
-                  <li class="active"><a href="#covid"><img src="assets/img/icon-77.svg" alt=""> Covid-19 Response</a>
+                  <li class="active"><a href="#welcome"><img src="assets/img/icon-77.svg" alt=""> Welcome</a>
+                  <li><a href="#covid"><img src="assets/img/icon-77.svg" alt=""> Covid-19 Response</a>
                   </li>
                   <li><a href="#checkin_time"><img src="assets/img/icon-21.svg" alt=""> Check-in/Check-out Times</a>
                   </li>
@@ -87,7 +115,43 @@
             </div>
             <div class="col-lg-8">
                <div class="info-content-wrapper">
-                  <div id="covid" class="info-content active">
+
+                  <div id="welcome" class="info-content active">
+                     <h2>Welcome</h2>
+                     <div class="single-info-content">
+                        <h4>FRIENDLY & EXPERIENCED HOSPITALITY </h4>
+                        <p>We have hosted over 1,000 guests from all parts of the world. Our hospitality begins the
+                           moment you inquire about one of our places. Your comfort is our top priority, so we go above
+                           and beyond to be prompt in our communications and provide transparency prior to and during
+                           your stay. </p>
+                        <h4>IN THE HEART OF IT ALL </h4>
+                        <p>Stay with us and live like a local and not a tourist. You will find that there’s so much to
+                           do just outside your door. Our apartments are close to major attractions such as beaches,
+                           parks, museums, and major entertainment venues as well as local restaurants, shopping and
+                           more.
+                        </p>
+                        <h4>DEDICATION TO LONG-TERM RELATIONSHIPS
+                        </h4>
+                        <p>We value our relationship with each guest so we go above and beyond to ensure you find a home
+                           that you will love, be happy in and even return to.
+                        </p>
+                        <h4>ALL THE COMFORTS OF A HOME
+                        </h4>
+                        <p>Our apartments are carefully designed with the guest in mind and offer the perfect blend
+                           between hotel and home. We provide all the essential amenities that you need to live at home
+                           such as fast Wi-Fi, streaming TV, and a fully stocked kitchen with cooking utensils and
+                           essentials, at prices you can afford.
+
+                        </p>
+                        <h4>WE MAKE BOOKING A BREEZE
+                        </h4>
+                        <p>From booking to staying, every step of the process is seamless, fast and allows you to start
+                           enjoying your stay right away.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div id="covid" class="info-content hide">
                      <h2>COVID -19 RESPONSE</h2>
                      <div class="single-info-content">
                         <img src="assets/img/summernote_image_54681_5ec6b7a5c148a.jpg" alt="">
@@ -342,39 +406,31 @@
          </div>
       </div>
    </div>
-   <style>
 
-   </style>
    <div id="tab3" class="map tab-content hide">
       <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14671.159792508808!2d89.19040541977539!3d23.177865299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff1090a9096f0f%3A0x79ae8cda32e37f6e!2sTalikhola%20Mosque!5e0!3m2!1sen!2sbd!4v1599805033559!5m2!1sen!2sbd"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 
       <!--The div element for the map -->
       <div id="map"></div>
    </div>
-   <script>
-      // Initialize and add the map
-      function initMap() {
-         // The location of Uluru
-         var uluru = {
-            lat: 33.779729,
-            lng: -118.200233
-         };
-         // The map, centered at Uluru
-         var map = new google.maps.Map(
-            document.getElementById('map'), {
-               zoom: 18,
-               center: uluru
-            });
-         // The marker, positioned at Uluru
-         var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-         });
+
+
+
+
+
+   <script type="text/javascript">
+      function googleTranslateElementInit() {
+         new google.translate.TranslateElement({
+            pageLanguage: 'en'
+         }, 'google_translate_element');
       }
    </script>
-   <script defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxYrf_NPIOBLr0hPOaf0ISZwlOWpiwR50&callback=initMap">
-   </script>
+
+   <script type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
 
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="assets/js/popper.min.js"></script>
