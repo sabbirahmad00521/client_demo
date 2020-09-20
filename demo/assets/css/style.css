@@ -88,7 +88,7 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #7E1E46;
+   background-color: #264773;
 }
 
 /* tabs */
@@ -96,7 +96,7 @@ nav a:hover {
 .nav-tabs>.active>a:hover {
    cursor: default;
    background-color: #999;
-   color: #7E1E46 !important;
+   color: #264773 !important;
 }
 
 .tab-content.active {
@@ -142,15 +142,15 @@ nav a:hover {
    opacity: 0.5;
    z-index: -1;
 }
-.home-content a.logo {
-    position: absolute;
-    left: calc(50% - 150px);
-    top: 10px;
+
+.home-content a.logo {margin-top: -150px;display: block;
 }
 
 .home-content a.logo img {
-    width: 300px;
+   width: 300px;margin: auto;
+   margin-bottom:30px;
 }
+
 .home-content h1 {
    font-size: 36px;
 }
@@ -159,11 +159,19 @@ nav a:hover {
    text-transform: capitalize;
 }
 
+.home-content p b {
+   font-size: 22px;
+   display: block;
+}
+
 .contact {
    margin: 0;
    padding: 0;
    list-style: none;
-   border-bottom: 3px solid #67C804;padding-bottom: 15px;display: table;margin: auto;
+   border-bottom: 3px solid #ED4434;
+   padding-bottom: 15px;
+   display: table;
+   margin: auto;
 }
 
 .contact li {
@@ -178,7 +186,7 @@ nav a:hover {
    width: 50px;
    color: #fff;
    line-height: 46px;
-   border: 3px solid #7E1E46;
+   border: 3px solid #ED4434;
    border-radius: 50%;
    -webkit-border-radius: 50%;
    -moz-border-radius: 50%;
@@ -193,15 +201,15 @@ nav a:hover {
 
 .contact li a:hover {
    background-color: #fff;
-   color: #7E1E46;
+   color: #ED4434;
 }
 
 .contact li a:hover i {
-   color: #7E1E46;
+   color: #ED4434;
 }
 
 a.get-started {
-   background-color: #7E1E46;
+   background-color: #264773;
    padding: 12px 25px;
    display: inline-block;
    font-size: 14px;
@@ -220,8 +228,10 @@ a.get-started {
    -o-transition: 0.4s;
 }
 
-a.get-started:hover,a.get-started:focus,a.get-started:visited  {
-   color: #7E1E46;
+a.get-started:hover,
+a.get-started:focus,
+a.get-started:visited {
+   color: #ED4434;
    background-color: #fff;
 }
 
@@ -272,7 +282,8 @@ a.get-started:hover,a.get-started:focus,a.get-started:visited  {
    list-style: none;
    overflow-y: scroll;
    max-height: calc(100vh - 85px);
-   padding: 30px 10px;margin-top: -31px;
+   padding: 30px 10px;
+   margin-top: -31px;
 
 }
 
@@ -313,14 +324,15 @@ a.get-started:hover,a.get-started:focus,a.get-started:visited  {
    font-size: 26px;
    position: absolute;
    left: 15px;
-   color: #7E1E46;
+   color: #ED4434;
 }
 
 .info-tabs li a img {
    height: 26px;
    position: absolute;
    left: 15px;
-   color: #7E1E46;
+   color: #ED4434;
+   top: calc(50% - 13px);
 }
 
 .info-content-wrapper {}
@@ -329,7 +341,7 @@ a.get-started:hover,a.get-started:focus,a.get-started:visited  {
 
 .info-content h2 {
    color: #fff;
-   background-color: #7E1E46;
+   background-color: #264773;
    font-size: 20px;
    font-weight: 600;
    padding: 20px 15px;
@@ -355,7 +367,7 @@ a.get-started:hover,a.get-started:focus,a.get-started:visited  {
    bottom: -10px;
    height: 1px;
    width: 100%;
-   background-color: #7E1E46;
+   background-color: #264773;
 }
 
 .info-content h5 {
@@ -385,7 +397,11 @@ a.get-started:hover,a.get-started:focus,a.get-started:visited  {
    margin: auto;
    margin-bottom: 30px;
 }
-a.text{color: #7E1E46;font-weight: 600;}
+
+a.text {
+   color: #264773;
+   font-weight: 600;
+}
 
 /* map */
 #map {
@@ -397,12 +413,14 @@ a.text{color: #7E1E46;font-weight: 600;}
 
 div#google_translate_element {
    position: relative;
-   z-index: 9999;margin-left: 10px;
+   z-index: 9999;
+   margin-left: 10px;
    /* left: 50px;
    top: 25px; */
 }
-select.goog-te-combo { 
-   border-color: #7E1E46;
+
+select.goog-te-combo {
+   border-color: #264773;
    font-weight: 600;
    padding: 5px 10px;
    border-radius: 5px;
@@ -410,6 +428,7 @@ select.goog-te-combo {
    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .1);
 }
+
 div#google_translate_element:after {
    content: '';
    position: absolute;
@@ -418,10 +437,15 @@ div#google_translate_element:after {
    background: #F3F3F3;
    bottom: 4px;
 }
-.skiptranslate iframe  {
+
+.skiptranslate iframe {
    display: none;
 }
 
 body {
    top: 0 !important;
+}
+
+#iframemap {
+   height: 100vh;
 }

@@ -75,6 +75,10 @@
         margin-left: 20px;
     }
 
+    .info-tabs {
+        margin-top: ;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -87,9 +91,21 @@
         padding: 15px;
         margin-bottom: 0;
     }
+
+    .home-content a.logo {
+        left: calc(50% - 100px);
+    }
+
+    .home-content a.logo img {
+        width: 200px;
+    }
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    .home-content a.logo {
+        margin-top: -50px;
+    }
+}
 
 @media (max-width: 440px) {
     .info-tabs li a {
