@@ -143,11 +143,14 @@ nav a:hover {
    z-index: -1;
 }
 
-.home-content a.logo {margin-top: -150px;display: block;
+.home-content a.logo {
+   margin-top: -150px;
+   display: block;
 }
 
 .home-content a.logo img {
-   width: 250px;margin: auto;
+   width: 250px;
+   margin: auto;
 }
 
 .home-content h1 {
@@ -155,13 +158,22 @@ nav a:hover {
 }
 
 .home-content p {
-   text-transform: capitalize;position: relative;padding-bottom: 30px;margin-bottom: 20px;
+   text-transform: capitalize;
+   position: relative;
+   padding-bottom: 30px;
+   margin-bottom: 20px;
 }
-.home-content p:after{
+
+.home-content p:after {
    position: absolute;
    left: calc(50% - 70px);
-   bottom: 0;height: 2px;width: 140px;content: '';background-color: #ED4434;
+   bottom: 0;
+   height: 2px;
+   width: 140px;
+   content: '';
+   background-color: #ED4434;
 }
+
 .home-content p b {
    font-size: 22px;
    display: block;
@@ -177,11 +189,17 @@ nav a:hover {
 }
 
 .contact li {
-   margin: 0 8px;margin-bottom: 10px;text-align: left;
+   margin: 0 8px;
+   margin-bottom: 10px;
+   text-align: left;
 }
-.contact li a span{margin-left: 10px;}
-.contact li a i{
- 
+
+.contact li a span {
+   margin-left: 10px;
+}
+
+.contact li a i {
+
    height: 50px;
    width: 50px;
    color: #fff;
@@ -196,10 +214,12 @@ nav a:hover {
    -webkit-transition: 0.4s;
    -moz-transition: 0.4s;
    -ms-transition: 0.4s;
-   -o-transition: 0.4s;margin: auto;margin-bottom: 10px;
+   -o-transition: 0.4s;
+   margin: auto;
+   margin-bottom: 10px;
 }
 
-.contact li a:hover i{
+.contact li a:hover i {
    background-color: #fff;
    color: #ED4434;
 }
@@ -448,5 +468,13 @@ body {
 #iframemap {
    height: 100vh;
 }
-.pdf{margin-top: 8px;margin-right: 20px;}
-.pdf i{font-size: 20px;color: #264773;}
+
+.pdf {
+   margin-top: 8px;
+   margin-right: 20px;
+}
+
+.pdf i {
+   font-size: 20px;
+   color: #264773;
+}
