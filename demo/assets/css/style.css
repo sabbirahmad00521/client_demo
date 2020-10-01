@@ -370,7 +370,8 @@ h2.header:after {
     padding-bottom: 15px;
     font-weight: 300;
     margin: auto;
-    margin-bottom: 20px;padding-top: 80px;
+    margin-bottom: 20px;
+    padding-top: 80px;
 }
 
 .title.lyrics-title:after {
@@ -383,9 +384,12 @@ h2.header:after {
     left: -30px;
 }
 
-h4.lyrics-title{
-   font-weight: 300;font-size: 18px;font-weight: 600;
+h4.lyrics-title {
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: 600;
 }
+
 .lyrics {
     margin-bottom: 80px;
     text-align: center;
@@ -475,4 +479,64 @@ button.auto-scroll.active {
 .video-width iframe {
     height: 350px;
     width: 650px;
+}
+
+/* mussic deails */
+.media-text {
+    text-align: center;
+    width: 650px;
+    margin: 30px auto 15px;
+}
+
+.media-text a {
+    font-weight: 600;
+    color: #3F9ED2;
+}
+
+
+/* resources */
+.resource-content {
+    margin-top: 50px;
+}
+
+.resource-content h1 {
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.single-music-video {
+    border-bottom: 1px solid #fff;
+    display: block;
+    padding: 40px 0;
+}
+
+.single-music-video:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.single-music-video .thumbnail {
+    height: 160px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-right: 20px;
+}
+
+.single-music-video .thumbnail i {
+    font-size: 60px;
+}
+
+.single-music-video h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.single-music-video p {
+    margin-bottom: 0;
 }

@@ -92,6 +92,10 @@
     .contact-content {
         margin-top: 150px;
     }
+
+    .title.lyrics-title {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -114,6 +118,30 @@
     .contact-content textarea {
         width: 100%;
     }
+
+    .media-text {
+        width: 100%;
+    }
+
+    .video-width iframe {
+        height: 320px;
+        width: 100%;
+    }
+
+    .resource-content h1 {
+        margin-top: 80px;
+        font-size: 30px;
+    }
+
+    .single-music-video .thumbnail {
+        float: none;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .single-music-video {
+        text-align: center;
+    }
 }
 
 @media (max-width: 575px) {
@@ -133,5 +161,9 @@
 
     .home-content .image-content:after {
         display: none;
+    }
+
+    .video-width iframe {
+        height: 250px;
     }
 }
