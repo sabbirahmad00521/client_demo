@@ -1,0 +1,89 @@
+
+a.btn {
+	width: 150px;
+}
+.footer-list li:first-child {
+	font-size: 13px
+}
+.footer-list li a {
+	font-size: 13px;
+}
+
+@media screen and (min-width: 767px) {
+	.footer-list1 {
+		width: 15%;
+	}
+	.footer-list2 {
+		width: 32%;
+	}
+	.footer-list3 {
+		width: 21%;
+	}
+	.footer-list4 {
+		width: 20%;
+	}
+}
+
+.v-desc-inner h2, .vessel-description h2 {
+	font-size: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+	.v-desc-inner h2, .vessel-description h2 {
+		font-size: 18px;
+	}
+}
+
+.table1 td { 
+	font-size: 14px;
+}
+
+.vessel-specifications p {
+	font-size: 15px;
+}
+.vessel-specifications a {
+	font-size: 12px;
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	.vessel-specifications p {
+		left: 20px;
+		font-size: 13px;
+	}
+	.vessel-specifications a {
+		left: 20px;
+	}
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+	.vessel-specifications {
+		height: 260px;
+		width: auto;
+	}
+	.vessel-specifications p {
+		left: 10px;
+		font-size: 13px;
+		top: 12px;
+		width: 120px;
+	}
+	.vessel-specifications a {
+		left: 10px;
+		font-size: 11px;
+		bottom: 12px;
+	}
+}
+@media screen and (max-width: 520px) {
+	.vessel-specifications {
+		height: 260px;
+		width: auto;
+	}
+	.vessel-specifications p {
+		left: 10px;
+		font-size: 13px;
+		top: 12px;
+		width: 120px;
+	}
+	.vessel-specifications a {
+		left: 10px;
+		font-size: 11px;
+		bottom: 12px;
+	}
+}
