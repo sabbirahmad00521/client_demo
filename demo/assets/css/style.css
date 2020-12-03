@@ -1,0 +1,508 @@
+/* Common Styles
+================*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,600,700,800,900|Roboto:300,400,500,700,900');
+
+@font-face {
+   font-family: "miller";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../webfonts/Miller-Banner_Light.woff2") format("woff2");
+}
+
+/* @font-face {
+   font-family: "miller";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../webfonts/Miller-Banner_Roman.woff2") format("woff");
+} */
+
+@font-face {
+   font-family: "proxima";
+   font-style: normal;
+   font-weight: 300;
+   src: url("../webfonts/ProximaNova-Reg.woff") format("woff");
+}
+
+@font-face {
+   font-family: "proxima";
+   font-style: normal;
+   font-weight: 500;
+   src: url("../webfonts/ProximaNova-Sbold.woff") format("woff");
+}
+
+@font-face {
+   font-family: "proxima";
+   font-style: normal;
+   font-weight: 700;
+   src: url("../webfonts/ProximaNova-Bold.woff") format("woff");
+}
+
+
+
+html {
+   overflow-x: hidden;
+}
+
+body {
+   font-family: 'proxima', sans-serif;
+   font-size: 16px;
+   background-color: #fff;
+   color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0 0 15px;
+   font-weight: 700;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:hover,
+a:visited {
+   text-decoration: none;
+   color: #333;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+
+input:focus,
+textarea:focus,
+button:focus {
+   outline: 0 solid;
+}
+
+p {
+   font-weight: 300;
+}
+
+.container {
+   max-width: 1580px;
+}
+
+header .container {
+   max-width: 98%;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+
+.mobile {
+   display: none;
+}
+
+.desktop {
+   display: block;
+}
+
+/* Owl Carowsel
+===============*/
+
+/*
+.owl-carousel-class-name .owl-nav div {
+   position: absolute;
+   bottom: -40px;
+   height: 35px;
+   width: 30px;
+   line-height: 35px;
+   background: #1083D8;
+   text-align: center;
+   color: #fff;
+   font-size: 20px;
+   left: 42%;
+}
+
+.owl-carousel-class-name .owl-nav .owl-next {
+   left: auto;
+   right: 42%;
+}
+
+.owl-dots div {
+   display: inline-block;
+   height: 15px;
+   width: 15px;
+   background: #FACD38;
+   margin: -38px 5px;
+   border-radius: 50%;
+}
+
+.owl-dots div.active {
+   background-color: #1083D8;
+}
+
+.owl-dots {
+   text-align: center;
+}*/
+
+/* header */
+header {
+   padding: 20px 0;
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: 99;
+   width: 100%;
+   background-color: #fff;
+}
+
+a.logo {
+   display: block;
+}
+
+a.logo img {
+   height: 36px;
+}
+
+.header-right {
+   display: flex;
+}
+
+.outnav-item {
+   display: flex;
+   align-items: center;
+   font-weight: 300;
+   font-size: 13px;
+   letter-spacing: 1px;
+   padding: 10px 20px;
+}
+
+nav {
+   text-align: right;
+   width: 370px;
+   height: 100vh;
+   position: absolute;
+   z-index: 9;
+   top: calc(100% + 20px);
+   right: -30px;
+   background-color: #fff;
+   padding: 10px 40px 0 10px;
+   display: none;
+}
+
+nav a {
+   display: block;
+   font-weight: 300;
+   font-size: 13px;
+   padding: 10px 0;
+   transition: 0.3s;
+   -webkit-transition: ;
+   -moz-transition: ;
+   -ms-transition: ;
+   -o-transition: ;
+   letter-spacing: 1px;
+}
+
+nav>a:last-child {
+   padding: 0;
+   padding-bottom: 20px;
+}
+
+nav a:hover,
+nav a.active {
+   color: #1a5eab;
+}
+
+.socials {
+   margin-bottom: 30px;
+}
+
+.socials a {
+   display: inline-block;
+   padding: 7px;
+}
+
+nav a img {
+   height: 25px;
+}
+
+nav p {
+   font-weight: 300;
+   font-size: 13px;
+   margin-bottom: 0;
+}
+
+nav span {
+   color: #1a5eab;
+}
+
+.responsive-menu {
+   margin-left: 20px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+   width: 30px;
+   height: 2px;
+   background-color: #000;
+   margin: 8px 0;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+
+.change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+   transform: rotate(-45deg) translate(-7px, 6px);
+   -moz-transform: rotate(-45deg) translate(-7px, 6px);
+   -ms-transform: rotate(-45deg) translate(-7px, 6px);
+   -o-transform: rotate(-45deg) translate(-7px, 6px);
+   background-color: #1a5eab;
+}
+
+.change .bar2 {
+   opacity: 0;
+}
+
+.change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+   transform: rotate(45deg) translate(-8px, -8px);
+   -moz-transform: rotate(45deg) translate(-8px, -8px);
+   -ms-transform: rotate(45deg) translate(-8px, -8px);
+   -o-transform: rotate(45deg) translate(-8px, -8px);
+   background-color: #1a5eab;
+}
+
+/* heroarea */
+.heroarea {
+   width: 100%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.heroarea .video {
+   position: relative;
+}
+
+.heroarea .video-file {
+   width: 100vw;
+   height: 100vh;
+   transition: 0.5s;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+   object-fit: cover;
+}
+
+.heroarea .video-logo {
+   position: absolute;
+   bottom: 80px;
+   left: 70px;
+   height: 100px;
+}
+
+.heroarea .video .volume {
+   position: absolute;
+   bottom: 25px;
+   left: 85px;
+   color: #fff;
+   background: none;
+   border: 0;
+   cursor: pointer;
+}
+
+.heroarea-content {
+   margin-left: 40px;
+   width: 40%;
+}
+
+.heroarea-content h1 {
+   font-size: 62px;
+   font-family: "miller";
+   font-weight: 300;
+   text-transform: uppercase;
+   line-height: 62px;
+   margin-bottom: 30px;
+}
+
+.heroarea-content h1 span {
+   color: #1A5EAB;
+   display: block;
+}
+
+.heroarea-content p {
+   margin-bottom: 0;
+   line-height: 26px;
+   font-weight: 300;
+}
+
+.heroarea-content p span {
+   color: #1A5EAB;
+   text-transform: uppercase;
+   font-family: "miller";
+   margin-right: 5px;
+   font-size: 17px;
+}
+
+.content-paragraph {
+   width: 300px;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8 {
+   padding: 50px 0 0;
+}
+
+.section-1 .heroarea-content,
+.section-1 .content-paragraph,
+.section-2 .heroarea-content,
+.section-2 .content-paragraph,
+.section-3 .heroarea-content,
+.section-3 .content-paragraph,
+.section-4 .heroarea-content,
+.section-4 .content-paragraph,
+.section-5 .heroarea-content,
+.section-5 .content-paragraph,
+.section-6 .heroarea-content,
+.section-6 .content-paragraph,
+.section-7 .heroarea-content,
+.section-7 .content-paragraph,
+   {
+   width: 350px;
+   margin-left: 0;
+}
+
+.section-1 .heroarea-content img {
+   height: 56px;
+   width: auto;
+   display: block;
+}
+
+.section-8 {
+   margin-bottom: 80px;
+}
+
+.section-8 .heroarea-content {
+   width: auto;
+}
+
+.section-8 .heroarea-content span {
+   display: inline-block;
+}
+
+.section-8 .heroarea-content {
+   text-align: right;
+}
+
+.section-8 table {
+   margin-top: 90px;
+}
+
+.section-8 td {
+   font-weight: 300;
+   font-size: 15px;
+   padding: 6px;
+}
+
+/* footer */
+
+footer {
+   padding-bottom: 25px;
+}
+
+footer .footer-nav a {
+   font-family: "miller";
+   font-size: 25px;
+   font-weight: 300;
+   transition: 0.4s;
+   -webkit-transition: 0.4s;
+   -moz-transition: 0.4s;
+   -ms-transition: 0.4s;
+   -o-transition: 0.4s;
+}
+
+footer .footer-nav span {
+   font-size: 25px;
+   font-family: "miller";
+   margin: 0 10px;
+}
+
+footer .footer-nav a:hover {
+   color: #1a5eab;
+}
+
+footer .address {
+   font-size: 13px;
+   font-weight: 300;
+   letter-spacing: 1px;
+}
+
+footer .address span {
+   color: #1a5eab;
+}
+
+footer .address a {
+   transition: 0.4s;
+   -webkit-transition: 0.4s;
+   -moz-transition: 0.4s;
+   -ms-transition: 0.4s;
+   -o-transition: 0.4s;
+}
+
+footer .address a:hover {
+   color: #1a5eab;
+}
+
+footer .footer-svg a {
+   display: inline-block;
+   margin: 0 4px;
+}
+
+footer .footer-svg a img {
+   height: 18px;
+   display: block;
+}
+
+footer .footer-svg a:last-child img {
+   height: 25px;
+}
+
+footer .svg-btm p {
+   display: inline-block;
+   font-size: 10px;
+   margin: 0 10px;
+   letter-spacing: 1px;
+}
+
+footer .svg-btm p a {
+   transition: 0.4s;
+   -webkit-transition: 0.4s;
+   -moz-transition: 0.4s;
+   -ms-transition: 0.4s;
+   -o-transition: 0.4s;
+}
+
+footer .svg-btm p a:hover {
+   color: #1A5EAB;
+}
+
+.footer-svg {
+   text-align: right;
+}
+
+.svg-btm {
+   text-align: right;
+}
