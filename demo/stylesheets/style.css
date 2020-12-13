@@ -694,3 +694,5 @@ table input[type="submit"] {
     display: inline-block;
     float: left;
 }
+
+#TagLine div{font-size: 18px !important;}
