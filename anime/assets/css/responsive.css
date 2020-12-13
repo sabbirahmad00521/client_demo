@@ -1,0 +1,46 @@
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .container .col-lg-4 {
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .sidebar {
+        margin-top: 40px;
+    }
+
+    .manga-details-mobile {
+        display: block;
+    }
+
+    .manga-top,
+    .manga-info {
+        display: none;
+    }
+
+    .manga {
+        margin-top: 0;
+    }
+
+    .manga-content {
+        padding-top: 0;
+    }
+
+    .chapter-browse {
+        margin: 10px 0;
+    }
+
+    .manga-reader {
+        height: 500px;
+        padding: 0;
+    }
+
+    .manga-reader img {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
