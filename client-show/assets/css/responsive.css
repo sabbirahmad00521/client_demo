@@ -1,0 +1,120 @@
+@media (max-width: 1199px) {
+
+    .about,
+    .news,
+    .bkaqstar {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .hero-area {
+        background-position: 100% center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    nav ul li a {
+        padding: 30px 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .hero-area {
+        background-position: center right;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-area:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+
+    a.logo img {
+        margin: 15px 0;
+    }
+
+    a.responsive-menu {
+        display: inline-block;
+        color: #97C636;
+        z-index: 999;
+        font-size: 36px;
+        /* float: right; */
+        margin-top: 0px;
+    }
+
+
+    .menu {
+        display: none;
+        float: none;
+
+        margin-right: -50px;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 100%;
+        display: block;
+    }
+
+    nav ul li a {
+        color: #fff !important;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 11px 30px !important;
+        display: block;
+        width: 100%;
+        background: #292929;
+        text-align: left;
+        border-bottom: 1px solid #3B3B3B;
+    }
+
+    .about .col-md-6 {
+        background: rgba(0, 0, 0, .8);
+    }
+
+    .about-content {
+        background-color: transparent;
+        padding-top: 25px;
+    }
+
+    .content-logo ul {
+        display: block;
+    }
+
+    .content-logo ul li img {
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .content-logo ul li:nth-child(3) img {
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .hero-content h1,
+    .about-content h1,
+    .news h1,
+    .contact h1,
+    .bkaqstar h1 {
+        font-size: 32px;
+    }
+
+    .hero-area {
+        background-position: 80% center;
+    }
+}

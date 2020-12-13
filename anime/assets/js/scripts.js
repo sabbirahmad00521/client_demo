@@ -23,12 +23,16 @@ jQuery(document).ready(function($) {
     })
 
 
-    $('.manga-reader').scroll(function() {
-        var scrollTop = $(this).scrollTop();
-        if (scrollTop > 1) {
-            console.log('it worked');
-        }
-    })
+    // $('.manga-reader').scroll(function() {
+    //     var scrollTop = $(this).scrollTop();
+    //     console.log(scrollTop);
+
+    //     if (scrollTop > 1) {
+    //       var mangaa = document.querySelector('.manga-reader ')
+    //         mangaa.requestFullScreen()
+    //         console.log('hu');
+    //     }
+    // })
 
     // $(window).resize(function() {
     //     if (window.matchMedia('(max-width: 575px)').matches) {
@@ -36,5 +40,19 @@ jQuery(document).ready(function($) {
     //     }
     // });
 
+
+});
+
+let last_known_scroll_position = 0;
+
+document.addEventListener('scroll', function(e) {
+    last_known_scroll_position = window.scrollY;
+
+    if (last_known_scroll_position > 1) {
+        var mangaa = document.querySelector('.manga-reader ')
+        manga.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        // mangaa.requestFullScreen()
+        console.log('hu');
+    }
 
 });
