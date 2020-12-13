@@ -43,4 +43,6 @@
         width: calc(100% - 20px);
         margin: 10px;
     }
+
+    .comment{display: none;}
 }
