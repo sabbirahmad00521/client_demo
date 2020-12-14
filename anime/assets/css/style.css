@@ -90,10 +90,25 @@ button:focus {
 
 .chapter-browse {
     text-align: center;
-    margin: 30px 0;
+}
+.chapter-browse .chapter-browse-wrapper{margin: 30px 0;}
+.mobile-browse {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    margin: 0;z-index: 99;text-align: center;
+
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
 }
 
-.chapter-browse button {
+.chapter-browse button,
+.mobile-browse button {
     border-radius: 30px;
     border: 3px solid #555;
     background-color: #fff;
@@ -101,7 +116,8 @@ button:focus {
     cursor: pointer;
 }
 
-.chapter-browse select {
+.chapter-browse select,
+.mobile-browse select {
     padding: 5px;
     padding-right: 40px;
     margin: 0 15px;
@@ -115,6 +131,11 @@ button:focus {
     color: #fff;
     text-align: center;
     padding: 30px;
+}
+
+.manga-reader.mobile {
+    /* height: calc(100vh - 60px); */
+    height: 100vh;
 }
 
 .manga-reader h5 {
@@ -221,7 +242,8 @@ button:focus {
 }
 
 .single-sidebar h4 {
-    font-size: 20px;margin-bottom: 0px;
+    font-size: 20px;
+    margin-bottom: 0px;
 }
 
 .single-sidebar p {
@@ -229,7 +251,13 @@ button:focus {
 }
 
 .manga-details-mobile {
-    margin-top: 20px;display: none;
+    margin-top: 20px;
+    display: none;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
 }
 
 .manga-details-mobile a.manga-name {
@@ -260,8 +288,10 @@ button:focus {
     display: none;
 }
 
-.button-bars {padding-bottom: 10px;}
- 
+.button-bars {
+    padding-bottom: 10px;
+}
+
 .button-bars a {
     display: inline-block;
     width: 50px;
@@ -281,19 +311,34 @@ button:focus {
 }
 
 .social-mobile-wrapper {
-    display: none;padding-bottom: 10px;
+    display: none;
+    padding-bottom: 10px;
 }
-.social-mobile-wrapper p{font-size: 14px;margin-bottom: 5px;}
+
+.social-mobile-wrapper p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
 .social-mobile a {
     margin: 3px;
-    padding: 10px;font-size: 14px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .social-mobile a i {
     display: block;
-    text-align: center;margin-bottom: 2px;
+    text-align: center;
+    margin-bottom: 2px;
 }
 
-.comment{margin-top: 20px;}
-.comment h4{font-size: 20px;margin-bottom: 5px;}
-.comment p{}
+.comment {
+    margin-top: 20px;
+}
+
+.comment h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.comment p {}
