@@ -62,22 +62,26 @@ jQuery(document).ready(function($) {
         $('.manga-reader').scroll(function() {
 
             var scrollTop = $(this).scrollTop();
-            console.log('scrolltop ' + scrollTop);
+            // console.log('scrolltop ' + scrollTop);
+            $('.one').text("scroll from top " + scrollTop)
             // console.log('innerHeight ' + $(this).innerHeight());
             // console.log('scrolltop + innerHeight ' + ($(this).scrollTop() + $(window).innerHeight()));
             // console.log('scrollHeight ' + $(this)[0].scrollHeight);
             // console.log('scrollHeight ' + ($(this)[0].scrollHeight -  $(window).innerHeight()) );
             var mobileReaderscroll = $(this)[0].scrollHeight - $(window).innerHeight();
-            console.log('totalscrollsize ' + mobileReaderscroll);
+            $('.two').text('totalscrollsize ' + mobileReaderscroll)
+            // console.log('totalscrollsize ' + mobileReaderscroll);
             var extrascroll = $(window).innerHeight() - $(this).innerHeight();
-            console.log('extra scroll ' + extrascroll);
-            console.log(('total and extra ' + (mobileReaderscroll + extrascroll)));
+            $('.three').text('extra scroll ' + extrascroll)
+            // console.log('extra scroll ' + extrascroll);
+            // console.log(('total and extra ' + (mobileReaderscroll + extrascroll)));
             if (scrollTop < 100) { // যদি ১০০ এর কম স্ক্রল করা হয় তবে 
                 $('.manga-reader').removeClass('mobile')
                 $('.manga-details-mobile').removeClass('mobile')
                 $('.mobile-browse').removeClass("hide");
                 $('.manga-details-mobile').removeClass("hide");
                 fullscreenmode = false
+                $('.four').text("start scroll, normal screen")
             } else if (scrollTop > 100 && scrollTop < (mobileReaderscroll - 1000)) { // যদি ১০০ এর বেশি 3743 এর কম স্ক্রল হয়
                 console.log('hey bro');
                 $('.manga-reader').addClass('mobile')
@@ -85,12 +89,14 @@ jQuery(document).ready(function($) {
                 $('.mobile-browse').addClass("hide");
                 $('.manga-details-mobile').addClass("hide");
                 fullscreenmode = true
+                $('.four').text("mid scroll, full screen")
             } else if (scrollTop >= (mobileReaderscroll - 1000)) { // যদি 3743 এর বেশি স্ক্রল করা হয় তবে 
                 $('.manga-reader').removeClass('mobile')
                 $('.manga-details-mobile').removeClass('mobile')
                 $('.mobile-browse').removeClass("hide");
                 $('.manga-details-mobile').removeClass("hide");
                 fullscreenmode = false
+                $('.four').text("end scroll, normal screen")
             }
             
 
@@ -99,10 +105,11 @@ jQuery(document).ready(function($) {
         $('.manga-reader img').click(function () {
             console.log(fullscreenmode);
             if ($('.mobile-browse').hasClass("hide") && fullscreenmode === true) {
-                console.log('nice bro');
+                $('.five').text("click to show working")
                 $('.mobile-browse').removeClass("hide");
             } else if(fullscreenmode === true){
                 $('.mobile-browse').addClass("hide");
+                $('.five').text("click to hide working")
             }
             if ($('.manga-details-mobile').hasClass("hide")  && fullscreenmode === true) {
                 $('.manga-details-mobile').removeClass("hide");
