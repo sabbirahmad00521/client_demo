@@ -78,14 +78,14 @@ jQuery(document).ready(function($) {
                 $('.mobile-browse').removeClass("hide");
                 $('.manga-details-mobile').removeClass("hide");
                 fullscreenmode = false
-            } else if (scrollTop > 100 && scrollTop < mobileReaderscroll) { // যদি ১০০ এর বেশি 3743 এর কম স্ক্রল হয়
+            } else if (scrollTop > 100 && scrollTop < (mobileReaderscroll - 1000)) { // যদি ১০০ এর বেশি 3743 এর কম স্ক্রল হয়
                 console.log('hey bro');
                 $('.manga-reader').addClass('mobile')
                 $('.manga-details-mobile').addClass('mobile')
                 $('.mobile-browse').addClass("hide");
                 $('.manga-details-mobile').addClass("hide");
                 fullscreenmode = true
-            } else if (scrollTop >= mobileReaderscroll) { // যদি 3743 এর বেশি স্ক্রল করা হয় তবে 
+            } else if (scrollTop >= (mobileReaderscroll - 1000)) { // যদি 3743 এর বেশি স্ক্রল করা হয় তবে 
                 $('.manga-reader').removeClass('mobile')
                 $('.manga-details-mobile').removeClass('mobile')
                 $('.mobile-browse').removeClass("hide");
