@@ -1,3 +1,27 @@
+var manga = document.querySelector('.manga-reader')
+
+function fullscreens() {
+    if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+        (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+        if (manga.requestFullScreen) {
+            manga.requestFullScreen();
+        } else if (manga.mozRequestFullScreen) {
+            manga.mozRequestFullScreen();
+        } else if (manga.webkitRequestFullScreen) {
+            manga.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        }
+    } else {
+        if (document.cancelFullScreen) {
+            document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        }
+    }
+}
+
+
 jQuery(document).ready(function($) {
     $('.manga-name h5').text($('.manga-info> h5').text())
     $('.manga-name h6').text($('.manga-info> h6').text())
@@ -23,97 +47,90 @@ jQuery(document).ready(function($) {
     })
 
 
+    // menu
+    jQuery("a.responsive-menu").click(function() {
+        jQuery("ul.menu").fadeToggle();
+        return false;
+    });
+    jQuery(window).resize(function() {
+        var windowWidth = jQuery(window).width();
+        if (windowWidth > 991) {
+            jQuery("ul.menu").css({
+                "display": "flex"
+            });
+            $('.responsive-menu').removeClass('change');
+        } else {
+            jQuery("ul.menu").css({
+                "display": "none"
+            });
+
+        }
+    });
 
 
-
-
-
-    // if (window.matchMedia('(max-width: 575px)').matches) {
-    //     $(".chapter-browse-wrapper").appendTo(".mobile-browse");
-
-    //     $('.manga-reader').scroll(function() {
-    //         var scrollTop = $(this).scrollTop();
-    //         console.log(scrollTop);
-    //         if (($(this).scrollTop() + $(this).innerHeight() )>= ($(this)[0].scrollHeight - 200)) { 
-    //             console.log('end reached');
-    //         }
-    //         console.log($(this).innerHeight());
-    //         if (scrollTop > 100) {
-    //             var mangareader = document.querySelector('.manga-reader ')
-    //             $('.manga-reader').addClass('mobile')
-    //             $('.manga-details-mobile').addClass('mobile')
-    //         } else {
-    //             $('.manga-reader').removeClass('mobile')
-    //             $('.manga-details-mobile').removeClass('mobile')
-    //         }
-    //     })
-    // } else {
-    //     $(".chapter-browse-wrapper").appendTo(".chapter-browse");
-    // }
-
-
-
-
-
-
+    // mobile reader
     if (window.matchMedia('(max-width: 575px)').matches) {
         $(".chapter-browse-wrapper").appendTo(".mobile-browse");
         var fullscreenmode = false
         $('.manga-reader').scroll(function() {
-
             var scrollTop = $(this).scrollTop();
-            // console.log('scrolltop ' + scrollTop);
-            $('.one').text("scroll from top " + scrollTop)
-            // console.log('innerHeight ' + $(this).innerHeight());
-            // console.log('scrolltop + innerHeight ' + ($(this).scrollTop() + $(window).innerHeight()));
-            // console.log('scrollHeight ' + $(this)[0].scrollHeight);
-            // console.log('scrollHeight ' + ($(this)[0].scrollHeight -  $(window).innerHeight()) );
             var mobileReaderscroll = $(this)[0].scrollHeight - $(window).innerHeight();
-            $('.two').text('totalscrollsize ' + mobileReaderscroll)
-            // console.log('totalscrollsize ' + mobileReaderscroll);
-            var extrascroll = $(window).innerHeight() - $(this).innerHeight();
-            $('.three').text('extra scroll ' + extrascroll)
-            // console.log('extra scroll ' + extrascroll);
-            // console.log(('total and extra ' + (mobileReaderscroll + extrascroll)));
-            if (scrollTop < 100) { // যদি ১০০ এর কম স্ক্রল করা হয় তবে 
+            if (scrollTop < 100) {
                 $('.manga-reader').removeClass('mobile')
                 $('.manga-details-mobile').removeClass('mobile')
                 $('.mobile-browse').removeClass("hide");
                 $('.manga-details-mobile').removeClass("hide");
+                $('.mobile-browse').css({
+                    "position": "relative"
+                });
+                $('header').removeClass("hide");
+                $('header').css({
+                    "display": "block"
+                });
                 fullscreenmode = false
-                $('.four').text("start scroll, normal screen")
-            } else if (scrollTop > 100 && scrollTop < (mobileReaderscroll - 100)) { // যদি ১০০ এর বেশি 3743 এর কম স্ক্রল হয়
+            } else if (scrollTop > 100 && scrollTop < (mobileReaderscroll - 100)) {
                 console.log('hey bro');
                 $('.manga-reader').addClass('mobile')
                 $('.manga-details-mobile').addClass('mobile')
-                $('.mobile-browse').addClass("hide");
                 $('.manga-details-mobile').addClass("hide");
+                $('.mobile-browse').addClass("hide");
+                $('.mobile-browse').css({
+                    "position": "fixed"
+                });
+                $('header').addClass("hide");
+                $('header').css({
+                    "display": "none"
+                });
                 fullscreenmode = true
-                $('.four').text("mid scroll, full screen")
-            } else if (scrollTop >= (mobileReaderscroll - 100)) { // যদি 3743 এর বেশি স্ক্রল করা হয় তবে 
+            } else if (scrollTop >= (mobileReaderscroll - 100)) {
                 $('.manga-reader').removeClass('mobile')
                 $('.manga-details-mobile').removeClass('mobile')
                 $('.mobile-browse').removeClass("hide");
                 $('.manga-details-mobile').removeClass("hide");
+                $('.mobile-browse').css({
+                    "position": "relative"
+                });
+                $('header').removeClass("hide");
+                $('header').css({
+                    "display": "block"
+                });
                 fullscreenmode = false
-                $('.four').text("end scroll, normal screen")
             }
-            
 
         })
-        
-        $('.manga-reader img').click(function () {
+
+        $('.manga-reader img').click(function() {
             console.log(fullscreenmode);
             if ($('.mobile-browse').hasClass("hide") && fullscreenmode === true) {
                 $('.five').text("click to show working")
                 $('.mobile-browse').removeClass("hide");
-            } else if(fullscreenmode === true){
+            } else if (fullscreenmode === true) {
                 $('.mobile-browse').addClass("hide");
                 $('.five').text("click to hide working")
             }
-            if ($('.manga-details-mobile').hasClass("hide")  && fullscreenmode === true) {
+            if ($('.manga-details-mobile').hasClass("hide") && fullscreenmode === true) {
                 $('.manga-details-mobile').removeClass("hide");
-            } else if(fullscreenmode === true){
+            } else if (fullscreenmode === true) {
                 $('.manga-details-mobile').addClass("hide");
             }
 
@@ -122,31 +139,4 @@ jQuery(document).ready(function($) {
         $(".chapter-browse-wrapper").appendTo(".chapter-browse");
     }
 
-
-
 });
-
-
-
-
-// if (scrollTop < 100) { // যদি ১০০ এর কম স্ক্রল করা হয় তবে 
-//     $('.manga-reader').removeClass('mobile')
-//     $('.manga-details-mobile').removeClass('mobile')
-//     $('.mobile-browse').fadeIn();
-// } else if (scrollTop > 100 && scrollTop < mobileReaderscroll) { // যদি ১০০ এর বেশি স্ক্রল করা হয় তবে 
-//     $('.manga-reader').addClass('mobile')
-//     $('.manga-details-mobile').addClass('mobile')
-//     $('.mobile-browse').fadeOut();
-//     $('.manga-reader').click(function() {
-//         if ($('.mobile-browse').css('display') == 'none') {
-//             $('.mobile-browse').fadeIn();
-//         }
-//         if ($('.mobile-browse').css('display') == 'block') {
-//             $('.mobile-browse').fadeOut();
-//         }
-//     })
-// } else if (scrollTop >= mobileReaderscroll) { // যদি ৩০০০ এর বেশি স্ক্রল করা হয় তবে 
-//     $('.manga-reader').removeClass('mobile')
-//     $('.manga-details-mobile').removeClass('mobile')
-//     $('.mobile-browse').fadeIn();
-// }
