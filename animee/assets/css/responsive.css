@@ -108,6 +108,7 @@
     .manga-reader {
         height: 500px;
         padding: 0;
+        overflow-y: scroll;
     }
 
     .manga-reader img {
@@ -142,6 +143,10 @@
 
     .comment p {
         font-size: 14px;
+    }
+
+    .bottom-chapter-browser {
+        display: none !important;
     }
 }
 

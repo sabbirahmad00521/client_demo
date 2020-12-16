@@ -257,19 +257,19 @@ nav ul li a svg {
 }
 
 .manga-reader {
-    height: 600px;
+    height: auto;
     width: 100%;
-    overflow-y: scroll;
     background: #333333;
     color: #fff;
-    text-align: center;
-    padding: 30px;
+    padding: 30px;position: relative;
 }
 
 .manga-reader.mobile {
     /* height: calc(100vh - 60px); */
     height: 100vh;
 }
+
+.manga-reader .manga-top{text-align: center;} 
 
 .manga-reader h5 {
     font-size: 22px;
@@ -337,16 +337,16 @@ nav ul li a svg {
     margin: 10px auto;
 }
 
+.fullscreen-wrapper{text-align: right;position: sticky;right: 0;top: 95%;} 
+
 #fullscreen {
-    position: fixed;
-    right: 40px;
+    position: sticky;
     font-size: 22px;
-    bottom: 20px;
     z-index: 9;
     cursor: pointer;
     border: 0;
     color: #6C6C6E;
-    background: none;
+    background: none;right: 0;top: 0;
 }
 
 .manga .col-lg-4 {

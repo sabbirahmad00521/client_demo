@@ -10,6 +10,7 @@ function fullscreens() {
         } else if (manga.webkitRequestFullScreen) {
             manga.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
         }
+        document.querySelector(".manga-reader").style.overflowY= "scroll";
     } else {
         if (document.cancelFullScreen) {
             document.cancelFullScreen();
@@ -18,6 +19,7 @@ function fullscreens() {
         } else if (document.webkitCancelFullScreen) {
             document.webkitCancelFullScreen();
         }
+        document.querySelector(".manga-reader").style.overflowY= "hidden";
     }
 }
 
@@ -46,6 +48,11 @@ jQuery(document).ready(function($) {
         return false;
     })
 
+
+    $(function() {
+        var chapterClone = $(".chapter-browse").clone();
+        $('.bottom-chapter-browser').html(chapterClone);
+    });
 
     // menu
     jQuery("a.responsive-menu").click(function() {
