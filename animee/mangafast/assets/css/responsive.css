@@ -1,0 +1,159 @@
+@media (max-width: 1199px) {
+
+
+    nav ul li a {
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    .manga.container .col-lg-4 {
+        background-color: #fff;
+    }
+
+    a.responsive-menu {
+        display: inline-block;
+        color: #97C636;
+        z-index: 999;
+        font-size: 36px;
+        float: right;
+        margin-top: 0px;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+    }
+
+    nav a:after {
+        display: none;
+    }
+
+    header a.logo {
+        display: inline-block;
+    }
+
+    header .col-lg-4.col-md-12 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    header input {
+        width: 100%;
+    }
+
+    nav ul li a {
+        border-right: 0;
+    }
+
+    .sidebar {
+        position: static;
+        margin-top: 60px;
+    }
+
+    .sidebar>img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+
+    /* .manga.container{padding: 0;} */
+    .sidebar {
+        margin-top: 40px;
+    }
+
+    .manga-details-mobile {
+        display: block;
+
+    }
+
+    .manga-details-mobile.mobile {
+        position: fixed;
+        z-index: 9;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+    .manga-top,
+    .manga-info {
+        display: none;
+    }
+
+    .manga {
+        margin-top: 0px;
+    }
+
+    .manga-content {
+        padding-top: 0;
+    }
+
+    .chapter-browse-wrapper {
+        padding: 10px;
+    }
+
+    .manga-reader {
+        height: 500px;
+        padding: 0;
+        overflow-y: scroll;
+    }
+
+    .manga-reader img {
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+
+    /* .comment{display: none;} */
+    .hide {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+        -moz-transition: 0.6s;
+        -ms-transition: 0.6s;
+        -o-transition: 0.6s;
+    }
+
+    #fullscreen {
+        display: none;
+    }
+
+    a.google img {
+        height: auto;
+    }
+
+    .sidebar>h4,
+    .single-sidebar h4,
+    .comment h4 {
+        font-size: 16px;
+    }
+
+    .comment p {
+        font-size: 14px;
+    }
+
+    .bottom-chapter-browser {
+        display: none !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .social-mobile a {
+        margin: 1px;
+        padding: 8px 8px;
+        font-size: 13px;
+    }
+}
