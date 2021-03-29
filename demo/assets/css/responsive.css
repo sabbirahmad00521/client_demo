@@ -1,4 +1,265 @@
-@media (max-width: 1199px) {}
-@media (max-width: 991px) {}
-@media (max-width: 767px) {}
+@media (max-width: 1199px) {
+
+    .reg-content,
+    .support-content,
+    .feedback-content,
+    .social-content {
+        margin: 20px;
+    }
+
+    .products-content {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    header {
+        /* position: sticky;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9; */
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    header .logo-mobile {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 20;
+        display: block;
+        height: 48px;
+        width: 170px;
+        background-size: 170px 48px;
+        background-image: url(../img/logo-white.png);
+    }
+
+
+
+
+
+    header .logo-desktop {
+        display: none;
+    }
+
+    .mobile-menu-bar,
+    header select {
+        display: block;
+    }
+
+    .mobile-show {
+        display: block;
+    }
+
+    .desktop-show {
+        display: none;
+    }
+
+
+    header .col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+    }
+
+    header i.mobile-menu-bar {
+        color: #7ACCC8;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .body-area .col-lg-9 {
+        min-width: 100%;
+    }
+
+    .body-area .col-lg-3 {
+        position: absolute;
+        z-index: 8;
+        width: 280px;
+        left: -280px;
+        top: 0;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+
+    .body-area .col-lg-3.active {
+        left: 0;
+    }
+
+    header,
+    .body-area .col-lg-9 {
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+
+    header.active,
+    .body-area .col-lg-9.active {
+        margin-left: 280px;
+    }
+
+    .sidebar {
+        height: 100vh;
+    }
+
+    .sidebar>a {
+        display: flex;
+    }
+
+    .sidebar ul li a {
+        padding: 12px 23px;
+    }
+
+    .index-header,
+    .login-header {
+        background: #35404F;
+    }
+
+    .index-header a {
+        display: none;
+    }
+
+    .index-header select {
+        padding: 6px;
+        border-radius: 5px;
+        font-size: 14px;
+        width: 150px;
+    }
+
+    .home-content {
+        margin: 0 30px;
+    }
+
+    .home-content img {
+        margin: 0 auto 60px;
+    }
+
+    .content-area {
+        background-size: contain;
+    }
+
+    .login-header .feedback-link {
+        background-color: #fff;
+        height: 35px;
+        width: 35px;
+        border-radius: 3px;
+        text-align: center;
+        display: block;
+        line-height: 35px;
+    }
+
+    .login-content {
+        margin: 0 10px;
+    }
+
+    .singup-modal {
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    #signup h5 {
+        font-family: 'Cabin', sans-serif;
+        font-weight: 300;
+    }
+
+    #signup i {
+        color: #808080;
+        font-size: 18px;
+    }
+
+    #signup .modal-dialog {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    #signup .modal-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #signup .modal-footer a {
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0 0 0;
+        color: #000 !important;
+        background-color: #fff;
+        border: 1px solid #DDDDDD;
+    }
+
+    #signup .modal-footer a:nth-child(2) {
+        background-color: #E45F56;
+        color: #fff !important;
+    }
+
+    #signup .modal-body {
+        font-size: 18px;
+    }
+
+    .product-header {
+        background-color: #fff;
+    }
+
+    .product-header .logo-mobile {
+        background-image: url(../img/logo-color.png);
+    }
+
+    .product-header a i {
+        background-color: #fff;
+        height: 35px;
+        width: 35px;
+        border-radius: 3px;
+        text-align: center;
+        display: block;
+        line-height: 35px;
+        border: 1px solid #ddd;
+        font-size: 13px;
+    }
+
+    .products-wrapper,
+    .products-wrapper h6 {
+        margin-top: 5px;
+    }
+
+    a.back-link {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    a.back-link i {
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rates-tab {
+        width: 97%;
+    }
+
+    #accordion .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #accordion ol {
+        padding: 0 0 0 30px;
+    }
+}
+
 @media (max-width: 575px) {}

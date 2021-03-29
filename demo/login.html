@@ -31,11 +31,14 @@
 <body>
 
 
-    <header>
+    <header class="login-header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
-                    <a href="index.html"><img src="assets/img/helloearth-icon.png" alt="HelloEarth "> <span>HelloEarth</span></a>
+                <div class="col ">
+                    <i class="fa fa-bars mobile-menu-bar"></i>
+                    <a href="index.html" class="logo-desktop"><img src="assets/img/helloearth-icon.png" alt="HelloEarth "> <span>HelloEarth</span></a>
+                    <a href="index.html" class="logo-mobile"> </a>
+                    <a href="feedback.html" class="feedback-link mobile-show"><i class="fa fa-star-half-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -46,6 +49,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="sidebar">
+                    <a href="index.html"><img src="assets/img/helloearth-icon.png" alt="HelloEarth "> <span>HelloEarth</span></a>
                     <ul>
                         <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
                         <li class="active"><a href="login.html"><i class="fa fa-sign-in-alt"></i>Login</a></li>
@@ -56,35 +60,47 @@
                         <li><a href="support.html"><i class="fa fa-life-ring"></i>Support</a></li>
                         <li><a href="feedback.html"><i class="fa fa-star-half-alt"></i>Feedback</a></li>
                         <li><a href="social.html"><i class="fa fa-envelope"></i>Social Shout</a></li>
-                        <li><a href=""><i class="fa fa-flag"></i>English</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-flag"></i> <select name="" id="">
+                                    <option value="">English </option>
+                                    <option value="">Espanol</option>
+                                </select></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="content-area " style="background-image: url(assets/img/earth.png);">
-                  <div class="home-content login-content">
-                      <h5>login</h5>
-                    <form action="">
-                        <label for="">Enter your phone number below to get started</label>
-                        <input type="text" name="" id="" placeholder="Phone Number">
-                        <button class="boxed-button">Login</button>
-                    </form>
-                    <span class="or">or</span> 
-                    <a href="register.html" class="boxed-button">Create account</a>
-                    <p><a href="terms.html">Terms and Conditions </a> ©2021</p>
+                <div class="content-area " style="background-image: url(assets/img/earth.png); overflow: hidden;">
+                    <div class="home-content login-content">
+                        <h5>login</h5>
+                        <form action="" class="login-form">
+                            <label for="">Enter your phone number below to get started</label>
+                            <input type="number" name="" id="login-input" placeholder="Phone Number">
+                            <div class="errorMessage">Phone Number cannot be blank.</div>
+                            <button class="boxed-button">Login</button>
+                        </form>
+                        <span class="or">or</span>
+                        <a href="register.html" class="boxed-button">Create account</a>
+                        <p><a href="terms.html">Terms and Conditions </a> ©2021</p>
 
 
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script>
+
+
+    </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+
+
 </body>
 
 </html>

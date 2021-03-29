@@ -26,19 +26,25 @@
     <script src="assets/js/jquery-2.2.4.min.js"></script>
 
 
+
 </head>
 
 <body>
 
 
-    <header>
+    <header class="index-header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col ">
+                    <i class="fa fa-bars mobile-menu-bar"></i>
                     <a href="index.html"><img src="assets/img/helloearth-icon.png" alt="HelloEarth "> <span>HelloEarth</span></a>
+                    <select name="" id="">
+                        <option value="">English </option>
+                        <option value="">Espanol</option>
+                    </select>
                 </div>
             </div>
-        </div>
+        </div> 
     </header>
 
 
@@ -46,6 +52,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="sidebar">
+                    <a href="index.html"><img src="assets/img/helloearth-icon.png" alt="HelloEarth "> <span>HelloEarth</span></a>
                     <ul>
                         <li class="active"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="login.html"><i class="fa fa-sign-in-alt"></i>Login</a></li>
@@ -56,28 +63,43 @@
                         <li><a href="support.html"><i class="fa fa-life-ring"></i>Support</a></li>
                         <li><a href="feedback.html"><i class="fa fa-star-half-alt"></i>Feedback</a></li>
                         <li><a href="social.html"><i class="fa fa-envelope"></i>Social Shout</a></li>
-                        <li><a href=""><i class="fa fa-flag"></i>English</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-flag"></i>                    <select name="" id="">
+                            <option value="">English </option>
+                            <option value="">Espanol</option>
+                        </select></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="content-area " style="background-image: url(assets/img/earth.png);">
-                  <div class="home-content">
-                    <img src="assets/img/logo-white.png" alt="">
-                    <form action="">
-                        <label for="">Enter your phone number below to get started</label>
-                        <input type="text" name="" id="" placeholder="Phone">
-                        <button class="boxed-button">Get Started</button>
-                    </form>
-                    <span class="or">or</span>
-                    <div class="home-buttons">
-                        <a href="rates.html">Search Rates</a>
-                        <a href="">Watch Video</a>
+                <div class="content-area " style="background-image: url(assets/img/earth.png); overflow: hidden;">
+                    <div class="home-content">
+                        <img src="assets/img/logo-white.png" alt="">
+                        <form action="">
+                            <label for="">Enter your phone number below to get started</label>
+                            <input type="text" name="" id="" placeholder="Phone">
+                            <button class="boxed-button">Get Started</button>
+                        </form>
+                        <span class="or">or</span>
+                        <div class="home-buttons">
+                            <a href="rates.html">Search Rates</a>
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#youtube-video">Watch Video</a>
+                        </div>
+                        <div class="modal fade" id="youtube-video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                    <iframe width="640" height="300" src="https://www.youtube.com/embed/rpdntcGzVIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="boxed-button" data-dismiss="modal">Continue</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <p><a href="terms.html">Terms and Conditions </a> ©2021</p>
+
+
                     </div>
-                    <p><a href="terms.html">Terms and Conditions </a> ©2021</p>
-
-
-                </div>
                 </div>
             </div>
         </div>

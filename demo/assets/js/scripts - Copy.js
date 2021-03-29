@@ -84,49 +84,39 @@ jQuery(document).ready(function($) {
 });
 
 
-
-
-
-
 // pay go search
-var $numInput = $('#filterInput');
+var filterInput = document.getElementById('filterInput');
+// Add event listener
+filterInput.addEventListener('keyup', filterNames);
 
-$numInput.on('keyup', function(evt) {
-    evt.preventDefault();
-    var $fullList = $('#rates-country-list'),
-        $all = $fullList.find('li'),
-        value = $(this).val().replace(/\D/, ''),
-        matches = 0;
-    // Strip non-numerics from input, then show all and return if blank
-    if (value === '') {
-        $all.show();
-        return;
+function filterNames() {
+
+    if (filterInput.value !== '') {
+        $('.paygo-content .rates-country-letter-header').hide()
+    } else {
+        $('.paygo-content .rates-country-letter-header').show()
     }
-    var textvalue = $(this).val();
-    $all.each(function() {
-        var dialCode = $(this).data('dial-code'),
-            subValue;
-        // Skip items without a dial code, OR if dial code == 0 (DB match not found)
-        if (dialCode === undefined || dialCode === 0) {
-            $(this).hide();
-            return true;
-        }
-        // Convert dial codes to strings, then chop the entered value to only match the dial code length
-        dialCode = dialCode.toString();
-        subValue = value.substr(0, dialCode.length);
-       
-        // console.log($(this).find('span.rates-country-name').text().toUpperCase().indexOf(textvalue.toUpperCase()) == 0);
-        // console.log(textvalue.toUpperCase());
-        // console.log($(this).find('span.rates-country-name').text().toUpperCase());
-        if (dialCode.indexOf(subValue) == 0 || $(this).find('span.rates-country-name').text().toUpperCase().indexOf(textvalue.toUpperCase()) == 0) {
-            $(this).show();
-            matches++;
-        } else {
-            $(this).hide();
-        }
-    });
+    // Get value of input
+    var filterValue = document.getElementById('filterInput').value.toUpperCase();
 
-});
+    // Get names ul
+    var ul = document.getElementById('rates-country-list');
+    // Get lis from ul
+    var li = ul.querySelectorAll('li.rates-country-row');
+
+    // Loop through collection-item lis
+    for (var i = 0; i < li.length; i++) {
+        var a = li[i].getElementsByTagName('span')[0];
+        var b = li[i].getElementsByTagName('span')[1];
+        // If matched
+        if ((a.innerHTML.toUpperCase().indexOf(filterValue) > -1) || b.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
+            li[i].style.display = '';
+        } else {
+            li[i].style.display = 'none';
+        };
+    };
+};
+
 
 
 // Unlimited search
