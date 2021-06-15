@@ -59,7 +59,7 @@ button:focus {
 }
 
 header {
-    padding: 20px 30px 20px;
+    padding: 40px 30px ;
     position: relative;
 }
 
@@ -70,7 +70,7 @@ header a.logo {
 }
 
 header a.logo img {
-    height: 150px;
+    height: 140px;
 }
 
 .wide-logo {
@@ -91,12 +91,12 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 20px 20px 10px;
+    margin: 30px 15px 10px;
 }
 
 nav ul li a {
     display: block;
-    font-size: 22px;
+    font-size: 20px;
     color: #003963 !important;
     position: relative;
     padding: 10px 10px;
@@ -138,7 +138,7 @@ form {
 }
 
 form input {
-    width: 620px;
+    width: 540px;
     border: 1px solid #003963;
     padding: 10px 20px;
     border-radius: 35px;
@@ -172,7 +172,7 @@ form button {
 }
 
 .hero-content h1 {
-    font-size: 60px;
+    font-size: 56px;
     color: #fff;
     line-height: 1.3;
     margin-bottom: 40px;
@@ -180,13 +180,13 @@ form button {
 }
 
 .hero-content h1 span {
-    font-size: 120px;
+    font-size: 96px;
     display: block;
     line-height: 1.2;
 }
 
 .hero-content h3 {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.2;
     color: #fff;
     font-weight: 300;
@@ -206,26 +206,26 @@ form button {
 
 .floating-social-icons a.facebook {
     position: absolute;
-    left: 55%;
-    top: 55%;
+    left: 42%;
+    top: 45%;
 }
 
 .floating-social-icons a.twitter {
     position: absolute;
-    left: 50%;
-    bottom: 14%;
+    left: 36%;
+    bottom: 25%;
 }
 
 .floating-social-icons a.youtube {
     position: absolute;
-    left: 32%;
-    bottom: -4%;
+    left: 24%;
+    bottom: 7%;
 }
 
 .floating-social-icons a.insta {
     position: absolute;
-    left: 63%;
-    bottom: -12%;
+    left: 44%;
+    bottom: -0%;
 }
 
 .social-mobile {
