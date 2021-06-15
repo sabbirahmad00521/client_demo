@@ -187,6 +187,9 @@
     .single-campaign-slider h2 {
         font-size: 36px;
     }
+    form input {
+        width: 450px;
+    }
 }
 
 @media (max-width: 1199px) {
