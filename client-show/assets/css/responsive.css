@@ -1,7 +1,10 @@
+@media (min-width: 1920px) {
+    body{width: 1920px;margin: auto;}
+}
+
+
+
 @media (max-width: 1750px) {
-
-
-
     header {
         padding: 40px 30px;
     }
