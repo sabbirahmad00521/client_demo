@@ -144,7 +144,7 @@ jQuery(document).ready(function($) {
     });
     jQuery(window).resize(function() {
         var windowWidth = jQuery(window).width();
-        if (windowWidth > 768) {
+        if (windowWidth > 767) {
             jQuery("ul.menu").css({
                 "display": "block"
             });
