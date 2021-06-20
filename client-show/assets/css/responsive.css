@@ -1,17 +1,20 @@
 @media (min-width: 1360px) {
 
-    body,
-    html {
+    header,
+    footer,
+    .hero-area,
+    .sliders-section {
         width: 1350px;
         margin: auto;
     }
 
-    header,
-    .sliders-section,
-    .hero-area,
-    footer {
-        margin: 0 !important;
+    .only-border {
+        width: 100%;
+        margin: auto;
     }
+
+
+
 
     .floating-social-icons a.facebook {
         left: 42%;
@@ -75,10 +78,14 @@
         background-position: left top;
     }
 
+    .only-border {
+        background-position: right top;
+    }
+
 }
 
 @media (max-width: 1650px) {
-   
+
 
     .single-campaign-slider h2 {
         font-size: 40px;
@@ -87,7 +94,7 @@
 
 @media (max-width: 1500px) {
 
-  
+
     .single-campaign-slider h2 {
         font-size: 36px;
     }
@@ -207,6 +214,27 @@
         font-size: 32px;
     }
 
+    .campaign p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .campaign .d-flex {
+        display: block !important;
+    }
+
+    .campaign-social {
+        margin-left: 0px;
+    }
+
+    .campaign .col-lg-9,
+    .campaign .col-lg-3 {
+        padding: 0 15px;
+    }
+
+    .people .campaign-social>a {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -327,6 +355,57 @@
         height: 60px;
         margin-right: 15px;
     }
+
+    .campaign-video .play {
+        left: 50%;
+        height: 100px;
+    }
+
+    .section-header h3 {
+        font-size: 28px;
+    }
+
+    .campaign h4 {
+        font-size: 20px;
+    }
+
+    .campaign-social {
+        text-align: center;
+        position: relative;
+    }
+
+    .campaign-social:after {
+        content: '';
+        position: absolute;
+        right: 15%;
+        bottom: 0;
+        height: 3px;
+        width: 70%;
+        background-color: #5F9732;
+    }
+
+    .campaign-social a {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .people .col-lg-3:nth-child(4):after,
+    .people .col-lg-3:nth-child(2):after {
+        display: none;
+    }
+
+    .border-bottom {
+        border-bottom: 0;
+    }
+
+    .people .col-lg-3 {
+        padding: 0 15px;
+        margin: 20px 0;
+    }
+
+    .people .col-12 .section-header {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -382,6 +461,7 @@
         position: absolute;
         right: 30px;
         top: 15px;
+        z-index: 999;
     }
 
     form input {
@@ -488,6 +568,59 @@
 
     footer p {
         margin-right: 60px;
+    }
+
+    .section-header h3 {
+        font-size: 32px;
+    }
+
+    .campaign {
+        margin-top: 0;
+    }
+
+    .campaign-video .video-bg {
+        padding-right: 0;
+    }
+
+    .campaign .col-lg-9:after,
+    .campaign .col-lg-3 {
+        display: none;
+    }
+
+    .campaign p {
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .other-campaign {
+        margin-top: 0;
+    }
+
+    .about img {
+        margin: auto;
+    }
+
+
+    .about p {
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .about-column .col-md-6:nth-child(2):after {
+        left: calc(50% - 25%);
+        top: -30px;
+        height: 5px;
+        width: 50%;
+    }
+
+    .about-column .col-md-6 {
+        padding: 0 15px;
+        padding-bottom: 100px;
+    }
+
+    .people .col-lg-3:after {
+        display: none;
     }
 }
 
@@ -599,6 +732,22 @@
     footer p {
         font-size: 15px;
         margin-bottom: 10px;
+    }
+
+    .only-border {
+        background-image: url(../img/green-hero-border.png);
+    }
+
+    .campaign-video .play {
+        height: 60px;
+    }
+
+    .single-people-profile h4 {
+        font-size: 22px;
+    }
+
+    .people {
+        margin-bottom: 0;
     }
 }
 

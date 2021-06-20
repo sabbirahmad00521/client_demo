@@ -13,6 +13,34 @@ jQuery(document).ready(function($) {
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
     });
 
+
+    // Owl Carousel (campaign page slider)
+    $('.other-campaign-slider').owlCarousel({
+        items: 5,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 2000,
+        dots: true,
+        margin: 30,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            650: {
+                items: 2,
+            },
+            850: {
+                items: 3,
+            },
+            1200: {
+                items: 5,
+            }
+        }
+    });
+
 });
 
 
