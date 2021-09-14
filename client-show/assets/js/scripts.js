@@ -453,7 +453,7 @@ jQuery(document).ready(function($) {
 
     // form validation
 
-    $(".bookcameoform input[type='text']").blur(function() {
+    $(".bookcameoform input[type='text'],.bookcameo textarea").blur(function() {
         if (!$(this).val() && !$(this).hasClass('optional')) {
             $(this).addClass('required')
             $(this).after("<span class='required-text'>Required</span>");

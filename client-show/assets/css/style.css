@@ -2589,7 +2589,8 @@ input[type=range]:focus {
     height: 100px;
 }
 
-.bookcameo input[type="text"].required {
+.bookcameo input[type="text"].required,
+.bookcameo textarea.required {
     border-color: #FE037C !important;
 }
 
