@@ -82,7 +82,7 @@
 }
 
 body {
-    font-family: 'Cerebri Sans Book';
+    font-family: 'Cerebri Sans SemiBold';
     font-size: 16px;
     background-color: #101010;
     color: #fff;
@@ -96,6 +96,10 @@ h5,
 h6 {
     margin: 0 0 15px;
     font-family: 'Cerebri Sans Bold';
+}
+
+p {
+    font-family: 'Cerebri Sans Book';
 }
 
 a,
@@ -318,6 +322,13 @@ nav .right-buttons a.login-btn {
     display: flex;
     align-items: center;
     padding: 10px 25px;
+    overflow-x: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.category::-webkit-scrollbar {
+    width: 0 !important
 }
 
 .category a {
@@ -395,6 +406,7 @@ nav .right-buttons a.login-btn {
 .slider-header h2 {
     margin-bottom: 0;
     color: #fff;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .slider-header-right a {
@@ -451,6 +463,7 @@ nav .right-buttons a.login-btn {
     text-overflow: ellipsis;
     font-size: 14px;
     margin-bottom: 5px;
+    font-family: 'Cerebri Sans SemiBold';
 }
 
 .single-stars-slider .star-details .price {
@@ -460,7 +473,14 @@ nav .right-buttons a.login-btn {
     font-size: 14px;
 }
 
-.single-stars-slider .star-details .price span.cost {}
+.single-stars-slider .star-details .price span.cost {
+    font-family: 'Cerebri Sans SemiBold';
+}
+
+.single-stars-slider .star-details .price span.cost i {
+    font-style: normal;
+    font-family: 'Cerebri Sans Book';
+}
 
 .single-stars-slider .star-details .price span.time {
     display: flex;
@@ -536,6 +556,10 @@ nav .right-buttons a.login-btn {
 .feature-slider .owl-nav .owl-next {
     left: auto;
     right: 0%;
+}
+
+.feature-slider .owl-stage {
+    left: -95px !important;
 }
 
 .video-slider .video-thumbnail {
@@ -615,6 +639,7 @@ nav .right-buttons a.login-btn {
 
 .features a h4 {
     margin-bottom: 5px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 /* live calls */
@@ -666,6 +691,7 @@ nav .right-buttons a.login-btn {
 .single-call .call-top h5 {
     margin-bottom: 0;
     font-size: 18px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .single-call .call-top span {
@@ -685,6 +711,7 @@ nav .right-buttons a.login-btn {
 .single-call h6 {
     margin-bottom: 5px;
     font-size: 14px;
+    font-family: 'Cerebri Sans SemiBold';
 }
 
 .single-call .call-text .single-tag {
@@ -692,11 +719,14 @@ nav .right-buttons a.login-btn {
     align-items: center;
 }
 
-.single-call .call-text .single-tag svg {}
+.single-call .call-text .single-tag svg {
+    margin-right: 5px;
+}
 
 .single-call .call-text .single-tag span {
     color: #adaeb5;
     font-size: 12px;
+    font-family: 'Cerebri Sans SemiBold';
 }
 
 .single-call .buy-btn {
@@ -763,11 +793,13 @@ footer {}
 footer h5 {
     margin-bottom: 10px;
     font-size: 18px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 footer p {
     font-size: 16px;
     margin-bottom: 10px;
+    font-family: 'Cerebri Sans Book';
 }
 
 footer p a {
@@ -782,6 +814,7 @@ footer p a:hover {
 
 footer p.privacy-link {
     color: #adaeb5;
+    font-family: 'Cerebri Sans Book';
 }
 
 footer form {
@@ -918,6 +951,7 @@ footer h6 {
     font-size: 17px;
     color: #adaeb5;
     margin-top: 70px;
+    font-family: 'Cerebri Sans Book';
 }
 
 
@@ -956,6 +990,7 @@ footer h6 {
     color: #fff !important;
     display: inline-block;
     padding: 5px 0;
+    font-family: 'Cerebri Sans Book';
 }
 
 .categories ul li a span {
@@ -982,6 +1017,7 @@ footer h6 {
 .login h2 {
     font-size: 30px;
     margin-bottom: 30px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .login-wrapper p {
@@ -1112,6 +1148,10 @@ footer h6 {
     padding: 40px 15px 20px;
 }
 
+.signup .login-wrapper h6 {
+    font-family: 'Cerebri Sans Book';
+}
+
 .signup .btn-fb {
     text-transform: unset;
     font-size: 18px;
@@ -1237,6 +1277,11 @@ footer h6 {
 ============== */
 .star {
     margin-top: 10px;
+}
+
+.star-wrapper {
+    width: 1080px;
+    margin: auto;
 }
 
 .star-top-bar {
@@ -1551,6 +1596,7 @@ footer h6 {
 
 .review-top span b {
     color: #fff;
+    font-family: 'Cerebri Sans Book';
 }
 
 .star-details-top {
@@ -1562,12 +1608,13 @@ footer h6 {
 .star-details-top h2 {
     font-size: 28px;
     margin: 5px 0px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .star-details-top h6 {
     font-size: 17px;
     color: #adaeb5;
-    font-family: 'Cerebri Sans Book';
+    font-family: 'Cerebri Sans SemiBold';
     margin-bottom: 10px;
 }
 
@@ -1644,7 +1691,7 @@ footer h6 {
 .choose-option .single-price p {
     margin-bottom: 0;
     font-size: 14px;
-    font-family: 'Cerebri Sans Bold';
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .choose-option .single-price p span {
@@ -1683,6 +1730,7 @@ footer h6 {
 
 .cameo-calls-box h5 {
     font-size: 18px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .cameo-calls-box p {
@@ -1774,6 +1822,7 @@ footer h6 {
     font-size: 17px;
     text-decoration: none;
     color: #45FFFF;
+    font-family: 'Cerebri Sans Book';
 }
 
 .review-section-top a:hover {
@@ -1821,6 +1870,7 @@ footer h6 {
 
 .reviewer-details .review-date {
     font-size: 14px;
+    font-family: 'Cerebri Sans Book';
 }
 
 .review-side {}
@@ -1885,6 +1935,7 @@ footer h6 {
 
 .review-modal .reviewer-details {
     display: flex;
+    align-items: center;
 }
 
 .review-modal .review-thumbnail {
@@ -1920,10 +1971,12 @@ footer h6 {
 
 .releted-category h5 {
     font-size: 18px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .releted-category .category-wrapper {
     display: inline-block;
+    font-family: 'Cerebri Sans Book';
 }
 
 .releted-category .category-wrapper a {
@@ -1986,6 +2039,7 @@ footer h6 {
 
 .about-cameo h4 {
     font-size: 17px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .about-cameo h5 {
@@ -2007,6 +2061,7 @@ footer h6 {
 .keypoint-wrapper h5 {
     color: #FF037C;
     margin-bottom: 25px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .keypoint-wrapper svg {
@@ -2020,6 +2075,7 @@ footer h6 {
 
 .about-cameo h6 {
     font-size: 16px;
+    font-family: 'Cerebri Sans Book';
 }
 
 .cameo-tip h5 {
@@ -2391,21 +2447,43 @@ input[type=range]:focus {
 .bookcameo {
     max-width: 780px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 15px;
 
+}
+
+.bookcameo .form-breadcumbers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.bookcameo .form-breadcumbers li {
+    display: inline-block;
+    font-size: 14px;
+    color: #ADAEB5;
+    margin: 0 3px;
+}
+
+.bookcameo .form-breadcumbers li a {
+    color: #ADAEB5;
+}
+
+.bookcameo .form-breadcumbers li.active a {
+    color: #fff;
 }
 
 .common-form-style {
     background-color: #1C1C1C;
     padding: 30px 50px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .bookcameo h5 {
     text-align: center;
     font-size: 18px;
-    font-family: 'Cerebri Sans SemiBold';
+    font-family: 'Cerebri Sans Bold';
 }
 
 .whatfor {}
@@ -2414,6 +2492,7 @@ input[type=range]:focus {
     font-size: 20px;
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Cerebri Sans ExtraBold';
 }
 
 .whatfor .cameo-image {
@@ -2444,7 +2523,9 @@ input[type=range]:focus {
     margin: 0 15px;
 }
 
-.who-btns a.active {}
+.who-btns a.active .business-cost {
+    background-color: #FE037C;
+}
 
 .who-btns a.active .small-thumbnail,
 .what-btns a.active .small-thumbnail {
@@ -2506,6 +2587,19 @@ input[type=range]:focus {
 
 .bookcameo textarea {
     height: 100px;
+}
+
+.bookcameo input[type="text"].required {
+    border-color: #FE037C !important;
+}
+
+.bookcameo span.required-text {
+    font-size: 14px;
+    font-family: 'Cerebri Sans Book';
+    color: #FF037C;
+    text-align: right;
+    display: block;
+    margin-top: 3px;
 }
 
 .identigy {
@@ -2782,6 +2876,7 @@ input[type=range]:focus {
     position: relative;
     z-index: 2;
     right: -10px;
+    flex: 0 0 40px;
 }
 
 .single-cat-box .cat-second {
@@ -2790,6 +2885,7 @@ input[type=range]:focus {
     object-fit: cover;
     position: relative;
     z-index: 3;
+    flex: 0 0 64px;
 }
 
 .single-cat-box .cat-third {
@@ -2799,6 +2895,7 @@ input[type=range]:focus {
     position: relative;
     z-index: 4;
     left: -10px;
+    flex: 0 0 40px;
 }
 
 .single-cat-box h6 {
@@ -2808,6 +2905,30 @@ input[type=range]:focus {
     margin-top: 20px;
     margin-bottom: 0;
     color: #fff;
+}
+
+.home-categories-slider .owl-nav div {
+    position: absolute;
+    top: -50px;
+    height: 35px;
+    width: 35px;
+    line-height: 40px;
+    background: #1C1C1C;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    right: 50px;
+    border-radius: 50%;
+    border: 1px solid #3D3D3D;
+}
+
+.home-categories-slider .owl-nav .owl-next {
+    left: auto;
+    right: 0%;
+}
+
+.home-categories-slider .owl-stage {
+    left: -50px !important;
 }
 
 .owl-next.disabled svg,

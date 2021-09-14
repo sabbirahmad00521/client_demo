@@ -3,15 +3,16 @@ jQuery(document).ready(function($) {
     // Owl Carousel
 
     $('.feature-slider').owlCarousel({
-        items: 7,
+        items: 6,
         loop: false,
+        mouseDrag: false,
         navRewind: false,
         autoplay: true,
         autoplayTimeout: 10000,
         margin: 30,
         nav: true,
         navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>', '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>'],
-        slideBy: 6,
+        slideBy: 5,
         responsiveClass: true,
         responsive: {
             0: {
@@ -23,24 +24,25 @@ jQuery(document).ready(function($) {
                 slideBy: 1,
             },
             768: {
+                items: 2,
+                slideBy: 1,
+                stagePadding: 95,
+            },
+            992: {
                 items: 3,
                 slideBy: 2,
             },
-            992: {
-                items: 4,
-                slideBy: 6,
-            },
             1200: {
+                items: 4,
+                slideBy: 3,
+            },
+            1300: {
                 items: 5,
                 slideBy: 4,
             },
-            1300: {
+            1550: {
                 items: 6,
                 slideBy: 5,
-            },
-            1550: {
-                items: 7,
-                slideBy: 6,
             }
         }
     });
@@ -73,6 +75,7 @@ jQuery(document).ready(function($) {
             992: {
                 items: 4,
                 slideBy: 6,
+                mouseDrag: false,
             },
             1200: {
                 items: 5,
@@ -114,6 +117,9 @@ jQuery(document).ready(function($) {
                 items: 1,
                 slideBy: 1,
             },
+            992: {
+                mouseDrag: false,
+            },
             1200: {
                 items: 2,
                 slideBy: 1,
@@ -139,19 +145,72 @@ jQuery(document).ready(function($) {
             0: {
                 stagePadding: 0,
                 items: 2,
+                margin: 15,
             },
-            450: {
+            575: {
 
-                items: 2,
-                margin: 0,
+                items: 3,
+                margin: 15,
             },
             768: {
-
-                items: 1,
+                items: 4,
             },
-            992: {},
-            1600: {
+            992: {
+
+                mouseDrag: false,
+                margin: 35,
                 stagePadding: 65,
+            },
+            1100: {
+                margin: 15,
+                stagePadding: 65,
+            }
+        }
+    });
+    // category slider
+    $('.home-categories-slider').owlCarousel({
+        items: 7,
+        loop: false,
+        navRewind: false,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        margin: 18,
+        nav: true,
+        navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>', '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>'],
+        slideBy: 6,
+        stagePadding: 50,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                slideBy: 1,
+                stagePadding: 0,
+            },
+            575: {
+                items: 2,
+                slideBy: 1,
+            },
+            768: {
+                items: 3,
+                slideBy: 2,
+                margin: 60
+            },
+            992: {
+                items: 4,
+                slideBy: 3,
+                mouseDrag: false,
+            },
+            1200: {
+                items: 5,
+                slideBy: 4,
+            },
+            1400: {
+                items: 6,
+                slideBy: 5,
+            },
+            1550: {
+                items: 7,
+                slideBy: 6,
             }
         }
     });
@@ -159,15 +218,60 @@ jQuery(document).ready(function($) {
     // slider stagepadding fix
     $('.call-slider .owl-nav .owl-next').click(function() {
         if ($('.call-slider .owl-next').hasClass("disabled")) {
-            $('.call-slider .owl-stage').each(function () {
-                this.style.setProperty( 'left', '100px', 'important' );
+            $('.call-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '100px', 'important');
             });
         }
     })
     $('.call-slider .owl-nav .owl-prev').click(function() {
         if ($('.call-slider .owl-prev').hasClass("disabled")) {
-            $('.call-slider .owl-stage').each(function () {
-                this.style.setProperty( 'left', '-100px', 'important' );
+            $('.call-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '-100px', 'important');
+            });
+        }
+    })
+
+    $('.home-categories-slider .owl-nav .owl-next').click(function() {
+        if ($('.home-categories-slider .owl-next').hasClass("disabled")) {
+            $('.home-categories-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '50px', 'important');
+            });
+        }
+    })
+    $('.home-categories-slider .owl-nav .owl-prev').click(function() {
+        if ($('.home-categories-slider .owl-prev').hasClass("disabled")) {
+            $('.home-categories-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '-50px', 'important');
+            });
+        }
+    })
+
+    $('.feature-slider .owl-nav .owl-next').click(function() {
+        if ($('.feature-slider .owl-next').hasClass("disabled")) {
+            $('.feature-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '95px', 'important');
+            });
+        }
+    })
+    $('.feature-slider .owl-nav .owl-prev').click(function() {
+        if ($('.feature-slider .owl-prev').hasClass("disabled")) {
+            $('.feature-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '-95px', 'important');
+            });
+        }
+    })
+
+    $('.star-video-slider .owl-nav .owl-next').click(function() {
+        if ($('.star-video-slider .owl-next').hasClass("disabled")) {
+            $('.star-video-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '65px', 'important');
+            });
+        }
+    })
+    $('.star-video-slider .owl-nav .owl-prev').click(function() {
+        if ($('.star-video-slider .owl-prev').hasClass("disabled")) {
+            $('.star-video-slider .owl-stage').each(function() {
+                this.style.setProperty('left', '-65px', 'important');
             });
         }
     })
@@ -345,6 +449,19 @@ jQuery(document).ready(function($) {
         $('.sub-form').removeClass('show-section')
         $('#businesssection').addClass('show-section')
     })
+
+
+    // form validation
+
+    $(".bookcameoform input[type='text']").blur(function() {
+        if (!$(this).val() && !$(this).hasClass('optional')) {
+            $(this).addClass('required')
+            $(this).after("<span class='required-text'>Required</span>");
+        } else if ($(this).val()) {
+            $(this).removeClass('required')
+            $(this).next('span.required-text').remove();
+        }
+    });
 
 
 });
