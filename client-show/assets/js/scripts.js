@@ -31,18 +31,22 @@ jQuery(document).ready(function($) {
             992: {
                 items: 3,
                 slideBy: 2,
+                stagePadding: 95,
             },
             1200: {
                 items: 4,
                 slideBy: 3,
+                stagePadding: 95,
             },
             1300: {
                 items: 5,
                 slideBy: 4,
+                stagePadding: 95,
             },
             1550: {
                 items: 6,
                 slideBy: 5,
+                stagePadding: 95,
             }
         }
     });
@@ -383,8 +387,8 @@ jQuery(document).ready(function($) {
     // hide-filter
     $('.hide-filter').click(function() {
         $('.sort-sidebar').toggle();
-        $('.sort-result a').toggleClass('fill-page');
-        $('.sort-result').toggleClass('full-width');
+        $('.all-actors a').toggleClass('fill-page');
+        $('.all-actors').toggleClass('full-width');
         var text = $(this).text()
         $(this).text(text == "Hide Filters" ? "Show Filters" : "Hide Filters");
         $(this).text() == "Hide Filters" ? $('.sort-sidebar').addClass('sidebar-show') : $('.sort-sidebar').removeClass('sidebar-show');

@@ -558,7 +558,7 @@ nav .right-buttons a.login-btn {
     right: 0%;
 }
 
-.feature-slider .owl-stage {
+.feature-slider .owl-stage-outer .owl-stage {
     left: -95px !important;
 }
 
@@ -2385,21 +2385,27 @@ input[type=range]:focus {
     flex-wrap: wrap;
     align-content: flex-start;
 }
+.all-actors {
+    width: calc(100% - 240px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
 
-.sort-result.full-width {
+.all-actors.full-width {
     width: calc(100%);
 }
 
-.sort-result a {
+.all-actors a {
     margin-right: 30px;
     width: calc(20% - 30px);
 }
 
-.sort-result a.fill-page {
+.all-actors a.fill-page {
     width: calc(16.65% - 30px);
 }
 
-.sort-result .single-stars-slider .star-thumbnail {
+.all-actors .single-stars-slider .star-thumbnail {
     width: 100%;
     height: 300px;
 }
