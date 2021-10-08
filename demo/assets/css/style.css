@@ -56,10 +56,10 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 9;
     width: 100%;
     background-color: #000000;
     padding: 10px 0;
+    z-index: 99999;
 }
 
 header a.logo img {
