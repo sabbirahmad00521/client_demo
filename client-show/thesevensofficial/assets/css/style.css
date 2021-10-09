@@ -1,24 +1,16 @@
 /* Common Styles
 ================*/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,600,700,800,900|Roboto:300,400,500,700,900');
-
-@font-face {
-   font-family: "font name";
-   font-style: normal;
-   font-weight: 400;
-   src: url("../webfonts/.WOFF") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
 /*
 font-family: 'Roboto', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Mono', monospace;
 */
 
 body {
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto', sans-serif;
    font-size: 16px;
    background-color: #fff;
    color: #333;
@@ -50,6 +42,9 @@ img {
    display: block;
 }
 
+p{
+   font-family: 'Roboto Mono', monospace;
+}
 
 input:focus,
 textarea:focus,
@@ -57,22 +52,6 @@ button:focus {
    outline: 0 solid;
 }
 
-ul.inline-list {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-
-ul.inline-list li {
-   display: inline-block;
-   margin-left: -4px;
-}
-
-ul.inline-list li a {
-   display: block;
-   transition: 0.6s;
-   padding: 10px 20px;
-}
 
 
 /* Owl Carowsel
