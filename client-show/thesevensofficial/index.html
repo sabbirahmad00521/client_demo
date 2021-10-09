@@ -86,11 +86,18 @@
                     <a href="" class="boxed-btn">Join The Sevens Discord</a>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/img/heroImage.87f74c81.jpg" alt="">
+
+                    <div class="photobanner-container">
+                        <div class="photobanner">
+                            <img src="assets/img/heroImage.87f74c81.jpg" alt="">
+                            <img src="assets/img/heroImage.87f74c81.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <div class="salvation">
@@ -114,6 +121,36 @@
         </div>
     </div>
 
+    <style>
+        .photobanner-container {
+            height: 450px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photobanner {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: bannermove 3s linear infinite;
+        }
+
+        .photobanner img {
+            margin: 0 0.5em
+        }
+
+        @keyframes bannermove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(0, -50%);
+            }
+        }
+    </style>
 
     <div class="know">
         <div class="container">
@@ -291,7 +328,6 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
