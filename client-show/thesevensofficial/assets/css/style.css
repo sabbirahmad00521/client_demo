@@ -10,10 +10,10 @@ font-family: 'Roboto Mono', monospace;
 */
 
 body {
-   font-family: 'Roboto', sans-serif;
-   font-size: 16px;
-   background-color: #fff;
-   color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
 }
 
 h1,
@@ -22,8 +22,8 @@ h3,
 h4,
 h5,
 h6 {
-   margin: 0 0 15px;
-   font-weight: 700;
+    margin: 0 0 15px;
+    font-weight: 700;
 }
 
 a,
@@ -32,24 +32,24 @@ a:focus,
 a:active,
 a:hover,
 a:visited {
-   text-decoration: none;
-   color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 img {
-   max-width: 100%;
-   height: auto;
-   display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-p{
-   font-family: 'Roboto Mono', monospace;
+p {
+    font-family: 'Roboto Mono', monospace;
 }
 
 input:focus,
 textarea:focus,
 button:focus {
-   outline: 0 solid;
+    outline: 0 solid;
 }
 
 
@@ -93,10 +93,201 @@ button:focus {
    text-align: center;
 }*/
 
+.container {
+    max-width: 1300px;
+}
 
-header{}
-header a.logo{}
-header nav{}
-header nav ul{}
-header nav ul li{}
-header nav ul li a{}
+header {}
+
+header a.logo {
+    position: fixed;
+    z-index: 99;
+}
+
+header a.logo img {
+    max-width: 127px;
+}
+
+header nav {}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 32px 0;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 25px;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 4px 0;
+}
+
+header nav ul li.active a {
+    border-bottom: 2px solid #EB1C24;
+}
+
+header nav>ul>li:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+header nav ul ul {
+    display: none;
+    position: absolute;
+    left: -60%;
+    top: 100%;
+    z-index: 99;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: rgb(122 122 122 / 11%) -1px 4px 15px 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+header nav ul ul li {
+    margin-left: 0;
+}
+
+header nav ul ul a {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 170px;
+}
+
+header nav ul ul a svg:first-child {
+    margin-right: 7px;
+}
+
+header nav ul ul a svg:nth-child(2) {
+    position: absolute;
+    right: 15px;
+    display: none;
+}
+
+header nav ul ul a:hover {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header nav ul ul a:hover svg:nth-child(2) {
+    display: block;
+}
+
+.heroarea {
+    margin-top: 100px;
+}
+
+.photobanner-container {
+    position: relative;
+    height: 520px;
+    width: 520px;
+
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+}
+
+
+
+.photobanner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: bannermove 10s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, -50%);
+    }
+}
+
+.heroarea h1 {
+    font-size: 60px;
+    color: #000;
+    font-weight: 500;
+}
+
+.heroarea h1 #typewritter {
+    color: #eb1c24;
+}
+
+.heroarea p {
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+a.boxed-btn {
+    padding: 8px 24px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    font-size: 14px;
+    display: inline-block;
+}
+
+a.boxed-btn:hover {
+    background-color: #333333;
+}
+
+.salvation {
+    margin-top: 250px;
+}
+
+.salvation h1 {
+    font-size: 60px;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.salvation-content {
+    margin-left: 40px;
+    max-width: 640px;
+}
+
+.salvation-content h4 {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 48px;
+    font-weight: 800;
+    font-size: 28px;
+    color: #000;
+}
+
+.salvation-content p {
+    line-height: 27px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4f4f4f;
+    margin-bottom: 45px;
+}
+
+
+.know{background-color: #000000;}
