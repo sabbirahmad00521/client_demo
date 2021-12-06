@@ -3885,4 +3885,7 @@ input, select, textarea {
 
 	.gallery iframe{width: 100%;height: 450px;}
 	#wrapper > section > header h1, #wrapper > section > header h2{color: #fff;}
-.items li a{color: #fff;}
+.items li a,ul.items > li > h3{color: #fff;}
+
+section header h3,
+section header p{color: #fff;}
