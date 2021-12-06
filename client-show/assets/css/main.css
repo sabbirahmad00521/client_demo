@@ -4038,3 +4038,7 @@ section header p {
 #wrapper>section>header h2:after{
 	background-color: #fff;
 }
+
+.button.primary{color: #fff !important;}
+
+.button.primary:hover{color: #000 !important;}
