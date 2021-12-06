@@ -4042,3 +4042,24 @@ section header p {
 .button.primary{color: #fff !important;}
 
 .button.primary:hover{color: #000 !important;}
+
+@media screen and (max-width: 1152px) {
+
+
+	#wrapper>section>header h1,
+#wrapper>section>header h2 {
+    color: #333;
+}
+
+.items li a,
+ul.items>li>h3 {
+    color: #333;
+}
+
+section header h3,
+section header p {
+    color: #333;
+}
+
+footer{margin-top: 60px;}
+}
