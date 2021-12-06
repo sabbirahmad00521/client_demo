@@ -3890,3 +3890,4 @@ input, select, textarea {
 section header h3,
 section header p{color: #fff;} 
 
+.gallery a.landscape img,.gallery a img{height: auto;}
