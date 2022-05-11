@@ -1,0 +1,395 @@
+body {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+.menu {
+    background-color: #2c4156;
+    width: 450px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    transition: 0.6s;
+}
+
+.menu.expand {
+    width: 650px;
+    transition: 0.6s;
+}
+
+.left-bar {
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #586c80;
+}
+
+.left-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.left-bar ul li {
+    height: 35px;
+    width: 35px;
+    background-color: #7f7f82;
+    text-align: center;
+    line-height: 35px;
+    margin: 7px 0;
+}
+
+.left-bar ul li.active {
+    background-color: #345879;
+}
+
+.left-bar ul li i {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.left-bar ul li a {
+    display: block;
+}
+
+.left-two {
+    position: absolute;
+    bottom: 8%;
+}
+
+.left-two ul li.active {
+    background-color: #3fab9f;
+}
+
+
+.right-bar {
+    width: 50px;
+    background-color: #000;
+}
+
+.middle-menu {
+    width: 100%;
+}
+
+.middle-menu>div:not(:first-child) {
+    display: none;
+}
+
+.top-filter {
+    background-color: #000;
+    border-right: 1px solid #2e323b;
+    border-bottom: 0;
+}
+
+
+.top-filter a {
+    color: #fff;
+    display: inline-block;
+    padding: 13px 25px;
+    cursor: pointer;
+}
+
+.top-filter a.active {
+    background-color: #2f333c;
+}
+
+.searchbar {
+    padding: 5px 2px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.searchbar input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #8a929b;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    padding-top: 5px;
+    color: #8a929b;
+}
+
+
+.searchbar input::placeholder {
+    color: #8a929b;
+}
+
+
+.searchbar i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+.card button {
+    position: relative;
+}
+
+.card button.btn {
+    font-size: 14px;
+}
+
+.card .card-header button.collapsed:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+}
+
+.card .card-header button:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    float: right;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #000;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: initial !important;
+    text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.card-header {
+    padding: 0;
+    border: 0;
+}
+
+.card {
+    border-radius: 0;
+    margin: 4px 7px;
+    border: 0;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card:nth-child(odd) .card-header {
+    background: #8a929c;
+}
+
+.card:nth-child(even) .card-header {
+    background: #bdc2c3;
+}
+
+.card button {
+    padding: 4px 8px;
+}
+
+.card .fav-btn i.fas {
+    color: #e4e92b;
+}
+
+.only-btn {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.only-btn .card-header {
+    padding: 5px 8px;
+
+}
+
+.only-btn .card-header:active {
+    background-color: #3fa99f !important;
+    color: #fff !important;
+}
+
+.collapse {
+    background-color: #49535f;
+}
+
+.card-body {
+    padding: 15px 15px 3px 15px;
+    background-color: #49535f;
+}
+
+
+.card-body input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #8a929b;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    padding-top: 5px;
+    color: #8a929b;
+    margin-bottom: 25px;
+}
+
+
+.card-body input::placeholder {
+    color: #8a929b;
+}
+
+.card .card-body button {
+    cursor: pointer;
+    border: 1px solid #8a929b;
+    background-color: #3b5775;
+    color: #c8e0f9;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+}
+
+.card .card-body button:active {
+    background-color: #3fa99f;
+    color: #fff;
+}
+
+.card .card-body p:nth-child(1) {
+    margin-top: 0;
+}
+
+.card .card-body p {
+    color: #c8e0f9;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+#menu-items .card .card-body p {
+    text-align: center;
+}
+
+#leftTwo .card .card-body p,
+#leftFive .card .card-body p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#leftTwo .card-body button,
+#leftFive .card-body button {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+.menu-guideline {
+    color: #fff;
+    padding: 10px;
+}
+
+.menu-guideline i {
+    width: 25px;
+}
+
+.menu-guideline h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.menu-guideline p {
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding-bottom: 15px;
+    line-height: 1.3;
+}
+
+#leftFour {
+    color: #fff;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+#leftFour .single-color-section {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+#leftFour h6 {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#leftFour input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+#leftFour button {
+    cursor: pointer;
+    border: 1px solid #8a929b;
+    background-color: #3b5775;
+    color: #c8e0f9;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+}
+
+#leftFour button:active {
+    background-color: #3fa99f;
+    color: #fff;
+}

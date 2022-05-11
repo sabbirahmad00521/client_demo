@@ -9,306 +9,381 @@
     <meta name="keywords" content="Site keyword">
     <meta name="description" content="Description about site">
 
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
     <!-- Site Title-->
-    <title>Site Title</title>
+    <title>Admin menu</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.2.4.min.js"></script>
-
+    <script src="js/jquery-2.2.4.min.js"></script>
 
 </head>
 
 <body>
 
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-between">
-                    <a href="" class="logo"><img src="assets/img/download.png" alt=""></a>
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="#portfolio-top">ELIGE TU JINGLE</a></li>
-                            <li><a href="#portfolio-bot">ULTIMOS JINGLES</a></li>
-                            <!-- <li><a href="">EQUIPO</a></li> -->
-                            <li><a href="team.html">TEAM</a></li>
-                            <li><a href="#contact">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <!-- Menu -->
+    <nav class="menu">
+        <!-- left bar -->
+        <div class="left-bar">
+            <div class="left-five">
+                <ul>
+                    <li class="active"><a href="#leftOne"><i class="fas fa-wave-square"></i></a></li>
+                    <li><a href="#leftTwo"><i class="fas fa-list-ul"></i></a></li>
+                    <li><a href="#leftThree"><i class="fas fa-book-open"></i></a></li>
+                    <li><a href="#leftFour"><i class="fas fa-cogs"></i></a></li>
+                    <li><a href="#leftFive"><i class="fas fa-ghost"></i></a></li>
+                </ul>
+            </div>
+            <div class="left-two">
+                <ul>
+                    <li><i class="fa fa-clipboard-list"></i></li>
+                    <li class="expand"><i class="fa fa-expand-arrows-alt"></i></li>
+                </ul>
             </div>
         </div>
-    </header>
+        <!-- middle content -->
+        <div class="middle-menu">
+            <!-- Left one
+            ===============-->
+            <div class="main-menu" id="leftOne">
 
+                <!-- top filter tab -->
+                <div class="top-filter nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-contact" aria-selected="false">All</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-fav" role="tab" aria-controls="nav-contact" aria-selected="false">Favorites</a>
+                </div>
 
-    <div class="hero-slider owl-carousel">
-        <div class="single-slider-item" style="background-image: url(assets/img/FINALES-01.jpg);">
-            <a href="javascript:void(0)" class="music-playlist">ESCUCHA AHORA <audio class="listen" preload="none" src="assets/audio/a.wav"></audio></a>
-        </div>
-        <div class="single-slider-item" style="background-image: url(assets/img/FINALES-02.jpg);">
-            <a href="javascript:void(0)" class="music-playlist">ESCUCHA AHORA <audio class="listen" preload="none" src="assets/audio/a.wav"></audio></a>
-        </div>
-        <div class="single-slider-item" style="background-image: url(assets/img/FINALES-03.jpg);">
-            <a href="javascript:void(0)" class="music-playlist">ESCUCHA AHORA <audio class="listen" preload="none" src="assets/audio/a.wav"></audio></a>
-        </div>
-        <div class="single-slider-item" style="background-image: url(assets/img/FINALES-04.jpg);">
-            <a href="javascript:void(0)" class="music-playlist">ESCUCHA AHORA <audio class="listen" preload="none" src="assets/audio/a.wav"></audio></a>
-        </div>
-        <div class="single-slider-item" style="background-image: url(assets/img/FINALES-05.jpg);">
-            <a href="javascript:void(0)" class="music-playlist">ESCUCHA AHORA <audio class="listen" preload="none" src="assets/audio/a.wav"></audio></a>
-        </div>
-        <div class="single-slider-item" style="background-image: url(assets/img/FINALES-06.jpg);">
-            <a href="javascript:void(0)" class="music-playlist">ESCUCHA AHORA <audio class="listen" preload="none" src="assets/audio/a.wav"></audio></a>
-        </div>
-    </div>
+                <!-- dropdown menu item -->
+                <div class="tab-content">
+                    <div class="tab-pane show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="searchbar">
+                            <form action="">
+                                <input type="text" name="" id="menu-item-search" placeholder="Begin Typing to filter commands">
+                                <i class="fa fa-times"></i>
+                            </form>
+                        </div>
+                        <div id="menu-items">
 
-    <div class="big-btn">
-        <a href="#portfolio-top">ELIGE TU JINGLE</a>
-        <a href="#portfolio-bot">ULTIMOS JINGLES</a>
-    </div>
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header reviveArea">
+                                    <a class="fav-btn" id="item001" href=""><i class="far fa-star"></i></a> <a class="reviveArea" href="JavaScript:void(0);"> Revive In Area
+                                </div>
+                            </div>
 
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header reviveAll">
+                                    <a class="fav-btn" id="item002" href=""><i class="far fa-star"></i></a> <a class="reviveAll" href="JavaScript:void(0);"> Revive All
+                                </div>
+                            </div>
 
-    <div class="portfolio-top">
-        <div class="section-top" style="background-image: url(assets/img/21034617.jpg);">
-            <h3>ESPECIALISTAS EN AUDIO BRANDING </h3>
-        </div>
-        <div class="container" id="portfolio-top">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="portfolio-top-wrapper">
-                        <p>En <strong class="adn">ADN</strong>, creemos en ese mundo de inspiración sonoro que refleje cada <strong>MARCA</strong>, en el sonido del <strong>SPOT</strong> que vende, en la <strong>MELODIA</strong> que emociona, en el <strong>JINGLE</strong> que nunca sale de tu cabeza. . El sonido está en la esencia que lo hace unico desde el brief hasta la pauta <br> El sonido está en nuestro <strong class="adn">ADN</strong></p>
-                        <div class="portfolio-top-musics">
-                            <div class="row justify-content-center">
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="single-top-portfolio-music music-playlist" style="background-image: url(assets/img/INICIO.jpg);">
-                                        <h5 class="music-title">Title goes here</h5>
-                                        <audio class="listen" preload="none" data-size="120" src="assets/audio/piano.mp3"></audio>
+                             <!-- single menu item -->
+                             <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item003">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Revive
+                                        </button>
+                                       
+                                    </h5>
+                                </div>
+
+                                <div id="item003" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body">
+                                        <select style="width: 100%;" class="playermultiselect selectpicker" name="players[]" multiple="multiple">
+                                        </select>
+                                        <button class="btn-blue">Revive</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="single-top-portfolio-music music-playlist" style="background-image: url(assets/img/jingles.jpg);">
-                                        <h5 class="music-title">Title goes here</h5>
-                                        <audio class="listen" preload="none" data-size="120" src="assets/audio/piano.mp3"></audio>
+                            </div>
+                         
+
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header tpm">
+                                    <a class="fav-btn" id="item1" href=""><i class="far fa-star"></i></a> <a class="tpm" href="JavaScript:void(0);"> Teleport to marker
+                                </div>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header noclip">
+                                    <a class="fav-btn" id="item2" href=""><i class="far fa-star"></i></a> <a class="noclip" href="JavaScript:void(0);"> Noclip
+                                </div>
+                            </div>
+
+                              <!-- single menu item -->
+                              <div class="card  only-btn">
+                                <div class="card-header spectate">
+                                    <a class="fav-btn" id="item23" href=""><i class="far fa-star"></i></a> <a class="spectate" href="JavaScript:void(0);"> Spectate
+                                </div>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item3">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Add Synced Object
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="item3" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body">
+                                        <input type="text" name="" id="" placeholder="Something">
+                                        <button class="btn-blue">Send</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="single-top-portfolio-music music-playlist" style="background-image: url(assets/img/COMERCIALES.jpg);">
-                                        <h5 class="music-title">Title goes here</h5>
-                                        <audio class="listen" preload="none" data-size="120" src="assets/audio/piano.mp3"></audio>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item4">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Announce
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="item4" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body">
+                                        <input type="text" name="" id="" placeholder="Announce Text">
+                                        <button class="btn-blue">Send</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="single-top-portfolio-music music-playlist" style="background-image: url(assets/img/POLITICOS.jpg);">
-                                        <h5 class="music-title">Title goes here</h5>
-                                        <audio class="listen" preload="none" data-size="120" src="assets/audio/a.wav"></audio>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header">
+                                    <a class="fav-btn" id="item11" href=""><i class="far fa-star"></i></a> <a href="JavaScript:void(0);">Auto Redial</a> 
+                                </div>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item5">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Ban
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="item5" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body">
+                                        <input type="text" name="" id="" placeholder="ID">
+                                        <input type="text" name="" id="" placeholder="Ban Hour (1 = 1 hour)">
+                                        <input type="text" name="" id="" placeholder="Reason">
+                                        <button class="btn-blue">Ban</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="single-top-portfolio-music music-playlist" style="background-image: url(assets/img/artistica.jpg);">
-                                        <h5 class="music-title">Title goes here</h5>
-                                        <audio class="listen" preload="none" data-size="120" src="assets/audio/a.wav"></audio>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header">
+                                    <a class="fav-btn" id="item9" href=""><i class="far fa-star"></i></a> <a href="JavaScript:void(0);">Barber Menu</a>
+                                </div>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card  only-btn">
+                                <div class="card-header">
+                                    <a class="fav-btn" id="item10" href=""><i class="far fa-star"></i></a> <a href="JavaScript:void(0);">Bennys Menu</a>
+                                </div>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item4">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Bring
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="item4" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body">
+                                        <input type="text" name="" id="" placeholder="ID">
+                                        <button class="btn-blue">Bring</button>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <a href="#contact" class="single-top-portfolio-music" style="background-image: url(assets/img/FIN.jpg);"> </a>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item5">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Coordinate
+                                        </button>
+                                    </h5>
                                 </div>
+
+                                <div id="item5" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body text-center">
+                                        <p>x = -6565.13, y = 35164.6614, z = 351.5456</p>
+                                        <button class="btn-blue">Copy</button>
+                                        <p>x = -6565.13, y = 35164.6614, z = 351.5456</p>
+                                        <button class="btn-blue">Copy</button>
+                                        <p>x = -6565.13, y = 35164.6614, z = 351.5456</p>
+                                        <button class="btn-blue">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- single menu item -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item6">
+                                            <a class="fav-btn" href=""><i class="far fa-star"></i></a> Rockstar Editor
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="item6" class="collapse" data-parent="#menu-items">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-around">
+                                            <button class="btn-blue">Start</button>
+                                            <button class="btn-blue">stop</button>
+                                            <button class="btn-blue">open editor</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- tab for fav items -->
+                    <div class="tab-pane" id="nav-fav" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="searchbar">
+                            <form action="">
+                                <input type="text" name="" id="fav-item-search" placeholder="Begin Typing to filter commands">
+                                <i class="fa fa-times"></i>
+                            </form>
+                        </div>
+                        <div id="fav-items">
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- left two
+            ============== -->
+            <div id="leftTwo">
+                <!-- search for left two -->
+                <div class="searchbar">
+                    <form action="">
+                        <input type="text" name="" id="left-two-search" placeholder="Begin Typing to filter commands">
+                        <i class="fa fa-times"></i>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- left three
+            ==================== -->
+            <div id="leftThree">
+                <div class="menu-guideline">
+                    <h6><i class="fas fa-wave-square"></i>Commands</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, cumque alias, quo itaque molestiae iusto tempora, esse pariatur a dicta illum temporibus deleniti voluptatum laborum saepe asperiores nobis? Minima dolores voluptas pariatur velit dolorem, ut voluptatem animi vero ad repellat.</p>
+                    <h6><i class="fas fa-wave-square"></i>Commands</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, cumque alias, quo itaque molestiae iusto tempora, esse pariatur a dicta illum temporibus deleniti voluptatum laborum saepe asperiores nobis? Minima dolores voluptas pariatur velit dolorem, ut voluptatem animi vero ad repellat.</p>
+                    <h6><i class="fas fa-wave-square"></i>Commands</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, cumque alias, quo itaque molestiae iusto tempora, esse pariatur a dicta illum temporibus deleniti voluptatum laborum saepe asperiores nobis? Minima dolores voluptas pariatur velit dolorem, ut voluptatem animi vero ad repellat.</p>
+                </div>
+            </div>
+
+            <!-- left four
+            ============== -->
+            <div id="leftFour">
+                <div class="single-color-section main-bg">
+                    <h6>Main Background</h6>
+                    <input id='main-bg-colourPicker' type="color" name="">
+                    <button type="submit">Change</button>
+                </div>
+                <div class="single-color-section left-bg">
+                    <h6>Left Background</h6>
+                    <input id='left-bg-colourPicker' type="color" name="">
+                    <button type="submit">Change</button>
+                </div>
+                <div class="single-color-section top-btns-bg">
+                    <h6>Top Selected Background</h6>
+                    <input id='top-btns-bg-colourPicker' type="color" name="">
+                    <button type="submit">Change</button>
+                </div>
+            </div>
+
+            <!-- left five
+            ================ -->
+            <div id="leftFive">
+                <!-- search for left five -->
+                <div class="searchbar">
+                    <form action="">
+                        <input type="text" name="" id="left-five-search" placeholder="Begin Typing to filter commands">
+                        <i class="fa fa-times"></i>
+                    </form>
+                </div>
+                <!-- single menu item -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#item8">
+                                <a class="fav-btn" href=""><i class="far fa-star"></i></a> jdev
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="item8" class="collapse" data-parent="#menu-items">
+                        <div class="card-body">
+                            <p>id: 10</p>
+                            <p>Steam HEX: steam:1234534522</p>
+                            <p>Discord ID: 123412341234</p>
+                            <p></p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn-blue">Bring</button>
+                                <button class="btn-blue">go to</button>
+                                <button class="btn-blue">spectate</button>
+                                <button class="btn-blue">kick</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- blank right bar -->
+        <div class="right-bar"> </div>
+    </nav>
+    <div id="leftbg" style="display: flex;height: 100vh;background-color: rgba(255, 0, 0, 0);">&nbsp;
     </div>
-
-    <div class="section-top" style="background-image: url(assets/img/21034617.jpg);">
-        <h3>ESCUCHA LOS ULTIMOS TRABAJOS
-        </h3>
-    </div>
-
-    <div class="step-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="three-step">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-step">
-                                            <span class="numbers">1</span>
-                                            <h4>CREAMOS </h4>
-                                            <p>A partir de tu briefing, te ayudamos a encontrar el mejor camino para tu estrategia de marca. Cuenta con <span class="adn">ADN</span> para tu proyecto!</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-step">
-                                            <span class="numbers">2</span>
-                                            <h4>JINGLES </h4>
-                                            <p>A partir de tu briefing, te ayudamos a encontrar el mejor camino para tu estrategia de marca. Cuenta con <span class="adn">ADN</span> para tu proyecto!</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <div class="single-step">
-                                            <span class="numbers">3</span>
-                                            <h4>DUPLA PERFECTA </h4>
-                                            <p>A partir de tu briefing, te ayudamos a encontrar el mejor camino para tu estrategia de marca. Cuenta con <span class="adn">ADN</span> para tu proyecto!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="portfolio-bottom" id="portfolio-bot">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center ">
-                        <span class="duration"><b>Año </b></span>
-                        <span class="genre"><b>Duración </b></span>
-                        <span class="artist"><b>Producción</b></span>
-                        <span class="name"><b>Nombre </b></span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-                    <div class="single-music-row d-flex flex-row-reverse align-items-center music-playlist">
-                        <audio class="listen" preload="none" src="assets/audio/a.wav"></audio>
-                        <span class="duration">5:30</span>
-                        <span class="genre">Metal</span>
-                        <span class="artist">Justin bieber</span>
-                        <span class="name">Here goes track name</span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <footer id="contact">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-12">
-                    <h2>CONTACTENOS</h2>
-                </div>
-                <div class="col-lg-4">
-                    <img src="assets/img/download.png" alt="">
-                    <h4>Agencia de publicidad especializada <br> en Audio Branding</h4>
-                    <a href=""></a>
-                </div>
-                <div class="col-lg-4">
-                    <p> Gobernador Candioti 1926, <br> Santa Fe – Argentina.</p>
-                    <p>Juan Benigno Vela 07 56 <br> Ambato- Ecuador</p>
-                    <p><a href="">LEGAL TERMS</a></p>
-                    <ul class="social">
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-soundcloud"></i></a></li>
-                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 contact-side">
-                    <a href="tel:0054 9 342 4767454"><i class="fa fa-phone-alt"></i>0054 9 342 4767454</a>
-                    <a href="mailto:info@adngrupocreativo.com"><i class="fa fa-envelope"></i>info@adngrupocreativo.com</a>
-                    <br><br>
-                    <a href="tel:0998741431"><i class="fa fa-phone-alt"></i>0998741431</a>
-                    <a href="tel:032- 2120021"><i class="fa fa-phone-alt"></i>032- 2120021</a>
-                    <a href="mailto:info@adngrupocreativo.com"><i class="fa fa-envelope"></i>info@adngrupocreativo.com</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
 
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/player.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
