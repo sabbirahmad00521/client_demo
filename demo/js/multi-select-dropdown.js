@@ -283,10 +283,33 @@
             m.clearAll.call(this)
         }
     }, e(document).on("click.dropdown", function() {
-        e(".dropdown-single,.dropdown-multiple,.dropdown-multiple-label").removeClass("active")
+        e(".dropdown-single,.dropdown-multiple,.dropdown-multiple-label").removeClass("active");
+        $('.multiple-select button').children('i').removeClass('fa-angle-up')
+        $('.multiple-select button').children('i').addClass('fa-angle-down')
     }), e.fn.multiselectdropdown = function(o) {
         return this.each(function(n, t) {
             e(t).data("dropdown", new r(e.extend(!0, {}, p, o), t))
         }), this
     }
 })(jQuery);
+
+
+$(function() {
+    $('<button class="open-close-select"><i class="fa fa-angle-down"></i></button>').appendTo($(".multiple-select"))
+
+
+    $('.multiple-select .open-close-select').click(function() {
+        if ($('.multiple-select').hasClass('active')) {
+            $('.multiple-select button').children('i').removeClass('fa-angle-up')
+            $('.multiple-select button').children('i').addClass('fa-angle-down')
+            $('.multiple-select').removeClass('active')
+        } else {
+            $('.multiple-select button').children('i').removeClass('fa-angle-down')
+            $('.multiple-select button').children('i').addClass('fa-angle-up')
+            $('.multiple-select').addClass('active')
+
+        }
+    })
+
+
+});

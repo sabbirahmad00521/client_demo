@@ -415,17 +415,7 @@ button:focus {
     animation: iui-fadeIn .2s ease-in forwards
 }
 
-.dropdown-multiple-label.active .dropdown-display-label:after,
-.dropdown-multiple-label.active .dropdown-display:after,
-.dropdown-multiple.active .dropdown-display-label:after,
-.dropdown-multiple.active .dropdown-display:after,
-.dropdown-single.active .dropdown-display-label:after,
-.dropdown-single.active .dropdown-display:after {
-    border-top: none;
-    border-bottom: 10px solid #999;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent
-}
+
 
 .dropdown-multiple-label.active .dropdown-display,
 .dropdown-multiple-label.active .dropdown-display-label,
@@ -455,16 +445,6 @@ button:focus {
     background-color: #bdc2c3
 }
 
-.dropdown-display-label:after,
-.dropdown-display:after {
-    content: '';
-    position: absolute;
-    border-top: 10px solid #999;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    top: 12px;
-    right: 8px
-}
 
 .dropdown-clear-all {
     background-color: #fff;
@@ -695,4 +675,15 @@ button:focus {
     -ms-animation: iui-fadeIn .2s ease-in forwards;
     -o-animation: iui-fadeIn .2s ease-in forwards;
     animation: iui-fadeIn .2s ease-in forwards
+}
+
+.multiple-select button.open-close-select {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: #000;
+    border: 0;
 }
