@@ -246,10 +246,15 @@ $('#menu-items .fav-btn').click(function() {
         }).appendTo('#menu-items');
     }
 
+
+
+
     return false
 })
 
 
+
+    
 // search functionality of menu
 $("#menu-item-search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
@@ -392,7 +397,6 @@ if ($(this).parent().closest('.card').hasClass('only-btn')) {
 
 // sorting code
 $('#menu-items .card:not(.favoritelist)').sort(function(a, b) {
-    console.log(a.textContent.trim().slice(0, 5));
     if (a.textContent.trim().slice(0, 5) < b.textContent.trim().slice(0, 5)) {
         return -1;
     } else {
@@ -402,4 +406,28 @@ $('#menu-items .card:not(.favoritelist)').sort(function(a, b) {
 
 
 return false
+});
+
+
+
+
+// new functions
+// ===============
+
+
+// mutli select with search 
+$('.multiple-select').multiselectdropdown({
+
+    // highest number of option you can select
+    limitCount: 4,
+    limitCountErrorMessage: 'You can not select more than 4 items',
+
+    // if you want selected option as box or as string
+    multipleMode: 'label',
+
+    // search option
+    searchable: true,
+    input: '<input type="text" maxLength="20" placeholder="Search">',
+    searchNoData: '<li style="color:#333">No Results Found</li>',
+
 });
