@@ -20,6 +20,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/PNotify.css" />
+    <link rel="stylesheet" href="css/BrightTheme.css" />
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -74,16 +76,7 @@
                         </div>
                         <div id="menu-items">
 
-
-
-
-
-
-
-
-
-
-                            <!-- working on it (example of multi select dropdown with search) -->
+                            <!-- (example of multi select dropdown with search) -->
                             <div class="card">
                                 <div class="card-header">
                                     <h5 class="mb-0">
@@ -123,25 +116,19 @@
 
 
 
+                            <!-- notification button-->
+                             <div class="card  only-btn">
+                                <div class="card-header reviveArea" onclick="showNoticeOne('I am Title one', ' i am title one content. i can be multiline. and i will hide myself within few second');">
+                                    <a class="fav-btn" id="item9988" href=""><i class="far fa-star"></i></a> <a class="reviveArea" href="JavaScript:void(0);"> AAA AAA button </a>
+                                </div>
+                            </div> 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            <!-- notification button-->
+                            <div class="card  only-btn">
+                                <div class="card-header reviveArea" onclick="showNoticeOne('I am Title Two', ' i am title one content. i can be multiline. and i will hide myself within few second');">
+                                    <a class="fav-btn" id="item9995" href=""><i class="far fa-star"></i></a> <a class="reviveArea" href="JavaScript:void(0);"> AAA AAA AAA button </a>
+                                </div>
+                            </div>
 
 
                             <!-- single menu item -->
@@ -445,12 +432,14 @@
         <!-- blank right bar -->
         <div class="right-bar"> </div>
     </nav>
+
+
     <div id="leftbg" style="display: flex;height: 100vh;background-color: rgba(255, 0, 0, 0);">&nbsp;
     </div>
 
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/PNotify.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>

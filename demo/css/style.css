@@ -48,6 +48,7 @@ button:focus {
     justify-content: space-between;
     height: 100%;
     transition: 0.6s;
+
 }
 
 .menu.expand {
@@ -109,7 +110,9 @@ button:focus {
 
 .middle-menu {
     width: 100%;
+
 }
+
 
 .middle-menu>div:not(:first-child) {
     display: none;
@@ -310,6 +313,14 @@ button:focus {
     color: #c8e0f9;
     font-size: 13px;
     margin-top: 15px;
+}
+
+
+
+#menu-items,
+#fav-items {
+    overflow-y: scroll;
+    height: calc(100vh - 93px);
 }
 
 #menu-items .card .card-body p {
@@ -519,12 +530,20 @@ button:focus {
     border: 0;
     outline: 0
 }
-.card-body .dropdown-search input{margin-bottom: 0;color: #333;}
-.card-body .dropdown-search input::placeholder{color: #333;}
+
+.card-body .dropdown-search input {
+    margin-bottom: 0;
+    color: #333;
+}
+
+.card-body .dropdown-search input::placeholder {
+    color: #333;
+}
 
 .dropdown-display-label {
     cursor: text;
-    padding: 3px 25px 2px 0;cursor: pointer;
+    padding: 3px 25px 2px 0;
+    cursor: pointer;
 }
 
 .dropdown-display-label .dropdown-search {

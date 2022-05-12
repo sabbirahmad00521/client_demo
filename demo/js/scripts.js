@@ -431,8 +431,26 @@ $('.multiple-select').multiselectdropdown({
 
 
 
-// $('.card').each(function() {
-//     $('.card:nth-child(odd) .card-header').css("background-color", "#8a929c");
-//     $('.card:nth-child(even) .card-header').css("background-color", "#bdc2c3");
+// notification function
+function showNoticeOne(title, text) {
+    if (typeof window.customOptionForNotification === 'undefined') {
+        window.customOptionForNotification = new PNotify.Stack({
+            dir1: 'up',
+            dir2: 'left',
+            firstpos1: 25,
+            firstpos2: 50,
+            modal: false,
+            maxOpen: 2,
+            maxStrategy: 'wait',
+            maxClosureCausesWait: false
+        });
+    }
 
-// });
+    PNotify.notice({
+        title: title,
+        text: text,
+        delay: 1000,
+        icon: 'fa fa-info-circle',
+        stack: window.customOptionForNotification,
+    });
+}
