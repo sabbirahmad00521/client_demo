@@ -153,7 +153,7 @@ window.addEventListener('message', function(event) {
 jQuery(document).ready(function($) {
     // sorting code
     $('#menu-items .card:not(.favoritelist)').sort(function(a, b) {
-        if (a.textContent.trim().slice(0, 5) < b.textContent.trim().slice(0, 5)) {
+        if (a.textContent.trim().slice(0, 25) < b.textContent.trim().slice(0, 25)) {
             return -1;
         } else {
             return 1;
@@ -235,12 +235,13 @@ jQuery(document).ready(function($) {
             // sort list
             $(this).parent().closest('.card').removeClass('favoritelist')
             $('#menu-items .card:not(.favoritelist)').sort(function(a, b) {
-                if (a.textContent.trim().slice(0, 5) < b.textContent.trim().slice(0, 5)) {
+                if (a.textContent.trim().slice(0, 25) < b.textContent.trim().slice(0, 25)) {
                     return -1;
                 } else {
                     return 1;
                 }
             }).appendTo('#menu-items');
+
         }
 
 
@@ -394,7 +395,7 @@ $(document).on("click", '#fav-items .fav-btn', function(event) {
 
     // sorting code
     $('#menu-items .card:not(.favoritelist)').sort(function(a, b) {
-        if (a.textContent.trim().slice(0, 5) < b.textContent.trim().slice(0, 5)) {
+        if (a.textContent.trim().slice(0, 25) < b.textContent.trim().slice(0, 25)) {
             return -1;
         } else {
             return 1;
@@ -454,3 +455,9 @@ function showNoticeOne(title, text) {
         stack: window.customOptionForNotification,
     });
 }
+
+// button active
+
+$('.togglable-btns').click(function() {
+    $(this).toggleClass('active')
+});

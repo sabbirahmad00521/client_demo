@@ -37,6 +37,21 @@ button:focus {
     outline: 0 solid;
 }
 
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c4156;
+    border-left: 1px solid #fff;
+}
+
 .menu {
     background-color: #2c4156;
     width: 450px;
@@ -319,9 +334,10 @@ button:focus {
 
 #menu-items,
 #fav-items {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: calc(100vh - 93px);
 }
+
 
 #menu-items .card .card-body p {
     text-align: center;
@@ -705,4 +721,22 @@ button:focus {
     background: transparent;
     color: #000;
     border: 0;
+}
+
+
+
+.togglable-btns.active .card-header {
+    position: relative;
+}
+
+.togglable-btns.active .card-header:after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #2c4156;
+    position: absolute;
+    right: 9px;
+    top: calc(50% - 5px);
+    z-index: 99;
+    border-radius: 20px;
 }
