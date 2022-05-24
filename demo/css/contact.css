@@ -1,0 +1,166 @@
+.mainsection {
+    background-color: #CCB38D;
+    opacity: 0.8;
+    filter: blur(15px);
+    height: 1200px;
+}
+
+.contactsection {
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    height: 50px;
+    width: 200px;
+    color: #000000;
+    z-index: 1000;
+    font-size: 1.1em;
+}
+
+.breadcrumbs span,
+a {
+    padding: 2px 5px;
+    color: #591e08;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: #CCB38D;
+    background: #591e08;
+    transition: 0.2s;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+.contactsection h1 {
+    position: relative;
+    top: 170px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #591e08;
+}
+
+.formcontainer {
+    position: relative;
+    top: 220px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: #591e08;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.form-group label {
+    color: #CCB38D;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #CCB38D;
+    background-color: #dddddd;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: #591e08;
+    background-color: #CCB38D;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    /* color: #591e08; */
+    background-color: #f0e1cb;
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@media only screen and (min-width: 2300px) {
+    .mainsection {
+        height: 1300px;
+    }
+
+    .formcontainer {
+        top: 260px;
+    }
+
+    .contactsection h1 {
+        top: 200px;
+    }
+
+    .breadcrumbs {
+        top: 240px;
+    }
+}

@@ -1,0 +1,369 @@
+.mainsection {
+    background-color: #CCB38D;
+    opacity: 0.8;
+    filter: blur(15px);
+    height: 1300px;
+}
+
+.servicessection {
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.breadcrumbs {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    height: 50px;
+    width: 200px;
+    color: #000000;
+    z-index: 1000;
+    font-size: 1.1em;
+}
+
+.breadcrumbs span,
+a {
+    padding: 2px 5px;
+    color: #591e08;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: #CCB38D;
+    background: #591e08;
+    transition: 0.2s;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+.servicessection h1 {
+    position: relative;
+    top: 142px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #591e08;
+}
+
+.serviceslist {
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: 145px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.svc1,
+.svc2,
+.svc3,
+.svc4 {
+    height: 340px;
+    width: 340px;
+    margin: 15px 10px;
+    background: #591e08;
+    border-radius: 4%;
+    display: inline-block;
+    vertical-align: top;
+    color: #CCB38D;
+    transition: 1100ms;
+}
+
+.lastbox {
+    padding: 55px 2px 0 2px;
+    text-align: center;
+}
+
+.serviceslist a {
+    text-decoration: none;
+}
+
+
+.serviceslist a:focus {
+    background: #591e08 !important;
+    -webkit-background: #591e08 !important;
+    -moz-background: #591e08 !important;
+    -ms-background: #591e08 !important;
+    color: #CCB38D;
+}
+
+.serviceslist a:active {
+    background: #CCB38D !important;
+    -webkit-background: #CCB38D !important;
+    -moz-background: #CCB38D !important;
+    -ms-background: #CCB38D !important;
+    color: #591e08;
+}
+
+.serviceslist a:focus:hover,
+.svc1:hover,
+.svc2:hover,
+.svc3:hover,
+.svc4:hover {
+    transform: scale(1.13);
+    -ms-transform: scale(1.13);
+    -webkit-transform: scale(1.13);
+    transition: 500ms;
+    border: 2px solid #591e08;
+    background: #CCB38D !important;
+    -webkit-background: #CCB38D !important;
+    -moz-background: #CCB38D !important;
+    -ms-background: #CCB38D !important;
+    color: #591e08;
+    box-shadow: 1px 5px 8px #591e08;
+}
+
+.svcsublist {
+    margin-top: 15px;
+}
+
+.svcsublist li {
+    padding-right: 10px;
+}
+
+.serviceslist h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.svcimg {
+    height: 95px;
+    margin: 5px 0;
+}
+
+.svcsublist {
+    text-align: left;
+    font-size: 1.18em;
+}
+
+.service-content {
+    width: 95%;
+    margin: auto;
+    margin-top: 230px;
+}
+
+.service-content h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #591e08;
+    position: static;
+}
+
+@media only screen and (min-width: 120px) and (max-width: 650px) {
+    .breadcrumbs {
+        top: 155px;
+        left: 0;
+        height: auto;
+        width: 90px;
+        font-size: 0.6em;
+    }
+
+    .breadcrumbs span,
+    a {
+        padding: 2px 1px;
+    }
+
+    .servicessection {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .servicessection h1 {
+        font-size: 0.9em;
+    }
+
+    .mainsection {
+        height: 1000px;
+    }
+
+    .serviceslist {
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .svc1,
+    .svc2,
+    .svc3,
+    .svc4 {
+        width: 300px;
+        height: 130px;
+        margin: 10px;
+    }
+
+    .serviceslist h3 {
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
+
+    .svcimg {
+        float: right;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .svcsublist {
+        text-align: left;
+        font-size: 0.7em;
+        padding-inline-start: 25px;
+    }
+
+    .lastbox {
+        padding: 30px 10px;
+    }
+
+    .lastbox h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 750px) {
+    .mainsection {
+        height: 1200px;
+    }
+
+    .breadcrumbs {
+        top: 200px;
+    }
+
+    .servicessection {
+        padding: 0;
+    }
+
+    .servicessection h1 {
+        top: 170px;
+        font-size: 1.5em;
+    }
+
+    .serviceslist {
+        width: 95%;
+        top: 200px;
+    }
+
+    .svc1,
+    .svc2,
+    .svc3,
+    .svc4 {
+        height: 275px;
+        width: 45%;
+    }
+
+    .svcimg {
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .lastbox h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1500px) {
+    .mainsection {
+        height: 1000px;
+    }
+
+    .breadcrumbs {
+        top: 175px;
+    }
+
+    .servicessection h1 {
+        top: 155px;
+        font-size: 1.5em;
+    }
+
+    .serviceslist {
+        width: 90%;
+        top: 172px;
+    }
+
+    .svc1,
+    .svc2,
+    .svc3,
+    .svc4 {
+        height: 205px;
+        width: 46%;
+    }
+
+    .svcimg {
+        float: right;
+        margin-right: 20px;
+        height: 65px;
+        clear: both;
+    }
+
+    .svcsublist {
+        font-size: 1em;
+    }
+
+    .lastbox h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2200px) {
+    .mainsection {
+        height: 1000px;
+    }
+
+    .breadcrumbs {
+        top: 190px;
+    }
+
+    .servicessection h1 {
+        top: 175px;
+        font-size: 1.5em;
+    }
+
+    .serviceslist {
+        width: 95%;
+        top: 190px;
+    }
+
+    .svc1,
+    .svc2,
+    .svc3,
+    .svc4 {
+        width: 320px;
+        height: 320px;
+    }
+
+    .svcimg {
+        height: 65px;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .servicessection h1 {
+        top: 190px;
+    }
+
+    .breadcrumbs {
+        top: 230px;
+        left: 80px;
+    }
+
+    .serviceslist {
+        top: 220px;
+    }
+
+    .mainsection {
+        height: 1400px;
+    }
+}

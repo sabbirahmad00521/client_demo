@@ -17,28 +17,29 @@
     <link rel="icon" href="images/favicon%20Logo.html" type="image/x-icon">
 
     <!-- CSS Files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/bars.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/bars.css">
 </head>
 
 <body>
 
     <!-- header Section Start Here -->
     <header class="Header">
-        <a href="index.html" class="logoclick">
-            <img class="logoimg" src="images/Main-Transparent.png" alt="ITS-logo">
+        <a href="../index.html" class="logoclick">
+            <img class="logoimg" src="../images/Main-Transparent.png" alt="ITS-logo">
         </a>
         <div class="callsection">
-            <img src="images/phone.png" alt="ITS-logo">
+            <img src="../images/phone.png" alt="ITS-logo">
             <h3>Need a tech?</h3>
             <p>Call us now<br><span><a href="tel:0452566369">04 525 66 369</a></span></p>
         </div>
     </header>
     <!-- header Section Ends Here -->
+
 
     <!-- Mobile nav start here -->
     <div id="toggle" class="nav-btn" onclick="myFunction(this)">
@@ -49,62 +50,56 @@
     <div class="nav-container" onclick="hideFunction()">
         <nav class="nav-default">
             <ul class="nav-list">
-                <li><a class="navigate" href="index.html"><span data-hover="Home">Home</span></a></li>
-                <li><a class="navigate" href="Pages/services.html"><span data-hover="Services">Services</span></a></li>
-                <li><a class="navigate" href="Pages/pricing.html"><span data-hover="Pricing">Pricing</span></a></li>
-                <li><a class="navigate" href="Pages/contact.html"><span data-hover="Contact">Contact us</span></a></li>
+                <li><a class="navigate" href="../index.html"><span data-hover="Home">Home</span></a></li>
+                <li><a class="navigate" href="services.html"><span data-hover="Services">Services</span></a></li>
+                <li><a class="navigate" href="pricing.html"><span data-hover="Pricing">Pricing</span></a></li>
+                <li><a class="navigate" href="contact.html"><span data-hover="Contact">Contact us</span></a></li>
             </ul>
         </nav>
     </div>
     <!-- Mobile nav ends here -->
 
-<!-- main content area -->
+
+
+    <!-- main content area -->
     <div class="mainsection">
-        <div class="img1"></div>
-        <div class="mainbanner">
-            <h1>We can solve all your tech problems.</h1>
-            <p>We come to you or can help through our contactless pick-up and remote services!</p>
-        </div>
-        <div class="buttondown">
-            <a href="#services" class="scroll">
-                <i class="reference-for-animation"></i>
-            </a>
-        </div>
     </div>
-    <div id="services" class="flowsection">
-        <div class="workflow">
-            <h1>Here is how it works:</h1>
-            <div class="step1">
-                <img class="firstset" src="images/logocircle1.png" alt="logocircle">
-                <img class="secondset" src="images/call.png" alt="logocircle">
-                <p>Contact us via phone, text or email.</p>
-            </div>
-            <div class="step2">
-                <img class="firstset" src="images/logocircle2.png" alt="logocircle">
-                <img class="secondset" src="images/discussion.png" alt="logocircle">
-                <p>We will discuss your technical issues and needs.</p>
-            </div>
-            <div class="step3">
-                <img class="firstset" src="images/logocircle3.png" alt="logocircle">
-                <img class="secondset" src="images/appointment-book.png" alt="logocircle">
-                <p>Book an appointment and get your issues resolved!</p>
-            </div>
+    <div id="contact-form" class="contactsection">
+        <p class="breadcrumbs"><span><a href="../index.html">Home</span></a> / Contact</p>
+        <h1>Contact Us!</h1>
+        <div class="formcontainer">
+            <form id="my-form">
+                <div class="form-group">
+                    <label for="firstName"> First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="latsName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
+        <div id="status"></div>
     </div>
-
-
     <!-- Footer Area -->
     <footer class="footer-distributed">
         <div class="footer-left">
             <h3>The<span>Technologists</span></h3>
             <p class="footer-links">
-                <a href="#">Home</a>
+                <a href="../index.html">Home</a>
                 ·
-                <a href="pages/services.html">Services</a>
+                <a href="services.html">Services</a>
                 ·
-                <a href="pages/pricing.html">Pricing</a>
-                ·
-                <a href="pages/contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
             </p>
 
             <p class="footer-company-name">The Technologists © 2020</p>
@@ -119,7 +114,7 @@
 
             <div>
                 <i class="fa fa-phone"></i>
-                <p><a href="tel:+61476996752">04 525 66 369</a></p>
+                <p>04 525 66 369</p>
             </div>
 
             <div>
@@ -150,12 +145,12 @@
     </footer>
 
     <!-- JS scripts -->
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/bars.js"></script>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="js/bars.html"></script>
     <!-- text-effect -->
-    <script type="text/javascript" src="js/jquery.transit.js"></script>
-    <script type="text/javascript" src="js/jquery.textFx.js"></script>
+    <script type="text/javascript" src="js/jquery.transit.html"></script>
+    <script type="text/javascript" src="js/jquery.textFx.html"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.test').textFx({
@@ -169,4 +164,3 @@
 </body>
 
 </html>
-
