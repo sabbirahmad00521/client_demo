@@ -103,6 +103,11 @@ a {
     color: #591e08;
 }
 
+.serviceslist a i {
+    font-size: 46px;
+    margin-top: 10px;
+}
+
 .serviceslist a:focus:hover,
 .svc1:hover,
 .svc2:hover,
