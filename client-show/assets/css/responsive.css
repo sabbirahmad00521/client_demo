@@ -1,0 +1,69 @@
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    .features a.single-feature-box {
+        margin-bottom: 40px;
+    }
+
+    .download img {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .heroarea h1,
+    .about h1 {
+        font-size: 48px;
+    }
+
+    .heroarea .open-buttons a {
+        display: block;
+    }
+
+    .features h5,
+    .features p {
+        margin-left: 80px;
+    }
+
+    .features i {
+        left: 20px;
+    }
+
+    .single-choose-box {
+        margin-bottom: 50px;
+    }
+
+    footer {
+        position: static;
+    }
+
+
+
+    footer .bottom-row .d-flex {
+        display: block !important;
+    }
+
+    footer h3 {
+        margin-top: 40px;
+    }
+
+    footer .brands {
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .heroarea h1,
+    .about h1 {
+        font-size: 36px;
+    }
+
+    .heroarea h3,
+    .download h3 {
+        font-size: 20px;
+    }
+}
