@@ -1,172 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+<html translate="no">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="link website">
+    <title>Rhin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
+    <script type="text/javascript" src="assets/js/sweetalert2.js"></script>
 
-    <!-- website title -->
-    <title>The Technologists</title>
-
-    <!-- fonts -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tenor+Sans" />
-
-    <!-- fav icon -->
-    <link rel="shortcut icon" href="images/favicon%20Logo.html" type="image/x-icon">
-    <link rel="icon" href="images/favicon%20Logo.html" type="image/x-icon">
-
-    <!-- CSS Files -->
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/bars.css">
+    <link rel="stylesheet" href="assets/css/sweetalerts.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
+    <div class="fade-in" id="blurry-content">
+        <div class="container">
+            <img src="assets/img/avataru.jpg">
+            <h1>
+                <div class="main-text">Rhin</div>
+            </h1>
+            <em>
+                <div class="sub-text">long live the king</div>
+            </em>
 
-    <!-- header Section Start Here -->
-    <header class="Header">
-        <a href="index.html" class="logoclick">
-            <img class="logoimg" src="images/Main-Transparent.png" alt="ITS-logo">
-        </a>
-        <div class="callsection">
-            <img src="images/phone.png" alt="ITS-logo">
-            <h3>Need a tech?</h3>
-            <p>Call us now<br><span><a href="tel:0452566369">04 525 66 369</a></span></p>
-        </div>
-    </header>
-    <!-- header Section Ends Here -->
+            <ul class="list-inline social">
+                <li class="list-inline-item">
+                    <a href="https://www.t.me/replica" target="_blank">
+                        <i class="fab fa-telegram"></i></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/rhin" target="_blank">
+                        <i class="fab fa-instagram"></i></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com/rural" target="_blank">
+                        <i class="fab fa-twitter"></i></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a onclick="bitcoin('Bitcoin:', 'bc1qc50ldq3k2k9zpfrsu45v0322xtg9mh7ufdjunm')" target="_blank">
+                        <i class="fab fa-btc"></i></i>
+                    </a>
+                </li>
 
-    <!-- Mobile nav start here -->
-    <div id="toggle" class="nav-btn" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-    <div class="nav-container" onclick="hideFunction()">
-        <nav class="nav-default">
-            <ul class="nav-list">
-                <li><a class="navigate" href="index.html"><span data-hover="Home">Home</span></a></li>
-                <li><a class="navigate" href="Pages/services.html"><span data-hover="Services">Services</span></a></li>
-                <li><a class="navigate" href="Pages/pricing.html"><span data-hover="Pricing">Pricing</span></a></li>
-                <li><a class="navigate" href="Pages/contact.html"><span data-hover="Contact">Contact us</span></a></li>
             </ul>
-        </nav>
+            <em>
+                <div class="sub-text">♄ | 2023</div>
+            </em>
+        </div>
     </div>
-    <!-- Mobile nav ends here -->
 
-<!-- main content area -->
-    <div class="mainsection">
-        <div class="img1"></div>
-        <div class="mainbanner">
-            <h1>We can solve all your tech problems.</h1>
-            <p>We come to you or can help through our contactless pick-up and remote services!</p>
-        </div>
-        <div class="buttondown">
-            <a href="#services" class="scroll">
-                <i class="reference-for-animation"></i>
-            </a>
-        </div>
-    </div>
-    <div id="services" class="flowsection">
-        <div class="workflow">
-            <h1>Here is how it works:</h1>
-            <div class="step1">
-                <img class="firstset" src="images/logocircle1.png" alt="logocircle">
-                <img class="secondset" src="images/call.png" alt="logocircle">
-                <p>Contact us via phone, text or email.</p>
-            </div>
-            <div class="step2">
-                <img class="firstset" src="images/logocircle2.png" alt="logocircle">
-                <img class="secondset" src="images/discussion.png" alt="logocircle">
-                <p>We will discuss your technical issues and needs.</p>
-            </div>
-            <div class="step3">
-                <img class="firstset" src="images/logocircle3.png" alt="logocircle">
-                <img class="secondset" src="images/appointment-book.png" alt="logocircle">
-                <p>Book an appointment and get your issues resolved!</p>
-            </div>
+    <div id="popup">
+        <div id="popup-content" class="animate__animated animate__fadeInUpBig">
+            <button id="enter-button"><img src="assets/img/mysteryerror.png" alt=""></button>
         </div>
     </div>
 
 
-    <!-- Footer Area -->
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <h3>Iconic <span>Tech Solution </span></h3>
-            <p class="footer-links">
-                <a href="#">Home</a>
-                ·
-                <a href="pages/services.html">Services</a>
-                ·
-                <a href="pages/pricing.html">Pricing</a>
-                ·
-                <a href="pages/contact.html">Contact</a>
-            </p>
+    <div class="musics">
+        <audio id="audio1" src="assets/audio/Bg1.mp3" loop></audio>
+        <audio id="audio2" src="assets/audio/Bg2.mp3" loop></audio>
+        <audio id="audio3" src="assets/audio/Bg3.mp3" loop></audio>
+        <audio id="audio4" src="assets/audio/Bg4.mp3" loop></audio>
+    </div>
 
-            <p class="footer-company-name">Iconic Tech Solution © 2022</p>
-        </div>
 
-        <div class="footer-center">
-
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Pokra</span> Adelaide, SA</p>
-            </div>
-
-            <div>
-                <i class="fa fa-phone"></i>
-                <p><a href="tel:+61476996752">04 525 66 369</a></p>
-            </div>
-
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:info@thetechnologists.com.au">info@thetechnologists.com.au</a></p>
-            </div>
-
-        </div>
-
-        <div class="footer-right">
-
-            <p class="footer-company-about">
-                <span>About the company</span>
-                We provide expert computer repair service & support across Adelaide South Australia
-            </p>
-
-            <div class="footer-icons">
-
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-    <!-- JS scripts -->
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/bars.js"></script>
-    <!-- text-effect -->
-    <script type="text/javascript" src="js/jquery.transit.js"></script>
-    <script type="text/javascript" src="js/jquery.textFx.js"></script>
+    <script src="assets/js/scripts.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.test').textFx({
-                type: 'fadeIn',
-                iChar: 70,
-                iAnim: 100
+        function bitcoin(bitcoin, address) {
+            Swal.fire({
+                title: bitcoin,
+                html: address,
+                imageUrl: "assets/img/btc.png",
+                imageWidth: 156,
+                imageHeight: 156,
+                imageAlt: "bitcoin",
+                timer: 4000,
+                timerProgressBar: true
             });
-        });
+        }
     </script>
-    <!-- //text-effect -->
 </body>
 
-</html>
 
+</html>
