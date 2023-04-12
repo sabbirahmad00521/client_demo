@@ -1,0 +1,83 @@
+@media (max-width: 1199px) {
+   h1.logo img {
+      margin: auto;
+      margin-bottom: 15px;
+   }
+
+   nav ul {
+      text-align: center;
+   }
+
+   nav {
+      margin-bottom: 15px;
+   }
+
+   header .col-xl-4 {
+      text-align: center;
+   }
+}
+
+@media (max-width: 991px) {
+   .Section-1 a {
+      margin-bottom: 70px;
+   }
+   .Section-3 img {
+      margin-top: 100px;
+   }
+   .Section-4 p {
+      margin-bottom: 30px;
+   }
+   .Section-6 .col-lg-4 {
+      height: 300px;
+      margin-bottom: 50px;
+   }
+   .Section-6 .col-lg-4 .button {
+      width: 100%;
+   }
+   .contact-area .col-lg-4 {
+      margin-top: 40px;
+   }
+}
+
+@media (max-width: 767px) {
+   .Section-2 img {
+      margin-bottom: 70px;
+   }
+   .Section-6 img {
+      margin-left: 0;
+   }
+   h1 {
+      font-size: 42px !important;
+   }
+   .Section-6 .box {
+      padding: 30px 15px;
+   }
+   header a,
+   nav li {
+      display: block !important;
+      margin-bottom: 15px;
+   }
+}
+
+@media (max-width: 575px) {
+   .Section-1 a {
+      padding: 50px;
+   }
+   #days,
+   #hours,
+   #minutes,
+   #seconds {
+      font-size: 35px;
+   }
+   div#CountdownClock p:after {
+      position: absolute;
+      content: ":";
+      font-size: 40px;
+      left: 63px;
+      color: #fff;
+      top: -4px;
+   }
+   div#CountdownClock div {
+      margin-right: 18px;
+   }
+}

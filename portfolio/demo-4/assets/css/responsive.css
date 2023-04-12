@@ -1,0 +1,151 @@
+@media (min-width: 1500px) {
+    .hero-area {
+        height: 650px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .hero-small-area {
+        height: 280px;
+    }
+    .hero-area {
+        height: 700px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .hero-area {
+        height: 800px;
+    }
+}
+
+@media (min-width: 2400px) {
+    .hero-area {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 1199px) {}
+
+
+
+@media (max-width: 1199px) {
+    footer h6 {
+        margin-top: 20px;
+    }
+    footer {
+        text-align: center;
+    }
+    .tabs label {
+        width: 32.3%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    nav a {
+        padding: 12px;
+    }
+    a.responsive-menu {
+        display: inline-block;
+        color: #97C636;
+        z-index: 999;
+        font-size: 36px;
+        float: right;
+        margin-top: 0px;
+    }
+    .menu {
+        display: none;
+        float: right;
+        margin-top: 70px;
+        margin-right: -50px;
+    }
+    .menu li {
+        display: block;
+    }
+    nav a:after {
+        display: none;
+    }
+    .header-bottom .row {
+        align-items: flex-start !important;
+    }
+    .header-bottom h1 {
+        margin-top: 8px;
+    }
+    .features {
+        text-align: center;
+    }
+    .features img {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .features-bg-frame-1:after {
+        right: 95px;
+    }
+    .features-bg-frame-2 {
+        margin-top: 40px;
+    }
+    .features-bg-frame-2:after {
+        left: 20px;
+        bottom: -125px;
+    }
+    .letest-blog {
+        background-image: none;
+    }
+    .letest-article {
+        background-image: none;
+    }
+    .tabs label {
+        width: 32.9%;
+    }
+    .populer {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .populer p {
+        margin-bottom: 0;
+    }
+    .hero-small-area {
+        background-position: 0 95%;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-top .dropdown {
+        display: block;
+        text-align: center;
+    }
+    .header-top .text-right {
+        text-align: center !important;
+        margin: 10px 0 20px;
+    }
+    .single-service-box {
+        margin-bottom: 35px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .contact-sidebar {
+        margin-top: 60px;
+    }
+    .single-contact-box:after {
+        top: -3%;
+    }
+}
+
+@media (max-width: 575px) {
+    .blog-post-footer a {
+        float: initial;
+        padding: 5px 0;
+        text-align: center;
+        display: block;
+    }
+    .tabs label {
+        width: 32.2%;
+    }
+    .social-icons {
+        margin-top: -45px;
+
+    }
