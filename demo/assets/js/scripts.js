@@ -150,4 +150,3 @@ enterButton.onclick = function() {
     blurryContent.style.filter = "none";
     playAudio();
 }
-
