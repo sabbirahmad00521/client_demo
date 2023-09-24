@@ -259,7 +259,7 @@ p {
 }
 
 .blue-background {
-    background-color: #1a2270;
+    background-color: #36a08a;
     background-image: url(../images/duotone2.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -283,7 +283,7 @@ p {
 }
 
 .blue-background3 {
-    background-color: #1a2270;
+    background-color: #36a08a;
     background-image: url(../images/duotone2.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -533,8 +533,8 @@ strong {
     max-height: 480px !important;
     max-width: 853px !important;
     margin: auto;
-    min-width: 272px;
-    min-height: 153px
+    min-width: 100%;
+    min-height: 100%
 }
 
 .video-wrapper-mobile {
@@ -1853,6 +1853,7 @@ div.tp:nth-of-type(odd) {
     display: block;
     margin: 0 auto 60px;
     max-width: 900px;
+    width: 100%;
 }
 
 .moneyback .smallerlogo {
@@ -2043,6 +2044,7 @@ div.tp:nth-of-type(odd) {
     max-width: 700px;
     display: block;
     margin: 80px auto 50px;
+    width: 100%;
 }
 
 .testimonial .single-testimonial {
@@ -2312,9 +2314,17 @@ input:checked~.tab-content {
     display: block;
 }
 
-.footersec ul {margin: 0;padding: 0;list-style: none;text-align: center;}
+.footersec ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
 
-.footersec ul li {display: inline-block;margin: 0 19px;}
+.footersec ul li {
+    display: inline-block;
+    margin: 0 19px;
+}
 
 .footersec ul li a {
     text-align: center;
@@ -2325,7 +2335,11 @@ input:checked~.tab-content {
     line-height: 20px;
     color: #fff;
 }
-.footersec ul li a:hover{text-decoration: underline;}
+
+.footersec ul li a:hover {
+    text-decoration: underline;
+}
+
 .footersec p {
     text-align: center;
     font-family: Roboto;
@@ -2333,6 +2347,250 @@ input:checked~.tab-content {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    color: #fff;max-width: 800px;margin: auto;
+    color: #fff;
+    max-width: 800px;
+    margin: auto;
 }
 
+.desktop-hide {
+    display: none;
+}
+
+.mobile-hide {
+    display: block;
+}
+
+@media only screen and (max-width:992px) {
+    .scientific-ref .ref-img {
+        display: block;
+    }
+
+    .scientific-ref .ref-img img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .desktop-hide {
+        display: block;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+    .loading-video,.w-bottom-bar.w-css-reset{display: none !important;}
+    .button-continue.pulsing.button-continue-pc{display: block;}.button-continue, .button-unmute{background-size: auto;}
+    .blue-background3 {
+        margin-top: 0 !important;
+    }
+
+    .headline-ac {
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .claim-section p {
+        font-size: 26px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px !important;
+    }
+
+    .price-section .wrapper {
+        flex-direction: column;
+    }
+
+    .price-section .wrapper .single-box {
+        margin: 0 0 20px;
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .price-section .wrapper .single-box.middle {
+        order: -2;
+    }
+
+    .price-section .wrapper .single-box.bundle {
+        order: -1;
+    }
+
+    .price-section .wrapper .single-box .main-content a {
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .price-section .wrapper .single-box .main-content a img {
+        max-width: 250px;
+        display: block;
+        margin: auto;
+    }
+
+    .price-section .wrapper .single-box.middle h4 {
+        font-size: 29.696px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 29.696px;
+    }
+
+    .price-section .wrapper .single-box.middle h5 {
+        font-size: 17.818px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 17.818px;
+    }
+
+    .moneyback .smallerlogo img {
+        height: auto;
+        width: 20%;
+        margin: auto;
+    }
+
+    .moneyback .mainimg img {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .moneyback {
+        padding: 60px 0 !important;
+    }
+
+    .freebook .bigheader,
+    .faq h1 {
+        font-size: 30px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px !important;
+    }
+
+    .book-wrapper {
+        display: block;
+    }
+
+    .single-book {
+        margin: 0 auto 30px;
+    }
+
+    .freeship {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ship-timer {
+        order: -1;
+    }
+
+    .ship-content h2 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .ship-content h6 {
+        line-height: 1.2;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .ship-content h6 span {
+        font-weight: 300;
+    }
+
+    .testimonial h1,
+    .testimonial h1 span {
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .testimonial .single-testimonial .person {
+        display: block;
+    }
+
+    .testimonial .single-testimonial .person>img {
+
+        display: block;
+        margin: 0 auto 5px !important;
+    }
+
+    .testimonial .single-testimonial .person .varified {
+        justify-content: center;
+    }
+
+    .testimonial .single-testimonial {
+        width: 90%;
+        margin: 0 auto 40px;
+    }
+
+    .testimonial .speech p {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonial .speech span {
+        display: block;
+        text-align: center;
+    }
+
+    .features>img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+    }
+
+    .features .wrapper .single-feature {
+        flex-direction: column;
+    }
+
+    .features .wrapper .single-feature img {
+        height: 60px;
+    }
+
+    .features .wrapper .single-feature h5 {
+        font-size: 24px;
+    }
+
+    .faq * {
+        font-size: 16px;
+    }
+
+    .vid-padding-desktop.vid-padding.wistia_responsive_padding {
+        height: 500px !important;
+        width: 100% !important;
+    }
+
+    .features .wrapper .single-feature h5 {
+        margin-left: 0;
+    }
+
+    .change-container {
+        padding: 30px 0;
+    }
+
+    /* .click-for-sound-btn{display: none !important;} */
+}
+
+@media only screen and (max-width:568px) {
+    .moneyback .smallerlogo {
+        flex-wrap: wrap;
+    }
+
+    .moneyback .smallerlogo img {
+        width: calc(50% - 40px);
+        margin: 20px;
+    }
+
+    .features .wrapper {
+        display: block;
+    }
+
+    .price-section .reviews img {
+        height:
+            auto;
+    }
+}
